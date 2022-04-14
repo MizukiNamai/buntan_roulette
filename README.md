@@ -41,7 +41,7 @@
 ## 使用技術
 ・ruby
 ・rails
-・jQuery
+・Vue.js
 
 ## スケジュール
 企画・技術調査 ４/6 〆切
@@ -54,4 +54,4 @@ README〜ER図作成：4/11 〆切
 https://www.figma.com/file/BTWujlkV9J2JazRaBoV0QU/Untitled?node-id=0%3A1
 
 ## ER図
-https://drive.google.com/file/d/1kCc3sZO179QLUypOpNEDpdoBr7cwcqVl/view?usp=sharing
+https://drive.google.com/file/d/1Iw5YPIsUP3lEDLgUPqQQ7Wh3QNaO8-i6/view?usp=sharing
