@@ -44,11 +44,11 @@
 ・Vue.js
 
 ## スケジュール
-企画・技術調査 ４/6 〆切
-README〜ER図作成：4/11 〆切
-メイン機能実装：4/12 - 5/1
-β版をRUNTEQ内リリース（MVP）：5/11〆切
-本番リリース：6月初旬
+企画・技術調査 ４/16 〆切
+README〜ER図作成：4/17 〆切
+メイン機能実装：4/18 - 5/7
+β版をRUNTEQ内リリース（MVP）：5/17〆切
+本番リリース：6月中旬
 
 ## 画面遷移図
 https://www.figma.com/file/BTWujlkV9J2JazRaBoV0QU/Untitled?node-id=0%3A1
