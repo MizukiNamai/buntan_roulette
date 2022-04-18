@@ -1,0 +1,16 @@
+current directory: /Users/namaimizuki/workspace/portfolio/buntan_roulette/buntan_roulette/vendor/bundle/ruby/3.0.0/gems/strscan-3.0.1/ext/strscan
+/Users/namaimizuki/.rbenv/versions/3.0.2/bin/ruby -I /Users/namaimizuki/.rbenv/versions/3.0.2/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220418-2496-jj5gkc.rb extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/namaimizuki/workspace/portfolio/buntan_roulette/buntan_roulette/vendor/bundle/ruby/3.0.0/gems/strscan-3.0.1/ext/strscan
+make DESTDIR\= clean
+
+current directory: /Users/namaimizuki/workspace/portfolio/buntan_roulette/buntan_roulette/vendor/bundle/ruby/3.0.0/gems/strscan-3.0.1/ext/strscan
+make DESTDIR\=
+compiling strscan.c
+linking shared-object strscan.bundle
+
+current directory: /Users/namaimizuki/workspace/portfolio/buntan_roulette/buntan_roulette/vendor/bundle/ruby/3.0.0/gems/strscan-3.0.1/ext/strscan
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20220418-2496-k97vw3
