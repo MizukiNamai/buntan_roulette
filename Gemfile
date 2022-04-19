@@ -83,6 +83,7 @@ group :test do
 end
 
 gem 'bootstrap', '~> 5.0.0'
+gem 'devise'
 gem 'high_voltage'
 gem 'meta-tags'
 gem 'rails-i18n'
