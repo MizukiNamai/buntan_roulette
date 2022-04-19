@@ -84,6 +84,8 @@ end
 
 gem 'bootstrap', '~> 5.0.0'
 gem 'devise'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
 gem 'high_voltage'
 gem 'meta-tags'
 gem 'rails-i18n'
