@@ -1,0 +1,25 @@
+AllCops:
+  Exclude:
+    - "db/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "Dangerfile"
+    - "node_modules/**/*"
+    - "bin/update"
+    - "bin/setup"
+    - "bin/yarn"
+    - "bin/bundle"
+    - "config/puma"
+  TargetRubyVersion: 3.0
+
+LineLength:
+  Max: 200
+
+ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
