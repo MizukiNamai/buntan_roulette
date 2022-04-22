@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
     sessions: 'users/sessions'
   }
-  root 'pages/index'
+  root 'pages#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   devise_scope :user do
     get 'login', to: 'users/sessions#new'
