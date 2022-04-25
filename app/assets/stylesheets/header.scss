@@ -1,0 +1,11 @@
+header {
+  .header-background {
+    background-image: image-url("top.jpg");
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+  }
+}
