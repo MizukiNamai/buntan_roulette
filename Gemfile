@@ -82,13 +82,11 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'bootstrap', '~> 5.0.0'
 gem 'devise'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
 gem 'font-awesome-sass', '~> 5.15.1'
 gem 'high_voltage'
-gem 'jquery-rails'
 gem 'meta-tags'
 gem 'rails-i18n'
 gem 'seed-fu'
