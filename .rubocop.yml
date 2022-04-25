@@ -10,6 +10,8 @@ AllCops:
     - "bin/yarn"
     - "bin/bundle"
     - "config/puma"
+    - "bin/webpack"
+    - "bin/webpack-dev-server"
   TargetRubyVersion: 3.0
 
 LineLength:
