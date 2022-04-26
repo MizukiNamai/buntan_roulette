@@ -1,3 +1,7 @@
-<p>使い方</p>
-<p>分担したいときに使用するルーレットです</p>
-<%= link_to "ルーレットを回す", pages_choice_path , class: "btn btn-primary" %>
+<div class= guide_contents>
+  <ul>
+    <li>使い方</li>
+    <li>分担したいときに使用するルーレットです</li>
+    <li><%= button_to "ルーレットを回す", pages_choice_path, {method: :get, class: "myButton"} %></li>
+  </ul>
+</div>
