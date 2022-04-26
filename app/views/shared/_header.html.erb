@@ -4,16 +4,13 @@
       <%= link_to root_path, class: 'navbar-brand' do %>
       <% end %>
     </div>
-<!--▽▽ヘッダーリスト▽▽-->
     <div class="header-background">
       <ul>
-        <li><%= link_to "トップページ", '/', class:"link head" %></li>
-        <li><%= link_to "遊び方", "#", class:"link head" %></li>
-        <li><%= link_to "モード選択","#", class:"link head" %></li>
-        <li><%= link_to "ログイン", login_path, class:"link head" %>
+        <li><%= link_to "ログイン", login_path, class:"header_link" %></li>
+        <li><%= link_to "使い方", pages_guide_path, class:"header_link" %></li>
+        <li><%= link_to "人数選択",pages_choice_path, class:"header_link" %></li>
+        <li><%= link_to "トップページ", '/', class:"header_link" %></li>
       </ul>
     </div>
   </nav>
-<!--△△ヘッダーリスト△△-->
-
 </header>
