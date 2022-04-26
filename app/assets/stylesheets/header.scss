@@ -1,11 +1,34 @@
 header {
-  .header-background {
+    position: flex-end;
     background-image: image-url("top.jpg");
     background-size: contain;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100px;
+    z-index: 999;
+    height: 70px;
     width: 100%;
-  }
+}
+
+header li {
+    display: inline;
+    list-style: none;
+}
+
+header ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.header_link {
+    text-decoration: none;
+    margin-left: 20px;
+    color:rgba(0, 0, 0, 0.7);
+}
+
+.header_link:hover {
+    color:rgb(0, 0, 0)
 }

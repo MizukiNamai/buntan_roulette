@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-size: cover;
+    z-index: 999;
+    height: 30px;
+    min-width: 200px;
+    margin: 0;
+}
+
+footer ul {
+    position: fixed;
+    color:rgba(10, 10, 10, 0.5);
+    list-style: none;
+    bottom: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+
+footer li {
+    display: inline;
+    font-size: 13px;
+    min-width: 200px;
+    margin: 0px 10px;
+}
+
+
+.footer_link {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.5);
+}
