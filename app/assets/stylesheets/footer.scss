@@ -11,7 +11,7 @@ footer {
     height: 78px;
 }
 
-.flex{
+.footer-container{
     display: flex;
     justify-content: center;
 }
@@ -20,7 +20,7 @@ footer ul {
     position: fixed;
     color:rgba(10, 10, 10, 0.5);
     list-style: none;
-    bottom: 8px;
+    bottom:4px;
     padding: 0;
     margin-right: 0;
 }
@@ -37,4 +37,8 @@ footer li {
 .footer_link {
     text-decoration: none;
     color:rgba(0, 0, 0, 0.5);
+}
+
+.copywrite{
+  margin-bottom: 2px;
 }
