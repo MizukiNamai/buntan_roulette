@@ -1,6 +1,20 @@
+.wrapper{
+  position: relative;
+}
 
 .guide_contents {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+    position: absolute;
+    top: 300px;
+    right: 750px;
+}
+
+guide ul {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+guide li {
+  margin: 50px;
 }
