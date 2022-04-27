@@ -8,6 +8,12 @@ header {
     z-index: 999;
     height: 70px;
     width: 100%;
+    margin: 0 auto;
+}
+
+.header-background{
+    display: flex;
+    justify-content: right;
 }
 
 header li {
@@ -16,11 +22,8 @@ header li {
 }
 
 header ul {
-  display: flex;
-  justify-content: right;
-  list-style: none;
-  padding: 0 20px;
-  margin: 0;
+    padding: 20px;
+    margin: 0;
 }
 
 .header_link {
