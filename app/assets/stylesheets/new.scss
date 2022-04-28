@@ -1,56 +1,44 @@
-.circle {
-  background-color: #efefef;
-  height: 800px;
-  width: 800px;
-  border-radius: 50%;
-  transform: rotate(0);
-  position: relative;
-  top: 30px;
-  left: 555px;
-}
-
-.three_buttons{
-  position: absolute;
-  top: 100px;
-  left: 300px;
-}
-.myButton_1{
-  box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-	background-color:#79bbff;
-	border-radius:6px;
-	border:1px solid #84bbf3;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #438ed9;
-  margin-bottom: 20px;
-	&:hover {
-	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-	background-color:#378de5;
-}
-}
-.form{
-  position: relative;
-  top: 10px;
-  left: 10px;
-}
-
-.four_forms{
-  position: absolute;
-  bottom: 50px;
-  right: 270px;
-}
-
-.four_roulettes{
-  position: absolute;
-  top: 400px;
-  left: 500px;
+@media screen and (min-width: 1024px) {
+  .roulettewrapper {
+    position: relative;
+    top: 270px;
+    left: 600px;
+  }
+  .circle{
+    background-color: #cf0909;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    transform: rotate(0);
+    position: absolute;
+    top: 243px;
+    left: 493px;
+  }
+  .foundation_roulettes{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+  .foundation_quarter {
+    position: absolute;
+    height: 220px;
+    width: 220px;
+  }
+  .roulettewrapper_top {
+    position: relative;
+    top: 270px;
+    left: 600px;
+  }
+  .top_roulettes{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+  .top_quarter {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+  }
 }
 
 .rotate {
@@ -63,34 +51,64 @@
 .stop {
   animation-play-state: paused;
 }
-.quarter {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-}
-#quarter_1 {
-  top: 0px;
-  right: 0px;
-  background-color: #bbdbf3;
+#f_quarter_1 {
+  bottom: 0px;
+  left: 0px;
+  background-color: #efefef;
   border-radius: 0 100% 0 0;
+  border: 2px solid #000000 ;
 }
-#quarter_2 {
-  bottom: 0px;
-  right: 0px;
-  background-color: #e3acae;
-  border-radius: 0 0 100% 0;
-}
-#quarter_3 {
-  bottom: 0px;
-  left: 0px;
-  background-color: #a3d6ce;
-  border-radius: 0 0 0 100%;
-}
-#quarter_4 {
+#f_quarter_2 {
   top: 0px;
   left: 0px;
-  background-color: #ffedab;
+  background-color: #efefef;
+  border-radius: 0 0 100% 0;
+  border: 2px solid #000000 ;
+}
+#f_quarter_3 {
+  top: 0px;
+  right: 0px;
+  background-color: #efefef;
+  border-radius: 0 0 0 100%;
+  border: 2px solid #000000 ;
+}
+#f_quarter_4 {
+  bottom: 0px;
+  right: 0px;
+  background-color: #efefef;
   border-radius: 100% 0 0 0;
+  border: 2px solid #000000 ;
+}
+#t_quarter_1 {
+  bottom: 0px;
+  left: 0px;
+  background-color: #ffcca2;
+  border-radius: 100% 0 0 0;
+  border: 2px solid #000000 ;
+  transform: scale(-1, 1);
+}
+#t_quarter_2 {
+  top: 0px;
+  left: 0px;
+  background-color: #b2f1ac;
+  border-radius: 100% 0 0 0;
+  border: 2px solid #000000 ;
+  transform: scale(-1, -1);
+}
+#t_quarter_3 {
+  top: 0px;
+  right: 0px;
+  background-color: #fdaabf;
+  border-radius: 100% 0 0 0;
+  border: 2px solid #000000 ;
+  transform: scale(1, -1);
+}
+#t_quarter_4 {
+  bottom: 0px;
+  right: 0px;
+  background-color: #84dae9;
+  border-radius: 100% 0 0 0;
+  border: 2px solid #000000 ;
 }
 
 .label1 {
@@ -105,19 +123,11 @@
 .label4 {
   transform: rotate(315deg);
 }
-.color {
-  width: 20px;
-  height: 20px;
+.todolist_button{
+  position: relative;
+  top: 320px;
 }
-.label1-color {
-  background-color: #bbdbf3;
-}
-.label2-color {
-  background-color: #e3acae;
-}
-.label3-color {
-  background-color: #a3d6ce;
-}
-.label4-color {
-  background-color: #ffedab;
+#btn_todo{
+  position: absolute;
+  right: 180px;
 }

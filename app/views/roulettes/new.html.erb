@@ -1,58 +1,31 @@
 <div class="fourversion_roulette">
   <div class="roulette-container">
-    <!--ルーレット-->
-    <div class="circle">
-      <div class= "four_roulettes">
-        <div class="quarter" id="quarter_1">
-          <% if @label1.present? %>
-            <h3 class="name1"><%= @name1 %></h3>
-          <% end %>
-        </div>
-        <div class="quarter" id="quarter_2">
-          <% if @label2.present? %>
-            <h3 class="name2"><%= @name2 %></h3>
-          <% end %>
-        </div>
-        <div class="quarter" id="quarter_3">
-          <% if @user3.present? %>
-            <h3 class="name3"><%= @name3 %></h3>
-          <% end %>
-        </div>
-        <div class="quarter" id="quarter_4">
-          <% if @label4.present? %>
-            <h3 class="name4"><%= @name4 %></h3>
-          <% end %>
-        </div>
+    <div class="roulettewrapper">
+      <div class= "foundation_roulettes">
+        <div class="foundation_quarter" id="f_quarter_1"></div>
+        <div class="foundation_quarter" id="f_quarter_2"></div>
+        <div class="foundation_quarter" id="f_quarter_3"></div>
+        <div class="foundation_quarter" id="f_quarter_4"></div>
       </div>
     </div>
-    <!--スタート・ストップボタン-->
-    <div class="new_button">
-      <div class="three_buttons">
-        <%= button_to "ストップ", "#", {method: :get, id: "stop", class: "myButton_1"} %>
-        <%= button_to "スタート", "#", {method: :get, id: "start", class: "myButton_1"} %>
-        <%= button_to "リセット", "#", {method: :get, id: "reset", class: "myButton_1"} %>
+    <div class="circle" id="circle_1"></div>
+    <div class="roulettewrapper_top">
+      <div class= "top_roulettes">
+        <div class="top_quarter" id="t_quarter_1"></div>
+        <div class="top_quarter" id="t_quarter_2"></div>
+        <div class="top_quarter" id="t_quarter_3"></div>
+        <div class="top_quarter" id="t_quarter_4"></div>
       </div>
     </div>
+    <%= render 'shared/roulettebutton' %>
+    <%= form_with url: "#", method: :get, local: true do |f| %>
+      <div><%= f.text_field :label1 %></div>
+      <div><%= f.text_field :label2 %></div>
+      <div><%= f.text_field :label3 %></div>
+      <div><%= f.text_field :label4 %></div>
+        <div class="todolist_button">
+          <%= f.submit "ToDoリストを作成", class: "myButton", id: "btn_todo"%>
+        </div>
+    <% end %>
   </div>
-
-
-  <!--項目名入力フォーム-->
-
-    <div class="form">
-      <div class="four_forms">
-        <h5 class="mt-4">項目名入力</h5>
-        <%= form_with url: "#", method: :get, local: true do |f| %>
-          <div><div class="color label1-color "></div><%= f.text_field :label1 %></div>
-          <div class= "my-2"><div class="color label2-color "></div><%= f.text_field :label2 %></div>
-          <div><div class="color label3-color "></div><%= f.text_field :label3 %></div>
-          <div class="my-2"><div class="color label4-color "></div><%= f.text_field :label4 %></div>
-          <%= link_to "リセット", "#", class: "myButton_1" %>
-          <%= f.hidden_field :h_label1, :value => @dish1 %>
-          <%= f.hidden_field :h_label2, :value => @dish2 %>
-          <%= f.hidden_field :h_label3, :value => @dish3 %>
-          <%= f.hidden_field :h_label4, :value => @dish4 %>
-          <%= f.submit "決定", class: "myButton_1" %>
-        <% end %>
-      </div>
-    </div>
 </div>
