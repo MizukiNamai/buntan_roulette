@@ -17,15 +17,17 @@
         <div class="top_quarter" id="t_quarter_4"></div>
       </div>
     </div>
+    <%= form_with url: "#", class: "todoform", method: :get, local: true do |f| %>
+      <div class="label1"><%= f.text_field :label1 %></div>
+      <div class="label2"><%= f.text_field :label2 %></div>
+      <div class="label3"><%= f.text_field :label3 %></div>
+      <div class="label4"><%= f.text_field :label4 %></div>
+      <div class="label5"><%= f.text_field :label5 %></div>
+      <div class="label6"><%= f.text_field :label6 %></div>
+      <div class="label7"><%= f.text_field :label7 %></div>
+      <div class="label8"><%= f.text_field :label8 %></div>
+      <%= f.submit "ToDoリストを作成", class: "btn_todo" %>
+      <% end %>
     <%= render 'shared/roulettebutton' %>
-    <%= form_with url: "#", method: :get, local: true do |f| %>
-      <div><%= f.text_field :label1 %></div>
-      <div><%= f.text_field :label2 %></div>
-      <div><%= f.text_field :label3 %></div>
-      <div><%= f.text_field :label4 %></div>
-        <div class="todolist_button">
-          <%= f.submit "ToDoリストを作成", class: "myButton", id: "btn_todo"%>
-        </div>
-    <% end %>
   </div>
 </div>
