@@ -1,4 +1,4 @@
-.myButton {
+.btn_top {
 	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
 	background-color:#79bbff;
@@ -8,6 +8,7 @@
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
+  width:400px;
 	font-size:15px;
 	font-weight:bold;
 	padding:6px 24px;
@@ -23,3 +24,12 @@
   display: flex;
   justify-content: center;
 }
+  top ul {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  top li{
+    margin: 50px;
+  }
