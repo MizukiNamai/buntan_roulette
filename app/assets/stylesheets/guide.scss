@@ -1,20 +1,17 @@
-.wrapper{
-  position: relative;
-}
+@media screen and (min-width: 1024px) {
+  .guide_contents {
+    display: flex;
+    justify-content: center;
+  }
 
-.guide_contents {
-    position: absolute;
-    top: 300px;
-    right: 750px;
-}
-
-guide ul {
+  guide ul {
     display: inline;
     list-style-type: none;
     padding: 0;
     text-align: center;
-}
+  }
 
-guide li {
-  margin: 50px;
+  guide li {
+    margin: 50px;
+  }
 }

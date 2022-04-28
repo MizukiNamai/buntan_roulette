@@ -1,17 +1,14 @@
-.wrapper{
-  position: relative;
-}
+@media screen and (min-width: 1024px) {
+  .choice_button{
+    display: flex;
+    justify-content: center;
+  }
 
-.choice_button{
-    position: absolute;
-    top: 200px;
-    right: 850px;
-}
+  ul{
+    list-style-type: none;
+  }
 
-ul{
-  list-style-type: none;
-}
-
-li{
-  margin: 50px;
+  li{
+    margin: 50px;
+  }
 }
