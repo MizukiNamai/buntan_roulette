@@ -1,6 +1,17 @@
+@media screen and (min-width: 1024px) {
+  .guide_contents {
+    display: flex;
+    justify-content: center;
+  }
 
-.guide_contents {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+  guide ul {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  guide li {
+    margin: 50px;
+  }
 }

@@ -1,24 +1,28 @@
 footer {
+    position: absolute;
+    bottom: 0;
+    background-image: image-url("top.jpg");
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 999;
+    height: 78px;
+}
+
+.footer-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-size: cover;
-    z-index: 999;
-    height: 30px;
-    min-width: 200px;
-    margin: 0;
 }
 
 footer ul {
     position: fixed;
     color:rgba(10, 10, 10, 0.5);
     list-style: none;
-    bottom: 8px;
+    bottom:4px;
     padding: 0;
-    margin: 0;
+    margin-right: 0;
 }
 
 
@@ -33,4 +37,8 @@ footer li {
 .footer_link {
     text-decoration: none;
     color:rgba(0, 0, 0, 0.5);
+}
+
+.copywrite{
+  margin-bottom: 2px;
 }

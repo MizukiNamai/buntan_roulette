@@ -1,16 +1,14 @@
 <header>
-  <nav class="navbar navbar-expand-lg navigation navbar-light bg-light">
-    <div class="header-background">
-      <%= link_to root_path, class: 'navbar-brand' do %>
-      <% end %>
-    </div>
-    <div class="header-background">
-      <ul>
-        <li><%= link_to "ログイン", login_path, class:"header_link" %></li>
-        <li><%= link_to "使い方", pages_guide_path, class:"header_link" %></li>
-        <li><%= link_to "人数選択",pages_choice_path, class:"header_link" %></li>
-        <li><%= link_to "トップページ", '/', class:"header_link" %></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="headerwrapper">
+    <nav>
+      <div class="header-background">
+        <ul>
+          <li><%= link_to "ログイン", login_path, class:"header_link" %></li>
+          <li><%= link_to "人数選択",pages_choice_path, class:"header_link" %></li>
+          <li><%= link_to "使い方", pages_guide_path, class:"header_link" %></li>
+          <li><%= link_to "トップページ", '/', class:"header_link" %></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>

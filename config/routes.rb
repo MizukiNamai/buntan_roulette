@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get 'pages/choice'
   get 'pages/guide'
+  get 'roulettes/new'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   devise_scope :user do
     get 'login', to: 'users/sessions#new'
