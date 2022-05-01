@@ -8,9 +8,8 @@
         <div class="foundation_quarter" id="f_quarter_4"></div>
       </div>
     </div>
-    <div class="circle" id="circle_1"></div>
     <div class="roulettewrapper_top">
-      <div class= "top_roulettes">
+      <div class= "top_roulettes" id="circle">
         <div class="top_quarter" id="t_quarter_1"></div>
         <div class="top_quarter" id="t_quarter_2"></div>
         <div class="top_quarter" id="t_quarter_3"></div>
@@ -27,7 +26,51 @@
       <div class="label7"><%= f.text_field :label7 %></div>
       <div class="label8"><%= f.text_field :label8 %></div>
       <%= f.submit "ToDoリストを作成", class: "btn_todo" %>
-      <% end %>
-    <%= render 'shared/roulettebutton' %>
+    <% end %>
+    <div class="roulettebutton">
+      <div class="tow_buttons">
+        <%= button_to "スタート", "#", {method: :get, id: "start", class: "myButton"} %>
+        <%= button_to "ストップ", "#", {method: :get, id: "stop", class: "myButton"} %>
+      </div>
+    </div>
   </div>
 </div>
+<script type="text/javascript">
+  const start = document.getElementById('start');
+  const stop = document.getElementById('stop');
+  const circle = document.getElementById('circle');
+
+  let deg = 0; // 角度
+  let velocity = 0; // 初速
+  let active = false; // 動作状態
+
+// スタートクリック
+  start.addEventListener('click', () => {
+    if(!active) {
+      active = true;
+      velocity = 90;
+      roulette();
+    }
+  });
+
+// ストップクリック
+  stop.addEventListener('click', () => {
+    if(active) {
+      active = false;
+    }
+  });
+
+// 回転処理
+  function roulette() {
+    deg += velocity;
+    if(active) {
+      setDeg();
+      requestAnimationFrame(roulette);
+    }
+  }
+
+// 角度セット
+  function setDeg() {
+      circle.style.transform = `rotate(${deg}deg)`;
+  }
+</script>
