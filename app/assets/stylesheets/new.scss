@@ -4,17 +4,13 @@
     top: 270px;
     left: 600px;
   }
-  .circle{
-    background-color: #cf0909;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
+  .top_roulettes{
     transform: rotate(0);
-    position: relative;
-    top: 180px;
-    left: 493px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
   }
-  .foundation_roulettes{
+  .foundation_roulettes {
     position: absolute;
     top: 20px;
     left: 10px;
@@ -25,14 +21,9 @@
     width: 220px;
   }
   .roulettewrapper_top {
-    position: relative;
-    top: 100px;
-    left: 600px;
-  }
-  .top_roulettes{
     position: absolute;
-    top: 20px;
-    left: 10px;
+    top: 328px;
+    left: 607px;
   }
   .top_quarter {
     position: absolute;
@@ -64,48 +55,41 @@
   }
 }
 
-.rotate {
-  animation: rotate-anime 0.4s linear infinite;
-}
-@keyframes rotate-anime {
-  0%  {transform: rotate(0);}
-  100%  {transform: rotate(360deg);}
-}
 .stop {
   animation-play-state: paused;
 }
 #f_quarter_1 {
   bottom: 0px;
   left: 0px;
-  background-color: #efefef;
+  background-color: #ffe7e7;
   border-radius: 0 100% 0 0;
   border: 2px solid #000000 ;
 }
 #f_quarter_2 {
   top: 0px;
   left: 0px;
-  background-color: #efefef;
+  background-color: #ffe7e7;
   border-radius: 0 0 100% 0;
   border: 2px solid #000000 ;
 }
 #f_quarter_3 {
   top: 0px;
   right: 0px;
-  background-color: #efefef;
+  background-color: #ffe7e7;
   border-radius: 0 0 0 100%;
   border: 2px solid #000000 ;
 }
 #f_quarter_4 {
   bottom: 0px;
   right: 0px;
-  background-color: #efefef;
+  background-color: #ffe7e7;
   border-radius: 100% 0 0 0;
   border: 2px solid #000000 ;
 }
 #t_quarter_1 {
   bottom: 0px;
   left: 0px;
-  background-color: #ffcca2;
+  background-color: #b2f1ac;
   border-radius: 100% 0 0 0;
   border: 2px solid #000000 ;
   transform: scale(-1, 1);
@@ -113,7 +97,7 @@
 #t_quarter_2 {
   top: 0px;
   left: 0px;
-  background-color: #b2f1ac;
+  background-color: #fffd95;
   border-radius: 100% 0 0 0;
   border: 2px solid #000000 ;
   transform: scale(-1, -1);
@@ -121,7 +105,7 @@
 #t_quarter_3 {
   top: 0px;
   right: 0px;
-  background-color: #fdaabf;
+  background-color: #8497e9;
   border-radius: 100% 0 0 0;
   border: 2px solid #000000 ;
   transform: scale(1, -1);
@@ -134,22 +118,17 @@
   border: 2px solid #000000 ;
 }
 
-.todoform{
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  color: #fff;
-  font-size: 14px;
-  position: absolute;
-  top: 250px;
-  left: 500px;
-}
 .label1 {
   transform: rotate(45deg);
-
+  position: absolute;
+  top: 250px;
+  left: 660px;
 }
 .label2 {
   transform: rotate(135deg);
+  position: absolute;
+  top: 240px;
+  left: 450px;
 }
 .label3 {
   transform: rotate(225deg);
