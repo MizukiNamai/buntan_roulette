@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="roulettewrapper_top">
-      <div class= "top_roulettes" id="circle">
+      <div class= "top_roulettes" id="roulettes4">
         <div class="top_quarter" id="t_quarter_1"></div>
         <div class="top_quarter" id="t_quarter_2"></div>
         <div class="top_quarter" id="t_quarter_3"></div>
@@ -29,48 +29,40 @@
     <% end %>
     <div class="roulettebutton">
       <div class="tow_buttons">
-        <%= button_to "スタート", "#", {method: :get, id: "start", class: "myButton"} %>
-        <%= button_to "ストップ", "#", {method: :get, id: "stop", class: "myButton"} %>
+        <%= button_to "スタート", "#", {method: :get, id: "start4", class: "myButton"} %>
+        <%= button_to "ストップ", "#", {method: :get, id: "stop4", class: "myButton"} %>
       </div>
     </div>
   </div>
 </div>
 <script type="text/javascript">
-  const start = document.getElementById('start');
-  const stop = document.getElementById('stop');
-  const circle = document.getElementById('circle');
+  const start = document.getElementById('start4');
+  const stop = document.getElementById('stop4');
+  const roulettes = document.getElementById('roulettes4');
 
-  let deg = 0; // 角度
-  let velocity = 0; // 初速
-  let active = false; // 動作状態
+  let deg = 0;
+  let speed = 0;
+  let move = false;
 
-// スタートクリック
   start.addEventListener('click', () => {
-    if(!active) {
-      active = true;
-      velocity = 90;
-      roulette();
+    if(!move) {
+      move = true;
+      speed = 90;
+      rotate();
     }
   });
 
-// ストップクリック
   stop.addEventListener('click', () => {
-    if(active) {
-      active = false;
+    if(move) {
+      move = false;
     }
   });
 
-// 回転処理
-  function roulette() {
-    deg += velocity;
-    if(active) {
-      setDeg();
-      requestAnimationFrame(roulette);
+  function rotate() {
+    deg += speed;
+    if(move) {
+      roulettes.style.transform = `rotate(${deg}deg)`;
+      requestAnimationFrame(rotate);
     }
-  }
-
-// 角度セット
-  function setDeg() {
-      circle.style.transform = `rotate(${deg}deg)`;
   }
 </script>

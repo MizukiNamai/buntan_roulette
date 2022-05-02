@@ -1,8 +1,12 @@
+.roulettebutton{
+  position: absolute;
+  top: 200px;
+}
 .tow_buttons{
   display: inline;
   display: flex;
   justify-content: left;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 .myButton{
   box-shadow:inset 0px 1px 0px 0px #bbdaf7;
