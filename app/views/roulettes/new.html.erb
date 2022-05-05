@@ -3,9 +3,7 @@
     <div class="roulettewrapper">
       <div class= "foundation_roulettes">
         <div class="foundation_quarter" id="f_quarter_1">
-          <% if @form1.present? %>
-            <h3 class="form1"><%= @form1%></h3>
-          <% end %>
+          <h3 class="form1"><%= @form1 %></h3>
         </div>
         <div class="foundation_quarter" id="f_quarter_2">
           <% if @form2.present? %>
@@ -27,7 +25,9 @@
     <div class="roulettewrapper_top">
       <div class= "top_roulettes" id="roulettes4">
         <div class="top_quarter" id="t_quarter_1">
+          <% if @form6.present? %>
             <h3 class="form5"><%= @form5 %></h3>
+          <% end %>
         </div>
         <div class="top_quarter" id="t_quarter_2">
           <% if @form6.present? %>
