@@ -61,8 +61,8 @@
     <% end %>
     <div class="roulettebutton">
       <div class="tow_buttons">
-        <%= button_to "スタート", "#", {method: :get, id: "start4", class: "myButton"} %>
-        <%= button_to "ストップ", "#", {method: :get, id: "stop4", class: "myButton"} %>
+        <input type="button" value="スタート", id= "start4", class= "myButton">
+        <input type="button" value="ストップ", id= "stop4", class= "myButton">
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@
   const stop = document.getElementById('stop4');
   const roulettes = document.getElementById('roulettes4');
 
-  let deg = 0;
+  let degree = 0;
   let speed = 0;
   let move = false;
 
@@ -80,7 +80,7 @@
     if(!move) {
       move = true;
       speed = 90;
-      rotate();
+      loop();
     }
   });
 
@@ -90,11 +90,11 @@
     }
   });
 
-  function rotate() {
-    deg += speed;
+  function loop() {
+    degree += speed;
     if(move) {
-      roulettes.style.transform = `rotate(${deg}deg)`;
-      requestAnimationFrame(rotate);
+      roulettes.style.transform = `rotate(${degree}deg)`;
+      requestAnimationFrame(loop);
     }
   }
 </script>
