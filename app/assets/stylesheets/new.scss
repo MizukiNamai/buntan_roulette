@@ -32,8 +32,8 @@
   }
   .btn_todo{
     position: absolute;
-    top: 200px;
-    left: 300px;
+    top: 360px;
+    left: 20px;
     box-shadow:inset 0px 1px 0px 0px #bbdaf7;
     background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
     background-color:#79bbff;
@@ -52,6 +52,54 @@
     background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
     background-color:#378de5;
   }
+  }
+  .form1{
+    position: absolute;
+    top: 70px;
+    left: 110px;
+    transform: rotate(45deg)
+  }
+  .form2{
+    position: absolute;
+    top: 70px;
+    left: 110px;
+    transform: rotate(135deg)
+  }
+  .form3{
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    transform: rotate(225deg)
+  }
+  .form4{
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    transform: rotate(315deg)
+  }
+  .form5{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transform: rotate(45deg);
+  }
+  .form6{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transform: rotate(135deg);
+  }
+  .form7{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transform: rotate(225deg);
+  }
+  .form8{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transform: rotate(315deg);
   }
 }
 
@@ -90,25 +138,22 @@
   bottom: 0px;
   left: 0px;
   background-color: #b2f1ac;
-  border-radius: 100% 0 0 0;
+  border-radius: 0 100% 0 0;
   border: 2px solid #000000 ;
-  transform: scale(-1, 1);
 }
 #t_quarter_2 {
   top: 0px;
   left: 0px;
   background-color: #fffd95;
-  border-radius: 100% 0 0 0;
+  border-radius: 0 0 100% 0;
   border: 2px solid #000000 ;
-  transform: scale(-1, -1);
 }
 #t_quarter_3 {
   top: 0px;
   right: 0px;
   background-color: #8497e9;
-  border-radius: 100% 0 0 0;
+  border-radius: 0 0 0 100%;
   border: 2px solid #000000 ;
-  transform: scale(1, -1);
 }
 #t_quarter_4 {
   bottom: 0px;
@@ -118,33 +163,111 @@
   border: 2px solid #000000 ;
 }
 
-.label1 {
-  transform: rotate(45deg);
+.todoform{
+  position: relative;
+  top: 100px;
+  left: 900px;
+}
+
+.background_color_t2{
   position: absolute;
-  top: 250px;
-  left: 660px;
+  top: 340px;
+  left: 900px;
+  width: 200px;
+  height: 30px;
+  background-color: #fffd95;
+  border-radius: 10px;
+  border: 2px solid #000000 ;
 }
-.label2 {
-  transform: rotate(135deg);
+.background_color_t3{
   position: absolute;
-  top: 240px;
-  left: 450px;
+  top: 370px;
+  left: 900px;
+  width: 200px;
+  height: 30px;
+  background-color: #8497e9;
+  border-radius: 10px;
+  border: 2px solid #000000 ;
 }
-.label3 {
-  transform: rotate(225deg);
+.background_color_t4{
+  position: absolute;
+  top: 400px;
+  left: 900px;
+  width: 200px;
+  height: 30px;
+  background-color: #84dae9;
+  border-radius: 10px;
+  border: 2px solid #000000 ;
 }
-.label4 {
-  transform: rotate(315deg);
+.taskform1{
+  input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border: 4px outset #e7a8a8;
+    border-radius: 5px 5px 5px 5px;
+  }
+  ::placeholder{
+    padding: 5px 5px;
+    color: #515353;
+  }
 }
-.label5 {
-  transform: rotate(45deg);
+
+.nameform1{
+  input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border: 4px outset #85d67e;
+    border-radius: 5px 5px 5px 5px;
+  }
+  ::placeholder{
+    padding: 5px 5px;
+    color: #515353;
+  }
 }
-.label6 {
-  transform: rotate(135deg);
+.nameform2{
+  input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border: 4px outset #e9e625;
+    border-radius: 5px 5px 5px 5px;
+  }
+  ::placeholder{
+    padding: 5px 5px;
+    color: #515353;
+  }
 }
-.label7 {
-  transform: rotate(225deg);
+.nameform3{
+  input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border: 4px outset #8497e9;
+    border-radius: 5px 5px 5px 5px;
+  }
+  ::placeholder{
+    padding: 5px 5px;
+    color: #515353;
+  }
 }
-.label8 {
-  transform: rotate(315deg);
+
+.nameform4{
+  input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    border: 4px outset #84dae9;
+  }
+  ::placeholder{
+    padding: 5px 5px;
+    color: #515353;
+  }
 }

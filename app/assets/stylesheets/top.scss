@@ -24,12 +24,13 @@
   display: flex;
   justify-content: center;
 }
-  top ul {
-    display: inline;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-  }
-  top li{
-    margin: 50px;
-  }
+
+.topul {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.toplist{
+  margin: 50px;
+}

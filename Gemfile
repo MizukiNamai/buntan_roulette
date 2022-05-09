@@ -69,6 +69,7 @@ group :development do
   gem 'rubocop', require: false
   gem 'rubocop-rails'
   gem 'spring'
+  gem 'pry-rails'
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end

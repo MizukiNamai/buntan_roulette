@@ -2,75 +2,99 @@
   <div class="roulette-container">
     <div class="roulettewrapper">
       <div class= "foundation_roulettes">
-        <div class="foundation_quarter" id="f_quarter_1"></div>
-        <div class="foundation_quarter" id="f_quarter_2"></div>
-        <div class="foundation_quarter" id="f_quarter_3"></div>
-        <div class="foundation_quarter" id="f_quarter_4"></div>
+        <div class="foundation_quarter" id="f_quarter_1">
+          <% if @form1.present? %>
+            <h3 class="form1"><%= @form1 %></h3>
+          <% end %>
+        </div>
+        <div class="foundation_quarter" id="f_quarter_2">
+          <% if @form2.present? %>
+            <h3 class="form2"><%= @form2 %></h3>
+          <% end %>
+        </div>
+        <div class="foundation_quarter" id="f_quarter_3">
+          <% if @form3.present? %>
+            <h3 class="form3"><%= @form3 %></h3>
+          <% end %>
+        </div>
+        <div class="foundation_quarter" id="f_quarter_4">
+          <% if @form4.present? %>
+            <h3 class="form4"><%= @form4 %></h3>
+          <% end %>
+        </div>
       </div>
     </div>
     <div class="roulettewrapper_top">
-      <div class= "top_roulettes" id="circle">
-        <div class="top_quarter" id="t_quarter_1"></div>
-        <div class="top_quarter" id="t_quarter_2"></div>
-        <div class="top_quarter" id="t_quarter_3"></div>
-        <div class="top_quarter" id="t_quarter_4"></div>
+      <div class= "top_roulettes" id="roulettes4">
+        <div class="top_quarter" id="t_quarter_1">
+          <% if @form5.present? %>
+            <h3 class="form5"><%= @form5 %></h3>
+          <% end %>
+        </div>
+        <div class="top_quarter" id="t_quarter_2">
+          <% if @form6.present? %>
+            <h3 class="form6"><%= @form6 %></h3>
+          <% end %>
+        </div>
+        <div class="top_quarter" id="t_quarter_3">
+          <% if @form7.present? %>
+            <h3 class="form7"><%= @form7 %></h3>
+          <% end %>
+        </div>
+        <div class="top_quarter" id="t_quarter_4">
+          <% if @form8.present? %>
+            <h3 class="form8"><%= @form8 %></h3>
+          <% end %>
+        </div>
       </div>
     </div>
     <%= form_with url: "#", class: "todoform", method: :get, local: true do |f| %>
-      <div class="label1"><%= f.text_field :label1 %></div>
-      <div class="label2"><%= f.text_field :label2 %></div>
-      <div class="label3"><%= f.text_field :label3 %></div>
-      <div class="label4"><%= f.text_field :label4 %></div>
-      <div class="label5"><%= f.text_field :label5 %></div>
-      <div class="label6"><%= f.text_field :label6 %></div>
-      <div class="label7"><%= f.text_field :label7 %></div>
-      <div class="label8"><%= f.text_field :label8 %></div>
+      <div class="taskform1"><%= f.text_field :form1 , placeholder: "タスクを記入" %></div>
+      <div class="taskform1"><%= f.text_field :form2 , placeholder: "タスクを記入" %></div>
+      <div class="taskform1"><%= f.text_field :form3 , placeholder: "タスクを記入" %></div>
+      <div class="taskform1"><%= f.text_field :form4 , placeholder: "タスクを記入" %></div>
+      <div class="nameform1"><%= f.text_field :form5 , placeholder: "名前を記入" %></div>
+      <div class="nameform2"><%= f.text_field :form6 , placeholder: "名前を記入" %></div>
+      <div class="nameform3"><%= f.text_field :form7 , placeholder: "名前を記入" %></div>
+      <div class="nameform4"><%= f.text_field :form8 , placeholder: "名前を記入" %></div>
       <%= f.submit "ToDoリストを作成", class: "btn_todo" %>
     <% end %>
     <div class="roulettebutton">
       <div class="tow_buttons">
-        <%= button_to "スタート", "#", {method: :get, id: "start", class: "myButton"} %>
-        <%= button_to "ストップ", "#", {method: :get, id: "stop", class: "myButton"} %>
+        <input type="button" value="スタート", id= "start4", class= "myButton">
+        <input type="button" value="ストップ", id= "stop4", class= "myButton">
       </div>
     </div>
   </div>
 </div>
 <script type="text/javascript">
-  const start = document.getElementById('start');
-  const stop = document.getElementById('stop');
-  const circle = document.getElementById('circle');
+  const start = document.getElementById('start4');
+  const stop = document.getElementById('stop4');
+  const roulettes = document.getElementById('roulettes4');
 
-  let deg = 0; // 角度
-  let velocity = 0; // 初速
-  let active = false; // 動作状態
+  let degree = 0;
+  let speed = 0;
+  let move = false;
 
-// スタートクリック
   start.addEventListener('click', () => {
-    if(!active) {
-      active = true;
-      velocity = 90;
-      roulette();
+    if(!move) {
+      move = true;
+      speed = 90;
+      loop();
     }
   });
 
-// ストップクリック
   stop.addEventListener('click', () => {
-    if(active) {
-      active = false;
+    if(move) {
+      move = false;
     }
   });
 
-// 回転処理
-  function roulette() {
-    deg += velocity;
-    if(active) {
-      setDeg();
-      requestAnimationFrame(roulette);
+  function loop() {
+    degree += speed;
+    if(move) {
+      roulettes.style.transform = `rotate(${degree}deg)`;
+      requestAnimationFrame(loop);
     }
-  }
-
-// 角度セット
-  function setDeg() {
-      circle.style.transform = `rotate(${deg}deg)`;
   }
 </script>

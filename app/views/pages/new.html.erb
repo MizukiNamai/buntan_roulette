@@ -1,0 +1,12 @@
+<div class= "wrapper">
+  <div class= choice_button>
+    <ul>
+      <li>
+        <%= form_with model: @page ,url: roulettes_new_path, method: :post,local: true do |f| %>
+          <%= f.hidden_field :participant , value: "4" %>
+          <%= f.submit '4人用',class: "myButton"%>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>
