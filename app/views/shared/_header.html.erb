@@ -3,7 +3,11 @@
     <nav>
       <div class="header-background">
         <ul>
-          <li><%= link_to "ログイン", login_path, class:"header_link" %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to "ログアウト", logout_path, method: :delete ,class:"header_link"%></li>
+          <% else %>
+            <li><%= link_to "ログイン", login_path, class:"header_link" %></li>
+          <% end %>
           <li><%= link_to "人数選択", new_page_path, class:"header_link" %></li>
           <li><%= link_to "使い方", pages_guide_path, class:"header_link" %></li>
           <li><%= link_to "トップページ", '/', class:"header_link" %></li>

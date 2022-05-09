@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'pages#top'
   resources :pages, only: %i[create new]
   get 'pages/guide'
+  get 'pages/choice'
 
   get 'roulettes/new'
   post 'roulettes/new'
