@@ -3,7 +3,11 @@
     <ul>
       <li>使い方</li>
       <li>分担したいときに使用するルーレットです</li>
+      <% if user_signed_in? %>
       <li><%= button_to "ルーレットを回す", new_page_path, {method: :get, class: "myButton"} %></li>
+      <% else %>
+      <li><%= button_to "ルーレットを回す", pages_choice_path, {method: :get, class: "myButton"} %></li>
+      <% end %>
     </ul>
   </div>
 </div>
