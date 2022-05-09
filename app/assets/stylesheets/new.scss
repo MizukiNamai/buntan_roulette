@@ -53,6 +53,54 @@
     background-color:#378de5;
   }
   }
+  .form1{
+    position: absolute;
+    top: 70px;
+    left: 110px;
+    transform: rotate(45deg)
+  }
+  .form2{
+    position: absolute;
+    top: 70px;
+    left: 110px;
+    transform: rotate(135deg)
+  }
+  .form3{
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    transform: rotate(225deg)
+  }
+  .form4{
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    transform: rotate(315deg)
+  }
+  .form5{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transform: rotate(45deg);
+  }
+  .form6{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transform: rotate(135deg);
+  }
+  .form7{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transform: rotate(225deg);
+  }
+  .form8{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transform: rotate(315deg);
+  }
 }
 
 .stop {
@@ -90,25 +138,22 @@
   bottom: 0px;
   left: 0px;
   background-color: #b2f1ac;
-  border-radius: 100% 0 0 0;
+  border-radius: 0 100% 0 0;
   border: 2px solid #000000 ;
-  transform: scale(-1, 1);
 }
 #t_quarter_2 {
   top: 0px;
   left: 0px;
   background-color: #fffd95;
-  border-radius: 100% 0 0 0;
+  border-radius: 0 0 100% 0;
   border: 2px solid #000000 ;
-  transform: scale(-1, -1);
 }
 #t_quarter_3 {
   top: 0px;
   right: 0px;
   background-color: #8497e9;
-  border-radius: 100% 0 0 0;
+  border-radius: 0 0 0 100%;
   border: 2px solid #000000 ;
-  transform: scale(1, -1);
 }
 #t_quarter_4 {
   bottom: 0px;
