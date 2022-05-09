@@ -1,6 +1,6 @@
 FactoryBot.define do
-  factory :choice_user do
+  factory :page_user do
     user { nil }
-    choice { nil }
+    page { nil }
   end
 end
