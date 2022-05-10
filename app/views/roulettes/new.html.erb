@@ -3,48 +3,32 @@
     <div class="roulettewrapper">
       <div class= "foundation_roulettes">
         <div class="foundation_quarter" id="f_quarter_1">
-          <% if @form1.present? %>
-            <h3 class="form1"><%= @form1 %></h3>
-          <% end %>
+          <h3 class="form1"><%= @form1 %></h3>
         </div>
         <div class="foundation_quarter" id="f_quarter_2">
-          <% if @form2.present? %>
-            <h3 class="form2"><%= @form2 %></h3>
-          <% end %>
+          <h3 class="form2"><%= @form2 %></h3>
         </div>
         <div class="foundation_quarter" id="f_quarter_3">
-          <% if @form3.present? %>
-            <h3 class="form3"><%= @form3 %></h3>
-          <% end %>
+          <h3 class="form3"><%= @form3 %></h3>
         </div>
         <div class="foundation_quarter" id="f_quarter_4">
-          <% if @form4.present? %>
-            <h3 class="form4"><%= @form4 %></h3>
-          <% end %>
+          <h3 class="form4"><%= @form4 %></h3>
         </div>
       </div>
     </div>
     <div class="roulettewrapper_top">
       <div class= "top_roulettes" id="roulettes4">
         <div class="top_quarter" id="t_quarter_1">
-          <% if @form5.present? %>
-            <h3 class="form5"><%= @form5 %></h3>
-          <% end %>
+          <h3 class="form5"><%= @form5 %></h3>
         </div>
         <div class="top_quarter" id="t_quarter_2">
-          <% if @form6.present? %>
-            <h3 class="form6"><%= @form6 %></h3>
-          <% end %>
+          <h3 class="form6"><%= @form6 %></h3>
         </div>
         <div class="top_quarter" id="t_quarter_3">
-          <% if @form7.present? %>
-            <h3 class="form7"><%= @form7 %></h3>
-          <% end %>
+          <h3 class="form7"><%= @form7 %></h3>
         </div>
         <div class="top_quarter" id="t_quarter_4">
-          <% if @form8.present? %>
-            <h3 class="form8"><%= @form8 %></h3>
-          <% end %>
+          <h3 class="form8"><%= @form8 %></h3>
         </div>
       </div>
     </div>
@@ -57,7 +41,7 @@
       <div class="nameform2"><%= f.text_field :form6 , placeholder: "名前を記入" %></div>
       <div class="nameform3"><%= f.text_field :form7 , placeholder: "名前を記入" %></div>
       <div class="nameform4"><%= f.text_field :form8 , placeholder: "名前を記入" %></div>
-      <%= f.submit "ToDoリストを作成", class: "btn_todo" %>
+      <%= f.submit "完了", class: "btn_todo" %>
     <% end %>
     <div class="roulettebutton">
       <div class="tow_buttons">
