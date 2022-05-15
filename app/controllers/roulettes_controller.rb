@@ -1,9 +1,9 @@
 class RoulettesController < ApplicationController
   def new
     hash = params[:formdate]
-    varcar = hash.values
-    (1..8).each do |i|
-      eval("@form#{i} = varcar[#{i}]")
+    array = hash.values
+    (1..array.size).each do |i|
+      eval("@form#{i} = array[#{i}]")
     end
   end
 
