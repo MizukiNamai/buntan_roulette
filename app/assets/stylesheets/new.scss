@@ -1,4 +1,4 @@
-@media screen and (min-width: 1044px) {
+@media screen and (min-width: 1366px) {
   .roulettewrapper {
     position: relative;
     top: 270px;
@@ -33,7 +33,7 @@
   .btn_todo{
     position: absolute;
     top: 360px;
-    left: 20px;
+    left: 200px;
     box-shadow:inset 0px 1px 0px 0px #bbdaf7;
     background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
     background-color:#79bbff;
@@ -101,6 +101,125 @@
     left: 50px;
     transform: rotate(315deg);
   }
+
+  .todoform{
+    position: relative;
+    top: 100px;
+    left: 900px;
+  }
+
+  .background_color_t2{
+    position: absolute;
+    top: 340px;
+    left: 900px;
+    width: 200px;
+    height: 30px;
+    background-color: #fffd95;
+    border-radius: 10px;
+    border: 2px solid #000000 ;
+  }
+  .background_color_t3{
+    position: absolute;
+    top: 370px;
+    left: 900px;
+    width: 200px;
+    height: 30px;
+    background-color: #8497e9;
+    border-radius: 10px;
+    border: 2px solid #000000 ;
+  }
+  .background_color_t4{
+    position: absolute;
+    top: 400px;
+    left: 900px;
+    width: 200px;
+    height: 30px;
+    background-color: #84dae9;
+    border-radius: 10px;
+    border: 2px solid #000000 ;
+  }
+  .taskform1{
+    input[type="text"]{
+      width: 200px;
+      height: 30px;
+      font-size: 14px;
+      text-align: center;
+      border: 4px outset #e7a8a8;
+      border-radius: 5px 5px 5px 5px;
+    }
+    ::placeholder{
+      padding: 5px 5px;
+      color: #515353;
+    }
+  }
+  .nameform1{
+    position: absolute;
+    top: 40px;
+    left: 260px;
+    input[type="text"]{
+      width: 200px;
+      height: 30px;
+      font-size: 14px;
+      text-align: center;
+      border: 4px outset #85d67e;
+      border-radius: 5px 5px 5px 5px;
+    }
+    ::placeholder{
+      padding: 5px 5px;
+      color: #515353;
+    }
+  }
+  .nameform2{
+    position: absolute;
+    top: 0px;
+    left: 260px;
+    input[type="text"]{
+      width: 200px;
+      height: 30px;
+      font-size: 14px;
+      text-align: center;
+      border: 4px outset #e9e625;
+      border-radius: 5px 5px 5px 5px;
+    }
+    ::placeholder{
+      padding: 5px 5px;
+      color: #515353;
+    }
+  }
+  .nameform3{
+    position: absolute;
+    top: 80px;
+    left: 260px;
+    input[type="text"]{
+      width: 200px;
+      height: 30px;
+      font-size: 14px;
+      text-align: center;
+      border: 4px outset #8497e9;
+      border-radius: 5px 5px 5px 5px;
+    }
+    ::placeholder{
+      padding: 5px 5px;
+      color: #515353;
+    }
+  }
+  .nameform4{
+    position: absolute;
+    top: 120px;
+    left: 260px;
+    input[type="text"]{
+      width: 200px;
+      height: 30px;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 5px 5px 5px 5px;
+      border: 4px outset #84dae9;
+    }
+    ::placeholder{
+      padding: 5px 5px;
+      color: #515353;
+    }
+  }
 }
 
 .stop {
@@ -161,125 +280,4 @@
   background-color: #84dae9;
   border-radius: 100% 0 0 0;
   border: 2px solid #000000 ;
-}
-
-.todoform{
-  position: relative;
-  top: 100px;
-  left: 900px;
-}
-
-.background_color_t2{
-  position: absolute;
-  top: 340px;
-  left: 900px;
-  width: 200px;
-  height: 30px;
-  background-color: #fffd95;
-  border-radius: 10px;
-  border: 2px solid #000000 ;
-}
-.background_color_t3{
-  position: absolute;
-  top: 370px;
-  left: 900px;
-  width: 200px;
-  height: 30px;
-  background-color: #8497e9;
-  border-radius: 10px;
-  border: 2px solid #000000 ;
-}
-.background_color_t4{
-  position: absolute;
-  top: 400px;
-  left: 900px;
-  width: 200px;
-  height: 30px;
-  background-color: #84dae9;
-  border-radius: 10px;
-  border: 2px solid #000000 ;
-}
-.taskform1{
-  input[type="text"]{
-    width: 200px;
-    height: 30px;
-    font-size: 14px;
-    text-align: center;
-    border: 4px outset #e7a8a8;
-    border-radius: 5px 5px 5px 5px;
-  }
-  ::placeholder{
-    padding: 5px 5px;
-    color: #515353;
-  }
-}
-
-.nameform1{
-  position: absolute;
-  top: 40px;
-  left: 260px;
-  input[type="text"]{
-    width: 200px;
-    height: 30px;
-    font-size: 14px;
-    text-align: center;
-    border: 4px outset #85d67e;
-    border-radius: 5px 5px 5px 5px;
-  }
-  ::placeholder{
-    padding: 5px 5px;
-    color: #515353;
-  }
-}
-.nameform2{
-  position: absolute;
-  top: 0px;
-  left: 260px;
-  input[type="text"]{
-    width: 200px;
-    height: 30px;
-    font-size: 14px;
-    text-align: center;
-    border: 4px outset #e9e625;
-    border-radius: 5px 5px 5px 5px;
-  }
-  ::placeholder{
-    padding: 5px 5px;
-    color: #515353;
-  }
-}
-.nameform3{
-  position: absolute;
-  top: 80px;
-  left: 260px;
-  input[type="text"]{
-    width: 200px;
-    height: 30px;
-    font-size: 14px;
-    text-align: center;
-    border: 4px outset #8497e9;
-    border-radius: 5px 5px 5px 5px;
-  }
-  ::placeholder{
-    padding: 5px 5px;
-    color: #515353;
-  }
-}
-
-.nameform4{
-  position: absolute;
-  top: 120px;
-  left: 260px;
-  input[type="text"]{
-    width: 200px;
-    height: 30px;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 5px 5px 5px 5px;
-    border: 4px outset #84dae9;
-  }
-  ::placeholder{
-    padding: 5px 5px;
-    color: #515353;
-  }
 }
