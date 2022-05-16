@@ -6,6 +6,6 @@ class RoulettesController < ApplicationController
       eval("@form#{i} = array[#{i}]")
     end
   end
-
+  
   def create; end
 end

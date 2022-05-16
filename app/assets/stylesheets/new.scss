@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1044px) {
   .roulettewrapper {
     position: relative;
     top: 270px;
@@ -215,6 +215,9 @@
 }
 
 .nameform1{
+  position: absolute;
+  top: 40px;
+  left: 260px;
   input[type="text"]{
     width: 200px;
     height: 30px;
@@ -229,6 +232,9 @@
   }
 }
 .nameform2{
+  position: absolute;
+  top: 0px;
+  left: 260px;
   input[type="text"]{
     width: 200px;
     height: 30px;
@@ -243,6 +249,9 @@
   }
 }
 .nameform3{
+  position: absolute;
+  top: 80px;
+  left: 260px;
   input[type="text"]{
     width: 200px;
     height: 30px;
@@ -258,6 +267,9 @@
 }
 
 .nameform4{
+  position: absolute;
+  top: 120px;
+  left: 260px;
   input[type="text"]{
     width: 200px;
     height: 30px;
