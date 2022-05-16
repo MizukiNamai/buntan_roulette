@@ -33,14 +33,14 @@
       </div>
     </div>
     <%= form_with url: "#", class: "todoform", method: :get, scope: :formdate, local: true do |f| %>
-      <div class="taskform1"><%= f.text_field :form1 , placeholder: "タスクを記入" %></div>
-      <div class="taskform1"><%= f.text_field :form2 , placeholder: "タスクを記入" %></div>
-      <div class="taskform1"><%= f.text_field :form3 , placeholder: "タスクを記入" %></div>
-      <div class="taskform1"><%= f.text_field :form4 , placeholder: "タスクを記入" %></div>
-      <div class="nameform1"><%= f.text_field :form5 , placeholder: "名前を記入" %></div>
-      <div class="nameform2"><%= f.text_field :form6 , placeholder: "名前を記入" %></div>
-      <div class="nameform3"><%= f.text_field :form7 , placeholder: "名前を記入" %></div>
-      <div class="nameform4"><%= f.text_field :form8 , placeholder: "名前を記入" %></div>
+      <div class="taskform1"><%= f.text_field :form1 , placeholder: "タスクを記入", maxlength: 6 %></div>
+      <div class="taskform1"><%= f.text_field :form2 , placeholder: "タスクを記入", maxlength: 6 %></div>
+      <div class="taskform1"><%= f.text_field :form3 , placeholder: "タスクを記入", maxlength: 6 %></div>
+      <div class="taskform1"><%= f.text_field :form4 , placeholder: "タスクを記入", maxlength: 6 %></div>
+      <div class="nameform1"><%= f.text_field :form5 , placeholder: "名前を記入", maxlength: 6 %></div>
+      <div class="nameform2"><%= f.text_field :form6 , placeholder: "名前を記入", maxlength: 6 %></div>
+      <div class="nameform3"><%= f.text_field :form7 , placeholder: "名前を記入", maxlength: 6 %></div>
+      <div class="nameform4"><%= f.text_field :form8 , placeholder: "名前を記入", maxlength: 6 %></div>
       <%= f.submit "完了", class: "btn_todo" %>
     <% end %>
 
