@@ -1,16 +1,13 @@
 class RoulettesController < ApplicationController
   def new
-    hash = formdate_params
-    array = hash.values
-    @form1 = array[0]
-    @form2 = array[1]
-    @form3 = array[2]
-    @form4 = array[3]
-    @form5 = array[4]
-    @form6 = array[5]
-    @form7 = array[6]
-    @form8 = array[7]
-    @form9 = array[8]
+    @form1 = params[:form1]
+    @form2 = params[:form2]
+    @form3 = params[:form3]
+    @form4 = params[:form4]
+    @form5 = params[:form5]
+    @form6 = params[:form6]
+    @form7 = params[:form7]
+    @form8 = params[:form8]
   end
 
   def create; end
