@@ -30,10 +30,33 @@
     height: 125px;
     width: 125px;
   }
-  .btn_todo{
+  .btn_reflection{
     position: absolute;
     top: 360px;
-    left: 200px;
+    left: 150px;
+    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    background-color:#79bbff;
+    border-radius:6px;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #438ed9;
+    &:hover {
+    background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+    background-color:#378de5;
+  }
+  }
+  .btn_todo{
+    position: absolute;
+    top: 537px;
+    left: 1200px;
     box-shadow:inset 0px 1px 0px 0px #bbdaf7;
     background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
     background-color:#79bbff;
