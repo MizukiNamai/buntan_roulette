@@ -2,10 +2,15 @@ class RoulettesController < ApplicationController
   def new
     hash = formdate_params
     array = hash.values
-    (1..array.size).each do |i|
-      var = "@form#{i}"
-      binding.eval("#{var} = array[#{i}-1]")
-    end
+    @form1 = array[0]
+    @form2 = array[1]
+    @form3 = array[2]
+    @form4 = array[3]
+    @form5 = array[4]
+    @form6 = array[5]
+    @form7 = array[6]
+    @form8 = array[7]
+    @form9 = array[8]
   end
 
   def create; end
