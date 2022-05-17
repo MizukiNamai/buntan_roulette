@@ -3,7 +3,8 @@ class RoulettesController < ApplicationController
     hash = formdate_params
     array = hash.values
     (1..array.size).each do |i|
-      binding.eval("@form#{i} = array[#{i}-1]")
+      var = "@form#{i}"
+      binding.eval("#{var} = array[#{i}-1]")
     end
   end
 
