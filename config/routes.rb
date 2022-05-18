@@ -5,12 +5,12 @@ Rails.application.routes.draw do
   }
   root 'pages#top'
   resources :pages, only: %i[create new]
+  resources :roulettes, only: %i[create new]
   get 'pages/guide'
   get 'pages/choice'
-
-  get 'roulettes/new'
   post 'roulettes/new'
-  patch 'roulettes/new'
+  get 'roulettes/create'
+  post 'roulettes/create'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   devise_scope :user do
     get 'login', to: 'users/sessions#new'

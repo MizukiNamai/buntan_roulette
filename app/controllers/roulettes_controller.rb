@@ -8,13 +8,18 @@ class RoulettesController < ApplicationController
     @form6 = params[:form6]
     @form7 = params[:form7]
     @form8 = params[:form8]
+    @task = Task.new
   end
 
-  def create; end
+  def create
+  hash = todolist_params
+  binding.pry
+  @task = Task.new(todolist_params)
+  end
 
   private
 
-  def formdate_params
-    params.require(:formdate).permit(:form1, :form2, :form3, :form4, :form5, :form6, :form7, :form8)
+  def todolist_params
+    params.require(:todoform).permit(:name, :task, :status, :roulette_id)
   end
 end
