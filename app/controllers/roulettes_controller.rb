@@ -12,8 +12,6 @@ class RoulettesController < ApplicationController
   end
 
   def create
-  hash = todolist_params
-  binding.pry
   @task = Task.new(todolist_params)
   end
 
