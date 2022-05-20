@@ -43,17 +43,15 @@
       <div class="nameform4"><%= f.text_field :form8 , placeholder: "名前を記入", maxlength: 5 %></div>
       <%= f.submit "反映", class: "btn_reflection" %>
     <% end %>
-    <%= form_with model: @task, url: roulettes_create_path, scope: :todoform,class: "todolists", method: :post , local: true do |f| %>
-      <%= f.hidden_field :task , value: @form1  %>
-      <%= f.hidden_field :task , value: @form2  %>
-      <%= f.hidden_field :task , value: @form3  %>
-      <%= f.hidden_field :task , value: @form4  %>
-      <%= f.hidden_field :name , value: @form5  %>
-      <%= f.hidden_field :name , value: @form6  %>
-      <%= f.hidden_field :name , value: @form7  %>
-      <%= f.hidden_field :name , value: @form8  %>
-      <%= f.hidden_field :status , value: "todo" %>
-      <%= f.hidden_field :roulette_id , value: "4" %>
+    <%= form_with model: @tasks, url: tasks_create_path, class: "todolists", method: :post ,class: "todolist", local: true do |f| %>
+      <% @tasks.tasks.each do |task|%>
+        <%= fields_for 'tasks[]', task do |field| %>
+          <%= f.text_field :task , value: @form1  %>
+          <%= f.text_field :name , value: @form5  %>
+          <%= f.text_field :status , value: "todo" %>
+          <%= f.text_field :roulette_id , value: "4" %>
+        <% end %>
+      <% end %>
       <%= f.submit "ToDoリストを作成する", class: "btn_todo" %>
     <% end %>
     <div class="roulettebutton">
