@@ -4,7 +4,6 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
   root 'pages#top'
-  resources :pages, only: %i[create new]
   resources :tasks, only: %i[create new]
   get 'pages/guide'
   get 'pages/choice'
