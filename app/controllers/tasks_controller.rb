@@ -8,12 +8,12 @@ class TasksController < ApplicationController
     @form6 = params[:form6]
     @form7 = params[:form7]
     @form8 = params[:form8]
-    @tasks = Form::TaskCollection.new
+    @page = Form::TaskCollection.new
   end
 
   def create
-    @tasks = Form::TaskCollection.new(tasks_collection_params)
-    if @tasks.save
+    @page = Form::TaskCollection.new(params[:page])
+    if @page.save
       binding.pry
       redirect_to tasks_todo_path
     else
@@ -23,10 +23,4 @@ class TasksController < ApplicationController
 
   def todo;end
 
-  private
-
-  def tasks_collection_params
-      params.require(:form_task_collection)
-      .permit(tasks_attributes: [:task, :name, :status, :rourette_id])
-  end
 end
