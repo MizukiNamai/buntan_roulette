@@ -8,7 +8,7 @@ class Form::TaskCollection < Form::Base
   end
 
   def tasks_attributes=(attributes)
-    self.tasks = attributes.map { |_, v| Product.new(v) }
+    self.tasks = attributes.map { |_, v| Task.new(v) }
   end
   # レコードが存在するか確認するメソッド
   def persisted?
@@ -18,8 +18,8 @@ class Form::TaskCollection < Form::Base
 
   def save
     Task.transaction do
-      self.tasks.map do |product|
-        product.save
+      self.tasks.map do |task|
+        task.save
       end
     end
       return true
