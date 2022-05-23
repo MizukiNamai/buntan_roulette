@@ -8,12 +8,12 @@ class TasksController < ApplicationController
     @form6 = params[:form6]
     @form7 = params[:form7]
     @form8 = params[:form8]
-    @page = Form::TaskCollection.new
+    @tasks = Form::TaskCollection.new
   end
 
   def create
-    @page = Form::TaskCollection.new(params[:page])
-    if @page.save
+    @tasks = Form::TaskCollection.new(tasks_collection_params)
+    if @tasks.save
       binding.pry
       redirect_to tasks_todo_path
     else
@@ -23,4 +23,9 @@ class TasksController < ApplicationController
 
   def todo;end
 
+  private
+
+  def tasks_collection_params
+      params.require(:tasks)
+  end
 end
