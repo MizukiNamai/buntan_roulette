@@ -14,7 +14,6 @@ class Form::TaskCollection < Form::Base
       end
     else
       self.collection = TASK_COUNT.times.map{ Task.new }
-      binding.pry
     end
   end
 
@@ -25,13 +24,18 @@ class Form::TaskCollection < Form::Base
 
 
   def save
-    Task.transaction do
-      self.tasks.map do |task|
-        task.save
+    is_success = true
+    ActiveRecord::Base.transaction do
+      collection.each do |result|
+        # バリデーションを全てかけたいからsave!ではなくsaveを使用
+        is_success = false unless result.save
       end
+      # バリデーションエラーがあった時は例外を発生させてロールバックさせる
+      raise ActiveRecord::RecordInvalid unless is_success
     end
-      return true
-    rescue => e
-      return false
+    rescue
+      p 'エラー'
+    ensure
+      return is_success
   end
 end
