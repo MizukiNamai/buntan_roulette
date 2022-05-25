@@ -13,15 +13,11 @@ class TasksController < ApplicationController
 
   def create
     @tasks = Form::TaskCollection.new(tasks_collection_params)
-    if @tasks.save
-      redirect_to tasks_todo_path
-    else
-      render :new
-    end
+    @tasks.save
+    redirect_to tasks_todo_path
   end
 
   def todo
-    @tasks = Form::TaskCollection.new.find
   end
 
   private

@@ -3,7 +3,7 @@ class CreateTasks < ActiveRecord::Migration[7.0]
     create_table :tasks do |t|
       t.integer :roulette_id, null: false
       t.string :tasks , null: false
-      t.integer :status, null: false, default: 0
+      t.integer :status, null: false
       t.string :name, null: false
 
       t.timestamps

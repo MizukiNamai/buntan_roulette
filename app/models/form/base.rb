@@ -4,4 +4,8 @@ class Form::Base
   extend ActiveModel::Translation
   include ActiveModel::AttributeMethods
   include ActiveModel::Validations
+
+  def value_to_boolean(value)
+    ActiveRecord::ConnectionAdapters::Column.value_to_boolean(value)
+  end
 end

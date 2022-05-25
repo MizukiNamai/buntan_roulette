@@ -44,14 +44,12 @@
       <%= f.submit "反映", class: "btn_reflection" %>
     <% end %>
     <%= form_with model: @tasks, url: tasks_path, class: "todolists", method: :post ,class: "todolist", local: true do |f| %>
-      <% @tasks.collection.each do |task|%>
-        <%= fields_for 'tasks[]', task do |f| %>
+        <%= fields_for 'tasks[]', @tasks do |f| %>
           <%= f.text_field :task , value: @form1  %>
           <%= f.text_field :name , value: @form5  %>
           <%= f.text_field :status , value: "todo"  %>
           <%= f.text_field :roulette_id , value: "4"  %>
         <% end%>
-      <% end %>
       <%= f.submit "ToDoリストを作成する", class: "btn_todo" %>
     <% end %>
     <div class="roulettebutton">
