@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :task do
     roulette_id { 1 }
-    tasks { 'MyString' }
-    status { 1 }
+    task { 'MyString' }
+    status { 'MyString' }
     name { 'MyString' }
   end
 end

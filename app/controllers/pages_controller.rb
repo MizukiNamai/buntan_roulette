@@ -3,6 +3,8 @@ class PagesController < ApplicationController
 
   def guide; end
 
+  def choice; end
+
   def new
     @page = Page.new
   end
