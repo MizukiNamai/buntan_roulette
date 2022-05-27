@@ -1,2 +1,5 @@
 #new
-<h3><%=  @tasks %></h3>
+<% @tasks.each do |task| %>
+  <%= task.name %>
+  <%= task.created_at %>
+<% end %>

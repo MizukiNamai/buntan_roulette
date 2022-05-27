@@ -4,12 +4,10 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
   root 'pages#top'
-  resources :tasks, only: %i[create new]
+  resources :tasks, only: %i[create new todo]
   get 'pages/guide'
   get 'pages/choice'
   post 'tasks/new'
-  get 'tasks/new'
-  get 'tasks/create'
   post 'tasks/create'
   get 'tasks/todo'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
