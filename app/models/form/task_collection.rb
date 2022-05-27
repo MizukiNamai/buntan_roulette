@@ -9,7 +9,7 @@ class Form::TaskCollection < Form::Base
           task: value['task'],
           name: value['name'],
           status: value['status'],
-          page_id: value['page_id']
+          roulette_id: value['roulette_id']
         )
       end
     else
@@ -26,8 +26,7 @@ class Form::TaskCollection < Form::Base
   def save
     Task.transaction do
       products.map do |value|
-        value.save
-        binding.pry
+        value.save!
       end
     end
   end

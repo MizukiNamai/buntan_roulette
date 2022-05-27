@@ -14,6 +14,7 @@ class TasksController < ApplicationController
   def create
     @tasks = Form::TaskCollection.new(tasks_collection_params)
     @tasks.save
+    binding.pry
     redirect_to tasks_todo_path
   end
 
