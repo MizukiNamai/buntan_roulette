@@ -27,6 +27,7 @@ class Form::TaskCollection < Form::Base
     Task.transaction do
       products.map do |value|
         value.save
+        binding.pry
       end
     end
   end
