@@ -1,4 +1,5 @@
 AllCops:
+  TargetRubyVersion: 3.0
   Exclude:
     - "db/**/*"
     - "tmp/**/*"
@@ -12,7 +13,7 @@ AllCops:
     - "config/puma"
     - "bin/webpack"
     - "bin/webpack-dev-server"
-  TargetRubyVersion: 3.0
+
 
 LineLength:
   Max: 200

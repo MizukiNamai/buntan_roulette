@@ -24,6 +24,6 @@ class TasksController < ApplicationController
   private
 
   def tasks_collection_params
-      params.require(:tasks)
+    params.require(:tasks)
   end
 end
