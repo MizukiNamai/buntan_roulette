@@ -1,25 +1,25 @@
 <script type="text/javascript">
   $(function(){
     $("button#btn").click(function() {
-        let n = $("text#num").val()
-          for(let i = 0; i < n; i++){
-            var tr_form += 
-              '<tr>' +
-              '<td ><input type="text" name="text' + (i + 1) + '"/></td>' +
-              '<td><input type="text" name="text' + (i + 1) + '"/></td>' +
-              '</tr>';
-            }
-              console.log(tr_form);
-  $(tr_form).appendTo($('table > tbody'));
-});
-});
-
+        var tr_form = '' +
+          '<tr>'+
+          '<td ><input type="text" class="task"/></td>' +
+          '<td><input type="text" class="name"/></td>' +
+          '</tr>';
+      $(tr_form).appendTo($('table > tbody'));
+      var i = 1;
+      $ ('.task').each(function(){
+        $(this).addClass('text'+ i );
+        i++;
+      });
+    });
+  });
 </script>
 <form action="data.php" method="post" enctype="multipart/form-data">
 <table>
   <tbody>
     <tr>
-      <td><input type="text" name="num"></td>
+      <td><input type="text" class="num"></td>
       <td><input type="text" name="text_2[]"></td>
     </tr>
   </tbody>
