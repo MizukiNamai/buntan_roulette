@@ -3,13 +3,13 @@
     $("button#btn").click(function() {
         var tr_form = '' +
           '<tr>'+
-          '<td ><input type="text" class="task"/></td>' +
-          '<td><input type="text" class="name"/></td>' +
+          '<td><input type="text" class="task"/></td>' +
+          '<td><input type="text" class="task"/></td>' +
           '</tr>';
       $(tr_form).appendTo($('table > tbody'));
       var i = 1;
       $ ('.task').each(function(){
-        $(this).addClass('text'+ i );
+        $(this).attr('name','text'+ i );
         i++;
       });
     });
