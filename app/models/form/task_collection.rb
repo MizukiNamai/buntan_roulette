@@ -5,8 +5,8 @@ class Form::TaskCollection
   extend ActiveModel::Translation
   include ActiveModel::AttributeMethods
   include ActiveModel::Validations
-  
-  TASK_COUNT = 4 # ここで、作成したい登録フォームの数を指定
+
+  TASK_COUNT = 4
   attr_accessor :products
 
   def initialize(attributes = {})
@@ -17,7 +17,6 @@ class Form::TaskCollection
     end
   end
 
-  # レコードが存在するか確認するメソッド
   def persisted?
     false
   end

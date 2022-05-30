@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   post 'tasks/new'
   post 'tasks/create'
   get 'tasks/todo'
+  get 'tasks/form'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   devise_scope :user do
     get 'login', to: 'users/sessions#new'
