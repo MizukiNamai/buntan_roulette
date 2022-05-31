@@ -7,7 +7,7 @@
           '<td><input type="text" class="task"/></td>' +
           '</tr>';
       $(tr_form).appendTo($('table > tbody'));
-      var i = 1;
+      var i = 3;
       $ ('.task').each(function(){
         $(this).attr('name','text'+ i );
         i++;
@@ -19,8 +19,8 @@
 <table>
   <tbody>
     <tr>
-      <td><input type="text" class="num"></td>
-      <td><input type="text" name="text_2[]"></td>
+      <td><input type="text" name="text1"></td>
+      <td><input type="text" name="text2"></td>
     </tr>
   </tbody>
   <tfoot>
