@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
   def new
-    @form1 = params[:form1]
+    @form1 = params[:text1]
     @form2 = params[:form2]
     @form3 = params[:form3]
     @form4 = params[:form4]
@@ -19,6 +19,10 @@ class TasksController < ApplicationController
 
   def todo
     @tasks = Task.all
+  end
+
+  def form
+    @form1 = params[:text1]
   end
 
   private

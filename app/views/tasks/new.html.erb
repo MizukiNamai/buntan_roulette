@@ -33,15 +33,20 @@
       </div>
     </div>
     <%= form_with  class: "todoform", method: :get, local: true do |f| %>
-      <div class="taskform1"><%= f.text_field :form1 , placeholder: "タスクを記入", maxlength: 5 %></div>
-      <div class="taskform1"><%= f.text_field :form2 , placeholder: "タスクを記入", maxlength: 5 %></div>
-      <div class="taskform1"><%= f.text_field :form3 , placeholder: "タスクを記入", maxlength: 5 %></div>
-      <div class="taskform1"><%= f.text_field :form4 , placeholder: "タスクを記入", maxlength: 5 %></div>
-      <div class="nameform1"><%= f.text_field :form5 , placeholder: "名前を記入", maxlength: 5 %></div>
-      <div class="nameform2"><%= f.text_field :form6 , placeholder: "名前を記入", maxlength: 5 %></div>
-      <div class="nameform3"><%= f.text_field :form7 , placeholder: "名前を記入", maxlength: 5 %></div>
-      <div class="nameform4"><%= f.text_field :form8 , placeholder: "名前を記入", maxlength: 5 %></div>
-      <%= f.submit "反映", class: "btn_reflection" %>
+      <table>
+        <tbody>
+          <tr>
+            <td><input type="text" name="text1" placeholder= "タスクを記入" max= 5 ></td>
+            <td><input type="text" name="text2" placeholder= "名前を記入" max= 5></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td ><button id="btn" type="button">追加</button></td>
+          </tr>
+        </tfoot>
+      </table>
+      <input type="submit" name="send" value="送信">
     <% end %>
     <%= form_with model: @tasks, url: tasks_path, class: "todolists", method: :post ,class: "todolist", local: true do |f| %>
         <%= fields_for 'tasks[]', @tasks do |f| %>
@@ -90,4 +95,20 @@
       requestAnimationFrame(loop);
     }
   }
+
+  $(function(){
+    $("button#btn").click(function() {
+        var tr_form = '' +
+          '<tr>'+
+          '<td><input type="text" class="task" placeholder= "タスクを記入" max= 5/></td>' +
+          '<td><input type="text" class="task" placeholder= "名前を記入" max= 5/></td>' +
+          '</tr>';
+      $(tr_form).appendTo($('table > tbody'));
+      var i = 3;
+      $ ('.task').each(function(){
+        $(this).attr('name','text'+ i );
+        i++;
+      });
+    });
+  });
 </script>
