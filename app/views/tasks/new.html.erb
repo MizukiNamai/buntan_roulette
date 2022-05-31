@@ -36,7 +36,7 @@
       <table>
         <tbody>
           <tr>
-            <td><input type="text" name="text1" placeholder= "タスクを記入" max= 5 ></td>
+            <td><input type="text" name="text"#{num} placeholder= "タスクを記入" max= 5></td>
             <td><input type="text" name="text2" placeholder= "名前を記入" max= 5></td>
           </tr>
         </tbody>
@@ -50,10 +50,12 @@
     <% end %>
     <%= form_with model: @tasks, url: tasks_path, class: "todolists", method: :post ,class: "todolist", local: true do |f| %>
         <%= fields_for 'tasks[]', @tasks do |f| %>
-          <%= f.text_field :task , value: @form1  %>
+          <% 3.times do |num| %>
+          <%= f.text_field :task ,name:"test#{num}", value: @form1  %>
           <%= f.text_field :name , value: @form5  %>
           <%= f.text_field :status , value: "todo"  %>
           <%= f.text_field :roulette_id , value: "4"  %>
+        <% end %>
         <% end%>
       <%= f.submit "ToDoリストを作成する", class: "btn_todo" %>
     <% end %>
