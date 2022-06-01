@@ -32,13 +32,13 @@
         </div>
       </div>
     </div>
-    <%= form_with  class: "todoform", method: :get, local: true do |f| %>
+    <%= form_with  class: "todoform", method: :get, scope: :formdate, local: true do |f| %>
       <table>
         <tbody>
-          <% 1.step(8, 2) do |num| %>
+          <% 1.step(7, 2) do |num| %>
             <tr>
-              <td><%= f.text_field :task ,name:"test#{num}" %></td>
-              <td><%= f.text_field :name ,name:"test#{num+1}"%></td>
+              <td><%= f.text_field :task ,name:"formdate[form#{num}]", placeholder:"タスクを記入" %></td>
+              <td><%= f.text_field :name ,name:"formdate[form#{num+1}]", placeholder: "名前を記入"%></td>
             </tr>
           <% end %>
         </tbody>
@@ -106,9 +106,9 @@
           '<td><input type="text" class="task" placeholder= "名前を記入" max= 5/></td>' +
           '</tr>';
       $(tr_form).appendTo($('table > tbody'));
-      var i = 3;
+      var i = 9;
       $ ('.task').each(function(){
-        $(this).attr('name','text'+ i );
+        $(this).attr('name','formdate[text'+ i +']' );
         i++;
       });
     });

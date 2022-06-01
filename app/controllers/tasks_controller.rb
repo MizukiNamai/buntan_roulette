@@ -1,13 +1,11 @@
 class TasksController < ApplicationController
   def new
-    @form1 = params[:text1]
-    @form2 = params[:form2]
-    @form3 = params[:form3]
-    @form4 = params[:form4]
-    @form5 = params[:form5]
-    @form6 = params[:form6]
-    @form7 = params[:form7]
-    @form8 = params[:form8]
+    hash = formdate_params
+    array = hash.values
+    (1..array.size).each do |i|
+      var = "@form#{i}"
+      binding.eval("#{var} = array[#{i}-1]")
+    end
     @tasks = Form::TaskCollection.new
   end
 
@@ -29,5 +27,9 @@ class TasksController < ApplicationController
 
   def tasks_collection_params
     params.require(:tasks)
+  end
+
+  def formdate_params
+    params.require(:formdate).permit(:form1, :form2, :form3, :form4, :form5, :form6, :form7, :form8 ,:form9)
   end
 end
