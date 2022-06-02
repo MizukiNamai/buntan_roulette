@@ -1,12 +1,15 @@
 class TasksController < ApplicationController
   def new
-    hash = formdate_params
-    array = hash.values
-    (1..array.size).each do |i|
-      var = "@form#{i}"
-      binding.eval("#{var} = array[#{i}-1]")
-    end
     @tasks = Form::TaskCollection.new
+
+    if params[:formdate].present?
+      hash = formdate_params
+      array = hash.values
+      (1..array.size).each do |i|
+        var = "@form#{i}"
+        binding.eval("#{var} = array[#{i}-1]")
+      end
+    end
   end
 
   def create

@@ -28,11 +28,8 @@ $(function (){
       move = false;
     }
   });
-});
 
-
-$(function(){
-  $("button#btn").click(function() {
+  $("#btn").click(function() {
       var tr_form = '' +
         '<tr>'+
         '<td><input type="text" class="task" placeholder= "タスクを記入" max= 5/></td>' +
