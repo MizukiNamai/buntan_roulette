@@ -22,10 +22,6 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
 
-  def form
-    @form1 = params[:text1]
-  end
-
   private
 
   def tasks_collection_params
