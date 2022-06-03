@@ -10,6 +10,8 @@ class TasksController < ApplicationController
         binding.eval("#{var} = array[#{i}-1]")
       end
     end
+
+    @page = Page.select(:participant).last(1)
   end
 
   def create

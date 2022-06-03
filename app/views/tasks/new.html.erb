@@ -1,37 +1,8 @@
 <div class="fourversion_roulette">
   <div class="roulette-container">
-    <div class="roulettewrapper">
-      <div class= "foundation_roulettes">
-        <div class="foundation_quarter" id="f_quarter_1">
-          <h3 class="form1"><%= @form1 %></h3>
-        </div>
-        <div class="foundation_quarter" id="f_quarter_2">
-          <h3 class="form2"><%= @form2 %></h3>
-        </div>
-        <div class="foundation_quarter" id="f_quarter_3">
-          <h3 class="form3"><%= @form3 %></h3>
-        </div>
-        <div class="foundation_quarter" id="f_quarter_4">
-          <h3 class="form4"><%= @form4 %></h3>
-        </div>
-      </div>
-    </div>
-    <div class="roulettewrapper_top">
-      <div class= "top_roulettes" id="roulettes4">
-        <div class="top_quarter" id="t_quarter_1">
-          <h3 class="form5"><%= @form5 %></h3>
-        </div>
-        <div class="top_quarter" id="t_quarter_2">
-          <h3 class="form6"><%= @form6 %></h3>
-        </div>
-        <div class="top_quarter" id="t_quarter_3">
-          <h3 class="form7"><%= @form7 %></h3>
-        </div>
-        <div class="top_quarter" id="t_quarter_4">
-          <h3 class="form8"><%= @form8 %></h3>
-        </div>
-      </div>
-    </div>
+    <% if @page.present? %>
+      <%= render 'shared/roulette_4' %>
+    <% end %>
     <%= form_with  class: "todoform", method: :get, scope: :formdate, local: true do |f| %>
       <table>
         <tbody>
