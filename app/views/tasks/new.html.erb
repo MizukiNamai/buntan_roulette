@@ -1,6 +1,6 @@
 <div class="fourversion_roulette">
   <div class="roulette-container">
-    <% if @page.present? %>
+    <% if @page == [4] %>
       <%= render 'shared/roulette_4' %>
     <% end %>
     <%= form_with  class: "todoform", method: :get, scope: :formdate, local: true do |f| %>

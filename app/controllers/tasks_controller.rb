@@ -11,7 +11,7 @@ class TasksController < ApplicationController
       end
     end
 
-    @page = Page.select(:participant).last(1)
+    @page = Page.order(updated_at: :desc).limit(1).pluck(:participant)
   end
 
   def create
