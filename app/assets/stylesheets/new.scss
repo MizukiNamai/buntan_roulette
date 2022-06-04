@@ -1,35 +1,4 @@
 @media screen and (min-width: 1366px) {
-  .roulettewrapper {
-    position: relative;
-    top: 270px;
-    left: 600px;
-  }
-  .top_roulettes{
-    transform: rotate(0);
-    position: absolute;
-    top: 40px;
-    left: 10px;
-  }
-  .foundation_roulettes {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-  }
-  .foundation_quarter {
-    position: absolute;
-    height: 220px;
-    width: 220px;
-  }
-  .roulettewrapper_top {
-    position: absolute;
-    top: 328px;
-    left: 607px;
-  }
-  .top_quarter {
-    position: absolute;
-    height: 125px;
-    width: 125px;
-  }
   .btn_reflection{
     position: absolute;
     top: 360px;
@@ -76,54 +45,6 @@
     background-color:#378de5;
   }
   }
-  .form1{
-    position: absolute;
-    top: 80px;
-    left: 100px;
-    transform: rotate(45deg)
-  }
-  .form2{
-    position: absolute;
-    top: 80px;
-    left: 100px;
-    transform: rotate(135deg)
-  }
-  .form3{
-    position: absolute;
-    top: 90px;
-    left: 60px;
-    transform: rotate(225deg)
-  }
-  .form4{
-    position: absolute;
-    top: 70px;
-    left: 60px;
-    transform: rotate(315deg)
-  }
-  .form5{
-    position: absolute;
-    top: 15px;
-    left: 30px;
-    transform: rotate(45deg);
-  }
-  .form6{
-    position: absolute;
-    top: 40px;
-    left: 30px;
-    transform: rotate(135deg);
-  }
-  .form7{
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    transform: rotate(225deg);
-  }
-  .form8{
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    transform: rotate(315deg);
-  }
 
   .todoform{
     position: relative;
@@ -131,36 +52,6 @@
     left: 900px;
   }
 
-  .background_color_t2{
-    position: absolute;
-    top: 340px;
-    left: 900px;
-    width: 200px;
-    height: 30px;
-    background-color: #fffd95;
-    border-radius: 10px;
-    border: 2px solid #000000 ;
-  }
-  .background_color_t3{
-    position: absolute;
-    top: 370px;
-    left: 900px;
-    width: 200px;
-    height: 30px;
-    background-color: #8497e9;
-    border-radius: 10px;
-    border: 2px solid #000000 ;
-  }
-  .background_color_t4{
-    position: absolute;
-    top: 400px;
-    left: 900px;
-    width: 200px;
-    height: 30px;
-    background-color: #84dae9;
-    border-radius: 10px;
-    border: 2px solid #000000 ;
-  }
   .taskform1{
     input[type="text"]{
       width: 200px;
@@ -248,62 +139,7 @@
 .stop {
   animation-play-state: paused;
 }
-#f_quarter_1 {
-  bottom: 0px;
-  left: 0px;
-  background-color: #ffe7e7;
-  border-radius: 0 100% 0 0;
-  border: 2px solid #000000 ;
-}
-#f_quarter_2 {
-  top: 0px;
-  left: 0px;
-  background-color: #ffe7e7;
-  border-radius: 0 0 100% 0;
-  border: 2px solid #000000 ;
-}
-#f_quarter_3 {
-  top: 0px;
-  right: 0px;
-  background-color: #ffe7e7;
-  border-radius: 0 0 0 100%;
-  border: 2px solid #000000 ;
-}
-#f_quarter_4 {
-  bottom: 0px;
-  right: 0px;
-  background-color: #ffe7e7;
-  border-radius: 100% 0 0 0;
-  border: 2px solid #000000 ;
-}
-#t_quarter_1 {
-  bottom: 0px;
-  left: 0px;
-  background-color: #b2f1ac;
-  border-radius: 0 100% 0 0;
-  border: 2px solid #000000 ;
-}
-#t_quarter_2 {
-  top: 0px;
-  left: 0px;
-  background-color: #fffd95;
-  border-radius: 0 0 100% 0;
-  border: 2px solid #000000 ;
-}
-#t_quarter_3 {
-  top: 0px;
-  right: 0px;
-  background-color: #8497e9;
-  border-radius: 0 0 0 100%;
-  border: 2px solid #000000 ;
-}
-#t_quarter_4 {
-  bottom: 0px;
-  right: 0px;
-  background-color: #84dae9;
-  border-radius: 100% 0 0 0;
-  border: 2px solid #000000 ;
-}
+
 .todolist{
   position: absolute;
   top: 400px;
