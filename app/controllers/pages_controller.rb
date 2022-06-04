@@ -12,6 +12,7 @@ class PagesController < ApplicationController
   def create
     @page = Page.new(page_params)
     @page.save!
+    redirect_to new_task_path
   end
 
   private

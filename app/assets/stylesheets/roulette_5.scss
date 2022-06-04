@@ -1,0 +1,126 @@
+@media screen and (min-width: 1366px) {
+  .roulettewrapper5{
+    position: relative;
+    top: 46px;
+    left: 376px;
+  }
+  .foundation_roulette5 {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 445px;
+    height: 445px;
+    background-color: #ffe7e7;
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+  }
+  .fivestripe1{
+    position: absolute;
+    top: 185px;
+    left: 4px;
+    width: 225px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(18deg);
+  }
+  .fivestripe2{
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    width: 225px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .fivestripe3{
+    position: absolute;
+    top: 185px;
+    left: 210px;
+    width: 228px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(162deg);
+  }
+  .fivestripe4{
+    position: absolute;
+    top: 310px;
+    left: 175px;
+    width: 225px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(234deg);
+  }
+  .fivestripe5{
+    position: absolute;
+    top: 310px;
+    left: 43px;
+    width: 225px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(306deg);
+  }
+  .roulettewrapper_top5 {
+    position: absolute;
+    top: 328px;
+    left: 607px;
+  }
+  .top_roulettes5{
+    transform: rotate(0);
+    position: absolute;
+    top: 40px;
+    left: 10px;
+  }
+  .top_quarter {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+  }
+  .form1{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    transform: rotate(45deg)
+  }
+  .form2{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    transform: rotate(135deg)
+  }
+  .form3{
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    transform: rotate(225deg)
+  }
+  .form4{
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    transform: rotate(315deg)
+  }
+  .form5{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    transform: rotate(45deg);
+  }
+  .form6{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    transform: rotate(135deg);
+  }
+  .form7{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    transform: rotate(225deg);
+  }
+  .form8{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transform: rotate(315deg);
+  }
+}
