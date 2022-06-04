@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'tasks/todo'
   post 'roulettes/new'
   get 'tasks/roulette_5'
+  get 'tasks/roulette_6'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   devise_scope :user do
     get 'login', to: 'users/sessions#new'
