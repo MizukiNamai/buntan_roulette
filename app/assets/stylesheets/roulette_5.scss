@@ -59,21 +59,63 @@
     background-color: #000000;
     transform: rotate(306deg);
   }
-  .roulettewrapper_top5 {
+  .roulettewrapper_top5{
     position: absolute;
-    top: 328px;
-    left: 607px;
+    top: 237px;
+    left: 488px;
   }
   .top_roulettes5{
     transform: rotate(0);
-    position: absolute;
-    top: 40px;
-    left: 10px;
+    height: 255px;
+    width: 255px;
+    background-image: conic-gradient(#d5525f 0% 20%,#d5b652 20% 40%,#5f52d5 40% 60%,#52c1d5 60% 80%, #d9d9d9 80% 100%);
+    border-radius: 50%;
+    border: 2px solid #000000 ;
   }
-  .top_quarter {
+  .fivestripe6{
     position: absolute;
-    height: 125px;
-    width: 125px;
+    top: 106px;
+    left: 0px;
+    width: 130px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(18deg);
+  }
+  .fivestripe7{
+    position: absolute;
+    top: 62px;
+    left: 64px;
+    width: 130px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .fivestripe8{
+    position: absolute;
+    top: 106px;
+    left: 124px;
+    width: 130px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(162deg);
+  }
+  .fivestripe9{
+    position: absolute;
+    top: 179px;
+    left: 101px;
+    width: 130px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(234deg);
+  }
+  .fivestripe10{
+    position: absolute;
+    top: 179px;
+    left: 24px;
+    width: 130px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(306deg);
   }
   .form1{
     position: absolute;
