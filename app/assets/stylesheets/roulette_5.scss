@@ -97,52 +97,64 @@
     background-color: #000000;
     transform: rotate(306deg);
   }
-  .form1{
+  .fiveform_task1{
     position: absolute;
-    top: 80px;
-    left: 100px;
+    top: 50px;
+    left: 300px;
     transform: rotate(45deg)
   }
-  .form2{
+  .fiveform_task2{
     position: absolute;
-    top: 80px;
-    left: 100px;
-    transform: rotate(135deg)
+    top: 240px;
+    left: 370px;
+    transform: rotate(110deg)
   }
-  .form3{
+  .fiveform_task3{
     position: absolute;
-    top: 90px;
+    top: 380px;
+    left: 180px;
+    transform: rotate(180deg);
+  }
+  .fiveform_task4{
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    transform: rotate(250deg);
+  }
+  .fiveform_task5{
+    position: absolute;
+    top: 60px;
     left: 60px;
-    transform: rotate(225deg)
+    transform: rotate(315deg);
   }
-  .form4{
-    position: absolute;
-    top: 70px;
-    left: 60px;
-    transform: rotate(315deg)
-  }
-  .form5{
-    position: absolute;
-    top: 15px;
-    left: 30px;
-    transform: rotate(45deg);
-  }
-  .form6{
-    position: absolute;
-    top: 40px;
-    left: 30px;
-    transform: rotate(135deg);
-  }
-  .form7{
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    transform: rotate(225deg);
-  }
-  .form8{
+  .fiveform_name1{
     position: absolute;
     top: 30px;
-    left: 30px;
-    transform: rotate(315deg);
+    left: 140px;
+    transform: rotate(45deg)
+  }
+  .fiveform_name2{
+    position: absolute;
+    top: 120px;
+    left: 180px;
+    transform: rotate(110deg)
+  }
+  .fiveform_name3{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    transform: rotate(180deg);
+  }
+  .fiveform_name4{
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    transform: rotate(250deg);
+  }
+  .fiveform_name5{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    transform: rotate(318deg);
   }
 }
