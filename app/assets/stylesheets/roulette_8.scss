@@ -1,26 +1,10 @@
 @media screen and (min-width: 1366px) {
-  .roulettewrapper8{
-    position: relative;
-    top: 46px;
-    left: 376px;
-  }
-  .foundation_roulette8 {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    width: 445px;
-    height: 445px;
-    background-color: #ffe7e7;
-    background-image: conic-gradient(#d5525f 0% 12.5%, #d9d9d9 12.5% 25%,#d552ce 25% 37.5%,#a88488 37.5% 50%,#527bd5 50% 62.5%,#9e7e9c 62.5% 75%,#52d5a3 75% 87.5%,#6f80a3 87.5% 100%);
-    border-radius: 50%;
-    border: 2px solid #000000 ;
-  }
   .eightstripe1{
     position: absolute;
     top: 222px;
     width: 446px;
     height: 4px;
-    background-color: #000000;
+    background-color: #ffffff;
     transform: rotate(45deg);
   }
   .eightstripe2{
@@ -28,7 +12,7 @@
     top: 220px;
     width: 446px;
     height: 4px;
-    background-color: #000000;
+    background-color: #ffffff;
     transform: rotate(90deg);
   }
   .eightstripe3{
@@ -36,7 +20,7 @@
     top: 222px;
     width: 446px;
     height: 4px;
-    background-color: #000000;
+    background-color: #ffffff;
     transform: rotate(135deg);
   }
   .eightstripe4{
@@ -44,12 +28,49 @@
     top: 222px;
     width: 446px;
     height: 4px;
-    background-color: #000000;
+    background-color: #ffffff;
     transform: rotate(180deg);
   }
-  .roulettewrapper_top8{
+  .top_roulettes8{
+    transform: rotate(0);
+    height: 255px;
+    width: 255px;
+    background-image: conic-gradient(#d5525f 0% 12.5%, #d9d9d9 12.5% 25%,#d552ce 25% 37.5%,#a88488 37.5% 50%,#527bd5 50% 62.5%,#9e7e9c 62.5% 75%,#52d5a3 75% 87.5%,#6f80a3 87.5% 100%);
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+  }
+  .eightstripe5{
     position: absolute;
-    top: 10px;
-    left: 43px;
+    top: 126px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+  .eightstripe6{
+    position: absolute;
+    top: 126px;
+    left: 1px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .eightstripe7{
+    position: absolute;
+    top: 127px;
+    left: 1px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(135deg);
+  }
+  .eightstripe8{
+    position: absolute;
+    top: 127px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(180deg);
   }
 }
