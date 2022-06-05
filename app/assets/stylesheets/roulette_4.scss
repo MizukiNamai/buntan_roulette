@@ -1,90 +1,63 @@
 @media screen and (min-width: 1366px) {
-  .roulettewrapper4 {
+  .roulettewrapper{
     position: relative;
-    top: 270px;
-    left: 600px;
+    top: 46px;
+    left: 376px;
   }
-  .top_roulettes4{
-    transform: rotate(0);
-    position: absolute;
-    top: 40px;
-    left: 10px;
-  }
-  .foundation_roulettes4 {
+  .foundation_roulette{
     position: absolute;
     top: 20px;
     left: 10px;
+    width: 445px;
+    height: 445px;
+    background-color: #ffe7e7;
+    border-radius: 50%;
+    border: 2px solid #000000 ;
   }
-  .foundation_quarter {
+  .fourstripe1{
     position: absolute;
-    height: 220px;
-    width: 220px;
+    top: 222px;
+    width: 446px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(0deg);
   }
-  .roulettewrapper_top4 {
+  .fourstripe2{
     position: absolute;
-    top: 328px;
-    left: 607px;
+    top: 222px;
+    width: 446px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
   }
-  .top_quarter {
+  .roulettewrapper_top{
     position: absolute;
-    height: 125px;
-    width: 125px;
+    top: 238px;
+    left: 488px;
   }
-  #f_quarter_1 {
-    bottom: 0px;
-    left: 0px;
-    background-color: #ffe7e7;
-    border-radius: 0 100% 0 0;
+  .top_roulettes4{
+    transform: rotate(0);
+    height: 255px;
+    width: 255px;
+    background-image: conic-gradient(#b2f1ac 0% 25%,#fffd95 25% 50%,#8497e9 50% 75%,#84dae9 75% 100%);
+    border-radius: 50%;
     border: 2px solid #000000 ;
   }
-  #f_quarter_2 {
-    top: 0px;
-    left: 0px;
-    background-color: #ffe7e7;
-    border-radius: 0 0 100% 0;
-    border: 2px solid #000000 ;
+  .fourstripe3{
+    position: absolute;
+    top: 127px;
+    width: 258px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(0deg);
   }
-  #f_quarter_3 {
-    top: 0px;
-    right: 0px;
-    background-color: #ffe7e7;
-    border-radius: 0 0 0 100%;
-    border: 2px solid #000000 ;
-  }
-  #f_quarter_4 {
-    bottom: 0px;
-    right: 0px;
-    background-color: #ffe7e7;
-    border-radius: 100% 0 0 0;
-    border: 2px solid #000000 ;
-  }
-  #t_quarter_1 {
-    bottom: 0px;
-    left: 0px;
-    background-color: #b2f1ac;
-    border-radius: 0 100% 0 0;
-    border: 2px solid #000000 ;
-  }
-  #t_quarter_2 {
-    top: 0px;
-    left: 0px;
-    background-color: #fffd95;
-    border-radius: 0 0 100% 0;
-    border: 2px solid #000000 ;
-  }
-  #t_quarter_3 {
-    top: 0px;
-    right: 0px;
-    background-color: #8497e9;
-    border-radius: 0 0 0 100%;
-    border: 2px solid #000000 ;
-  }
-  #t_quarter_4 {
-    bottom: 0px;
-    right: 0px;
-    background-color: #84dae9;
-    border-radius: 100% 0 0 0;
-    border: 2px solid #000000 ;
+  .fourstripe4{
+    position: absolute;
+    top: 126px;
+    width: 258px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(90deg);
   }
   .form1{
     position: absolute;
