@@ -1,20 +1,4 @@
 @media screen and (min-width: 1366px) {
-  .roulettewrapper6{
-    position: relative;
-    top: 46px;
-    left: 376px;
-  }
-  .foundation_roulette6 {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    width: 445px;
-    height: 445px;
-    background-color: #ffe7e7;
-    background-image: conic-gradient(#d5525f 0% 16.66%, #d9d9d9 16.66% 33.32%,#d552ce 33.32% 50%,#a88488 50% 66.66%,#527bd5 66.66% 83.32%,#52d5a3 83.32% 100%);
-    border-radius: 50%;
-    border: 2px solid #000000 ;
-  }
   .sixstripe1{
     position: absolute;
     top: 222px;
@@ -39,9 +23,37 @@
     background-color: #000000;
     transform: rotate(150deg);
   }
-  .roulettewrapper_top6{
+  .top_roulettes6{
+    transform: rotate(0);
+    height: 255px;
+    width: 255px;
+    background-image: conic-gradient(#d5525f 0% 16.66%, #d9d9d9 16.66% 33.32%,#d552ce 33.32% 50%,#a88488 50% 66.66%,#527bd5 66.66% 83.32%,#52d5a3 83.32% 100%);
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+  }
+  .sixstripe4{
     position: absolute;
-    top: 10px;
-    left: 43px;
+    top: 128px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(30deg);
+  }
+  .sixstripe5{
+    position: absolute;
+    top: 126px;
+    left: 1px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .sixstripe6{
+    position: absolute;
+    top: 127px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(150deg);
   }
 }
