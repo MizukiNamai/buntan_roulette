@@ -1,20 +1,4 @@
 @media screen and (min-width: 1366px) {
-  .roulettewrapper10{
-    position: relative;
-    top: 46px;
-    left: 376px;
-  }
-  .foundation_roulette10 {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    width: 445px;
-    height: 445px;
-    background-color: #ffe7e7;
-    background-image: conic-gradient(#d5525f 0% 10%, #d9d9d9 10% 20%,#d552ce 20% 30%,#a88488 30% 40%,#527bd5 40% 50%,#9e7e9c 50% 60%,#52d5a3 60% 70%,#6f80a3 70% 80%,#6fa396  80% 90%,#73a36f 90% 100%);
-    border-radius: 50%;
-    border: 2px solid #000000 ;
-  }
   .tenstripe1{
     position: absolute;
     top: 222px;
@@ -55,9 +39,55 @@
     background-color: #000000;
     transform: rotate(197deg);
   }
-  .roulettewrapper_top10{
+
+  .top_roulettes10{
+    transform: rotate(0);
+    height: 255px;
+    width: 255px;
+    background-image: conic-gradient(#d5525f 0% 10%, #d9d9d9 10% 20%,#d552ce 20% 30%,#a88488 30% 40%,#527bd5 40% 50%,#9e7e9c 50% 60%,#52d5a3 60% 70%,#6f80a3 70% 80%,#a38e6f  80% 90%,#73a36f 90% 100%);
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+  }
+  .tenstripe6{
     position: absolute;
-    top: 10px;
-    left: 43px;
+    top: 126px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(54deg);
+  }
+  .tenstripe7{
+    position: absolute;
+    top: 126px;
+    left: 1px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .tenstripe8{
+    position: absolute;
+    top: 127px;
+    left: 1px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(125deg);
+  }
+  .tenstripe9{
+    position: absolute;
+    top: 127px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(162deg);
+  }
+  .tenstripe10{
+    position: absolute;
+    top: 127px;
+    width: 256px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(197deg);
   }
 }
