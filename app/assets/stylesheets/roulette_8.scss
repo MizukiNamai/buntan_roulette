@@ -11,80 +11,41 @@
     width: 445px;
     height: 445px;
     background-color: #ffe7e7;
+    background-image: conic-gradient(#d5525f 0% 12.5%, #d9d9d9 12.5% 25%,#d552ce 25% 37.5%,#a88488 37.5% 50%,#527bd5 50% 62.5%,#9e7e9c 62.5% 75%,#52d5a3 75% 87.5%,#6f80a3 87.5% 100%);
     border-radius: 50%;
     border: 2px solid #000000 ;
   }
   .eightstripe1{
     position: absolute;
-    top: 142px;
-    left: 30px;
-    width: 223px;
+    top: 222px;
+    width: 446px;
     height: 4px;
     background-color: #000000;
     transform: rotate(45deg);
   }
   .eightstripe2{
     position: absolute;
-    top: 110px;
-    left: 110px;
-    width: 225px;
+    top: 220px;
+    width: 446px;
     height: 4px;
     background-color: #000000;
     transform: rotate(90deg);
   }
   .eightstripe3{
     position: absolute;
-    top: 142px;
-    left: 190px;
-    width: 224px;
+    top: 222px;
+    width: 446px;
     height: 4px;
     background-color: #000000;
     transform: rotate(135deg);
   }
   .eightstripe4{
     position: absolute;
-    top: 220px;
-    left: 220px;
-    width: 225px;
+    top: 222px;
+    width: 446px;
     height: 4px;
     background-color: #000000;
     transform: rotate(180deg);
-  }
-  .eightstripe5{
-    position: absolute;
-    top: 300px;
-    left: 190px;
-    width: 223px;
-    height: 4px;
-    background-color: #000000;
-    transform: rotate(225deg);
-  }
-  .eightstripe6{
-    position: absolute;
-    top: 332px;
-    left: 110px;
-    width: 225px;
-    height: 4px;
-    background-color: #000000;
-    transform: rotate(270deg);
-  }
-  .eightstripe7{
-    position: absolute;
-    top: 300px;
-    left: 33px;
-    width: 225px;
-    height: 4px;
-    background-color: #000000;
-    transform: rotate(315deg);
-  }
-  .eightstripe8{
-    position: absolute;
-    top: 220px;
-    left: 0px;
-    width: 230px;
-    height: 4px;
-    background-color: #000000;
-    transform: rotate(0deg);
   }
   .roulettewrapper_top8{
     position: absolute;
