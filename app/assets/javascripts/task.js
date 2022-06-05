@@ -38,7 +38,7 @@ $(function (){
     $(tr_form).appendTo($('table > tbody'));
     var i = 9;
     $ ('.task').each(function(){
-      $(this).attr('name','formdate[text'+ i +']' );
+      $(this).attr('name','formdate[form'+ i +']' );
       i++;
     });
   });
