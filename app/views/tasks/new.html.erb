@@ -16,14 +16,14 @@
         <tbody>
           <% 1.step(7, 2) do |num| %>
             <tr>
-              <td><%= f.text_field :task ,name:"formdate[form#{num}]", placeholder:"タスクを記入" %></td>
-              <td><%= f.text_field :name ,name:"formdate[form#{num+1}]", placeholder: "名前を記入"%></td>
+              <td><%= f.text_field :task ,name: "formdate[form#{num}]", placeholder: "タスク記入(5文字以内）" , maxlength: 5, size: 20 ,autocomplete:"off"%></td>
+              <td><%= f.text_field :name ,name: "formdate[form#{num+1}]", placeholder: "名前記入(5文字以内）" , maxlength: 5, size: 20 ,autocomplete:"off"%></td>
             </tr>
           <% end %>
         </tbody>
         <tfoot>
           <tr>
-            <td ><button id="btn" type="button">追加</button></td>
+            <td ><button id="addbtn" type="button">追加</button></td>
           </tr>
         </tfoot>
       </table>

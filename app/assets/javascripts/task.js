@@ -2,7 +2,7 @@ $(function (){
   const start = document.getElementById('start');
   const stop = document.getElementById('stop');
   const roulettes = document.getElementById('roulettes');
-  const btn = document.getElementById('btn');
+  const addbtn = document.getElementById('addbtn');
 
 
   let degree = 0;
@@ -14,15 +14,15 @@ $(function (){
         move = true;
         roulettetype = $('p').data('name');
           if (roulettetype== "4"){
-            var speed = 90;
+            speed = 90;
           }else if(roulettetype== "5"){
-            var speed = 72;
+            speed = 72;
           }else if(roulettetype== "6"){
-            var speed = 60;
+            speed = 60;
           }else if(roulettetype== "8"){
-            var speed = 45;
+            speed = 45;
           }else{
-            var speed = 36;
+            speed = 36;
           }
         loop();
       }
@@ -41,11 +41,11 @@ $(function (){
     }
   });
 
-  btn.addEventListener('click', () => {
+  addbtn.addEventListener('click', () => {
       tr_form = '' +
         '<tr>'+
-        '<td><input type="text" class="task" placeholder= "タスクを記入" max= 5></td>' +
-        '<td><input type="text" class="task" placeholder= "名前を記入" max= 5></td>' +
+        '<td><input type="text" class="task" placeholder= "タスク記入(5文字以内)" maxlength= 5 autocomplete="off"></td>' +
+        '<td><input type="text" class="task" placeholder= "名前記入(5文字以内)" maxlength= 5 autocomplete="off"></td>' +
         '</tr>';
     $(tr_form).appendTo($('table > tbody'));
     i = 9;
