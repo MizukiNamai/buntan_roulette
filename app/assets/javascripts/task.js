@@ -1,7 +1,7 @@
 $(function (){
-  const start = document.getElementById('start4');
-  const stop = document.getElementById('stop4');
-  const roulettes = document.getElementById('roulettes4');
+  const start = document.getElementById('start');
+  const stop = document.getElementById('stop');
+  const roulettes = document.getElementById('roulettes');
 
   let degree = 0;
   let speed = 0;

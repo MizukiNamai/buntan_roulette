@@ -1,7 +1,7 @@
 <div class="fourversion_roulette">
   <div class="roulette-container">
     <% if @page == [4] %>
-      <%= render 'shared/roulette_8' %>
+      <%= render 'shared/roulette_10' %>
     <% end %>
     <%= form_with  class: "todoform", method: :get, scope: :formdate, local: true do |f| %>
       <table>
@@ -32,8 +32,8 @@
     <% end %>
     <div class="roulettebutton">
       <div class="tow_buttons">
-        <input type="button" value="スタート", id= "start4", class= "myButton">
-        <input type="button" value="ストップ", id= "stop4", class= "myButton">
+        <input type="button" value="スタート", id= "start", class= "myButton">
+        <input type="button" value="ストップ", id= "stop", class= "myButton">
       </div>
     </div>
   </div>
