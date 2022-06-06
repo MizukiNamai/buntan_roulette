@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   def new
+    @page = Page.order(updated_at: :desc).limit(1).pluck(:participant)
     @tasks = Form::TaskCollection.new
-
     if params[:formdate].present?
       hash = formdate_params
       array = hash.values
@@ -10,8 +10,6 @@ class TasksController < ApplicationController
         binding.eval("#{var} = array[#{i}-1]")
       end
     end
-
-    @page = Page.order(updated_at: :desc).limit(1).pluck(:participant)
   end
 
   def create
