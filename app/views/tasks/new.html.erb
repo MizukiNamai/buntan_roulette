@@ -23,11 +23,11 @@
         </tbody>
         <tfoot>
           <tr>
-            <td ><button id="addbtn" type="button">追加</button></td>
+            <td ><button id="addbtn" type="button" >追加</button></td>
+            <td ><%= f.submit "反映", class: "formbtn" %></td>
           </tr>
         </tfoot>
       </table>
-      <td ><%= f.submit "反映", class: "btn" %></td>
     <% end %>
     <%= form_with model: @tasks, url: tasks_path, class: "todolists", method: :post ,class: "todolist", local: true do |f| %>
         <%= fields_for 'tasks[]', @tasks do |f| %>

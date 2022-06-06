@@ -4,10 +4,10 @@ $(function (){
   const roulettes = document.getElementById('roulettes');
   const addbtn = document.getElementById('addbtn');
 
-
   let degree = 0;
   let speed = 0;
   let move = false;
+  let count = 0;
 
   start.addEventListener('click', () => {
       if(!move) {
@@ -42,16 +42,22 @@ $(function (){
   });
 
   addbtn.addEventListener('click', () => {
-      tr_form = '' +
+      result = ++count;
+      if(result > 6){
+        $('#addbtn').attr('disabled', true);
+        $("#addbtn").css({background:'#788592',color:'#bcd3eb'});
+      }else{
+      var tr_form = '' +
         '<tr>'+
         '<td><input type="text" class="task" placeholder= "タスク記入(5文字以内)" maxlength= 5 autocomplete="off"></td>' +
         '<td><input type="text" class="task" placeholder= "名前記入(5文字以内)" maxlength= 5 autocomplete="off"></td>' +
         '</tr>';
     $(tr_form).appendTo($('table > tbody'));
-    i = 9;
+    var i = 9;
     $ ('.task').each(function(){
       $(this).attr('name','formdate[form'+ i +']' );
       i++;
     });
+    }
   });
 });
