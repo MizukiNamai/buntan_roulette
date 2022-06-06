@@ -6,6 +6,22 @@
           <%= f.hidden_field :participant , value: "4" %>
           <%= f.submit '4人用',class: "myButton"%>
         <% end %>
+        <%= form_with model: @page , method: :post,local: true do |f| %>
+          <%= f.hidden_field :participant , value: "5" %>
+          <%= f.submit '5人用',class: "myButton"%>
+        <% end %>
+        <%= form_with model: @page , method: :post,local: true do |f| %>
+          <%= f.hidden_field :participant , value: "6" %>
+          <%= f.submit '6人用',class: "myButton"%>
+        <% end %>
+        <%= form_with model: @page , method: :post,local: true do |f| %>
+          <%= f.hidden_field :participant , value: "8" %>
+          <%= f.submit '8人用',class: "myButton"%>
+        <% end %>
+        <%= form_with model: @page , method: :post,local: true do |f| %>
+          <%= f.hidden_field :participant , value: "10" %>
+          <%= f.submit '10人用',class: "myButton"%>
+        <% end %>
       </li>
     </ul>
   </div>

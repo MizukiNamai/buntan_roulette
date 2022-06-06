@@ -1,6 +1,14 @@
 <div class="fourversion_roulette">
   <div class="roulette-container">
     <% if @page == [4] %>
+      <%= render 'shared/roulette_4' %>
+    <% elsif @page == [5]%>
+      <%= render 'shared/roulette_5' %>
+    <% elsif @page == [6]%>
+      <%= render 'shared/roulette_6' %>
+    <% elsif @page == [8]%>
+      <%= render 'shared/roulette_8' %>
+    <% else %>
       <%= render 'shared/roulette_10' %>
     <% end %>
     <%= form_with  class: "todoform", method: :get, scope: :formdate, local: true do |f| %>
