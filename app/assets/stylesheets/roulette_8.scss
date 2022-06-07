@@ -1,0 +1,172 @@
+@media screen and (min-width: 1366px) {
+  .eightstripe_f1{
+    position: absolute;
+    top: 222px;
+    width: 446px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+  .eightstripe_f2{
+    position: absolute;
+    top: 220px;
+    width: 446px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .eightstripe_f3{
+    position: absolute;
+    top: 222px;
+    width: 446px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(135deg);
+  }
+  .eightstripe_f4{
+    position: absolute;
+    top: 222px;
+    width: 446px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(180deg);
+  }
+  .top_roulettes8{
+    transform: rotate(0);
+    height: 255px;
+    width: 255px;
+    background-image: conic-gradient(#d5525f 0% 12.5%, #d9d9d9 12.5% 25%,#d552ce 25% 37.5%,#a88488 37.5% 50%,#527bd5 50% 62.5%,#9e7e9c 62.5% 75%,#52d5a3 75% 87.5%,#6f80a3 87.5% 100%);
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+  }
+  .eightstripe_t1{
+    position: absolute;
+    top: 126px;
+    width: 256px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+  .eightstripe_t2{
+    position: absolute;
+    top: 126px;
+    left: 1px;
+    width: 256px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .eightstripe_t3{
+    position: absolute;
+    top: 127px;
+    left: 1px;
+    width: 256px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(135deg);
+  }
+  .eightstripe_t4{
+    position: absolute;
+    top: 127px;
+    width: 256px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(180deg);
+  }
+  .eightform_task1{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    transform: rotate(30deg);
+  }
+  .eightform_task2{
+    position: absolute;
+    top: 120px;
+    left: 360px;
+    transform: rotate(65deg);
+  }
+  .eightform_task3{
+    position: absolute;
+    top: 250px;
+    left: 360px;
+    transform: rotate(120deg);
+  }
+  .eightform_task4{
+    position: absolute;
+    top: 340px;
+    left: 250px;
+    transform: rotate(150deg);
+  }
+  .eightform_task5{
+    position: absolute;
+    top: 340px;
+    left: 110px;
+    transform: rotate(210deg);
+  }
+  .eightform_task6{
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    transform: rotate(250deg);
+  }
+  .eightform_task7{
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    transform: rotate(295deg);
+  }
+  .eightform_task8{
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    transform: rotate(335deg);
+  }
+  .eightform_name1{
+    position: absolute;
+    top: 10px;
+    left: 135px;
+    transform: rotate(30deg)
+  }
+  .eightform_name2{
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    transform: rotate(65deg)
+  }
+  .eightform_name3{
+    position: absolute;
+    top: 140px;
+    left: 190px;
+    transform: rotate(120deg);
+  }
+  .eightform_name4{
+    position: absolute;
+    top: 190px;
+    left: 130px;
+    transform: rotate(160deg);
+  }
+  .eightform_name5{
+    position: absolute;
+    top: 190px;
+    left: 60px;
+    transform: rotate(210deg);
+  }
+  .eightform_name6{
+    position: absolute;
+    top: 130px;
+    left: 15px;
+    transform: rotate(250deg);
+  }
+  .eightform_name7{
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    transform: rotate(295deg);
+  }
+  .eightform_name8{
+    position: absolute;
+    top: 15px;
+    left: 65px;
+    transform: rotate(335deg);
+  }
+}

@@ -2,38 +2,49 @@
   <div class="roulette-container">
     <% if @page == [4] %>
       <%= render 'shared/roulette_4' %>
+    <% elsif @page == [5]%>
+      <%= render 'shared/roulette_5' %>
+    <% elsif @page == [6]%>
+      <%= render 'shared/roulette_6' %>
+    <% elsif @page == [8]%>
+      <%= render 'shared/roulette_8' %>
+    <% else %>
+      <%= render 'shared/roulette_10' %>
     <% end %>
     <%= form_with  class: "todoform", method: :get, scope: :formdate, local: true do |f| %>
       <table>
         <tbody>
           <% 1.step(7, 2) do |num| %>
             <tr>
-              <td><%= f.text_field :task ,name:"formdate[form#{num}]", placeholder:"タスクを記入" %></td>
-              <td><%= f.text_field :name ,name:"formdate[form#{num+1}]", placeholder: "名前を記入"%></td>
+              <td><%= f.text_field :task ,name: "formdate[form#{num}]", placeholder: "タスク記入(5文字以内）" , maxlength: 5, size: 20 ,autocomplete:"off"%></td>
+              <td><%= f.text_field :name ,name: "formdate[form#{num+1}]", placeholder: "名前記入(5文字以内）" , maxlength: 5, size: 20 ,autocomplete:"off"%></td>
             </tr>
           <% end %>
         </tbody>
         <tfoot>
           <tr>
-            <td ><button id="btn" type="button">追加</button></td>
+            <td ><button id="addbtn" type="button" >追加</button></td>
+            <td ><%= f.submit "反映", class: "formbtn" %></td>
           </tr>
         </tfoot>
       </table>
-      <td ><%= f.submit "反映", class: "btn" %></td>
+
     <% end %>
     <%= form_with model: @tasks, url: tasks_path, class: "todolists", method: :post ,class: "todolist", local: true do |f| %>
+    <% 4.times do%>
         <%= fields_for 'tasks[]', @tasks do |f| %>
-          <%= f.text_field :task ,name:"test", value: @form1  %>
+          <%= f.text_field :task , value: @form1  %>
           <%= f.text_field :name , value: @form5  %>
           <%= f.text_field :status , value: "todo"  %>
           <%= f.text_field :roulette_id , value: "4"  %>
         <% end%>
       <%= f.submit "ToDoリストを作成する", class: "btn_todo" %>
     <% end %>
+  <% end%>
     <div class="roulettebutton">
       <div class="tow_buttons">
-        <input type="button" value="スタート", id= "start4", class= "myButton">
-        <input type="button" value="ストップ", id= "stop4", class= "myButton">
+        <input type="button" value="スタート", id= "start", class= "myButton">
+        <input type="button" value="ストップ", id= "stop", class= "myButton">
       </div>
     </div>
   </div>
