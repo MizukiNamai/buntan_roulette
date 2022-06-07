@@ -5,13 +5,19 @@ class Form::TaskCollection
   extend ActiveModel::Translation
   include ActiveModel::AttributeMethods
   include ActiveModel::Validations
-
   TASK_COUNT = 4
   attr_accessor :products
 
   def initialize(attributes = {})
     if attributes.present?
-      self.products = attributes.map { |_, v| Task.new(v) }
+      self.products = attributes.map do |value|
+        Task.new(
+          task: value['task'],
+          name: value['name'],
+          status: value['status'],
+          roulette_id: value['roulette_id']
+        )
+      end
     else
       TASK_COUNT.times.map { Task.new }
     end
