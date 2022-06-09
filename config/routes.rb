@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   resources :pages, only: %i[create new]
   resources :tasks, only: %i[create new todo]
   get 'pages/guide'
-  get 'pages/choice'
   post 'tasks/new'
   post 'tasks/create'
   get 'tasks/todo'

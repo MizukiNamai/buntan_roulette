@@ -1,11 +1,7 @@
 <div class= top_contents>
   <ul class="topul">
     <li class="toplist">分担ルーレット</li>
-    <% if user_signed_in? %>
     <li class="toplist"><%= button_to "早速回す", new_page_path, {method: :get, class: "btn_top"} %></li>
-    <% else %>
-    <li class="toplist"><%= button_to "早速回す", pages_choice_path, {method: :get, class: "btn_top"} %></li>
-    <% end %>
     <li class="toplist"><%= button_to "使い方", pages_guide_path, {method: :get, class: "btn_top"} %></li>
   </ul>
 </div>

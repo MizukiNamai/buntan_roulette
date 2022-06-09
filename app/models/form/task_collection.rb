@@ -5,7 +5,7 @@ class Form::TaskCollection
   extend ActiveModel::Translation
   include ActiveModel::AttributeMethods
   include ActiveModel::Validations
-  TASK_COUNT = 4
+  TASK_COUNT = 10
   attr_accessor :products
 
   def initialize(attributes = {})
