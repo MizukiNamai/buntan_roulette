@@ -7,10 +7,6 @@ Rails.application.routes.draw do
   resources :pages, only: %i[create new]
   resources :tasks, only: %i[create new todo]
   get 'pages/guide'
-  post 'tasks/new'
-  post 'tasks/create'
-  get 'tasks/todo'
-  post 'roulettes/new'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   devise_scope :user do
     get 'login', to: 'users/sessions#new'
