@@ -5,13 +5,12 @@ Rails.application.routes.draw do
   }
   root 'pages#top'
   resources :pages, only: %i[create new]
-  resources :tasks, only: %i[create new todo]
+  resources :tasks, only: %i[create new show]
   get 'pages/guide'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   devise_scope :user do
     get 'login', to: 'users/sessions#new'
     get 'logout', to: 'users/sessions#destroy'
   end
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
