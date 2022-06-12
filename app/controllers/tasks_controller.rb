@@ -18,10 +18,7 @@ class TasksController < ApplicationController
     redirect_to tasks_show_path
   end
 
-  def show
-    @tasks = Task.all
-    render json: @tasks
-  end
+
 
   private
 

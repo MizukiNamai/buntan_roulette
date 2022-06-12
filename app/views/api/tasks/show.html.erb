@@ -1,0 +1,40 @@
+    <div id="app">
+        <ul>
+            <router-link tag="li" to="/">page1</router-link>
+            <router-link tag="li" to="/page2">page2</router-link>
+        </ul>
+        <router-view></router-view>
+    </div>
+
+<script >
+document.addEventListener('DOMContentLoaded', function() {
+    new Vue({
+        el: '#app',
+        components: {
+            'component-a': httpVueLoader('component/a.vue'),
+            'component-b': httpVueLoader('component/b.vue'),
+            'component-list': httpVueLoader('component/list-wrap.vue'),
+        },
+        data: {
+            currentValue: '入力値',
+            currentElement: 'A',
+            currentComponent: 'component-a',
+        },
+        methods: {
+            selectValue(value) {
+                this.currentValue = value;
+            },
+            toggle() {
+                this.toggleElement();
+                this.toggleComponent();
+            },
+            toggleElement() {
+                this.currentElement = this.currentElement === 'A' ? 'B' : 'A'
+            },
+            toggleComponent() {
+                this.currentComponent = this.currentComponent === 'component-a' ? 'component-b' : 'component-a'
+            },
+        }
+    });
+});
+</script>

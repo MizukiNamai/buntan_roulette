@@ -1,4 +1,4 @@
-$(function (){
+window.addEventListener('DOMContentLoaded', function (){
   const start = document.getElementById('start');
   const stop = document.getElementById('stop');
   const roulettes = document.getElementById('roulettes');
@@ -9,6 +9,7 @@ $(function (){
   let move = false;
   let count = 0;
 
+  if (!start){ return false;}
   start.addEventListener('click', () => {
       if(!move) {
         move = true;

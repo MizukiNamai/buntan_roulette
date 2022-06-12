@@ -30,17 +30,19 @@
       </table>
     <% end %>
     <% if params[:formdate].present?%>
-      <%= form_with model: @tasks, url: tasks_path, class: "todolists", method: :post ,class: "todolist", local: true do |f| %>
-        <%= fields_for 'tasks[]', @tasks do |f| %>
-          <% @hiddenform.product.each_slice(2) do |task,name|%>
-            <%= f.hidden_field :task , value: task %>
-            <%= f.hidden_field :name , value: name %>
-            <%= f.hidden_field :status , value: "todo" %>
-            <%= f.hidden_field :roulette_id , value: @page  %>
-          <% end%>
-        <% end %>
-        <%= f.submit "ToDoリストを作成する", class: "btn_todo" %>
-      <% end%>
+      <div class= "js-tasksNew">
+        <%= form_with model: @tasks, url: tasks_path, class: "todolists", method: :post ,class: "todolist", local: true do |f| %>
+          <%= fields_for 'tasks[]', @tasks do |f| %>
+            <% @hiddenform.product.each_slice(2) do |task,name|%>
+              <%= f.hidden_field :task , value: task %>
+              <%= f.hidden_field :name , value: name %>
+              <%= f.hidden_field :status , value: "todo" %>
+              <%= f.hidden_field :roulette_id , value: @page  %>
+            <% end%>
+          <% end %>
+          <%= f.submit "ToDoリストを作成する", class: "btn_todo", v-on:click= "setBookInfo(book.id)" %>
+        <% end%>
+      </div>
     <% end%>
     <div class="roulettebutton">
       <div class="tow_buttons">
