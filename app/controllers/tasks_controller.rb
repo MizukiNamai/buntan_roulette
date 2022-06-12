@@ -15,7 +15,7 @@ class TasksController < ApplicationController
   def create
     @tasks = Form::TaskCollection.new(tasks_collection_params)
     @tasks.save
-    redirect_to tasks_show_path
+    redirect_to api_tasks_show_path
   end
 
 

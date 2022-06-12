@@ -37,10 +37,10 @@
               <%= f.hidden_field :task , value: task %>
               <%= f.hidden_field :name , value: name %>
               <%= f.hidden_field :status , value: "todo" %>
-              <%= f.hidden_field :roulette_id , value: @page  %>
+              <%= f.hidden_field :page_id , value: @page  %>
             <% end%>
           <% end %>
-          <%= f.submit "ToDoリストを作成する", class: "btn_todo", v-on:click= "setBookInfo(book.id)" %>
+          <%= f.submit "ToDoリストを作成する", class: "btn_todo" %>
         <% end%>
       </div>
     <% end%>
