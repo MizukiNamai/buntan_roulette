@@ -18,8 +18,6 @@ class TasksController < ApplicationController
     redirect_to api_tasks_show_path
   end
 
-
-
   private
 
   def tasks_collection_params

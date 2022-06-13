@@ -42,6 +42,10 @@ window.addEventListener('DOMContentLoaded', function (){
     }
   });
 
+  $('input.name').each(function(i){
+    $(this).attr('id','tasks__name' + (i+1));
+  });
+
   addbtn.addEventListener('click', () => {
       result = ++count;
       if(result > 6){

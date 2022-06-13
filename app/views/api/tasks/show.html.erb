@@ -1,40 +1,23 @@
-    <div id="app">
-        <ul>
-            <router-link tag="li" to="/">page1</router-link>
-            <router-link tag="li" to="/page2">page2</router-link>
-        </ul>
-        <router-view></router-view>
-    </div>
-
-<script >
-document.addEventListener('DOMContentLoaded', function() {
-    new Vue({
-        el: '#app',
-        components: {
-            'component-a': httpVueLoader('component/a.vue'),
-            'component-b': httpVueLoader('component/b.vue'),
-            'component-list': httpVueLoader('component/list-wrap.vue'),
-        },
-        data: {
-            currentValue: '入力値',
-            currentElement: 'A',
-            currentComponent: 'component-a',
-        },
-        methods: {
-            selectValue(value) {
-                this.currentValue = value;
-            },
-            toggle() {
-                this.toggleElement();
-                this.toggleComponent();
-            },
-            toggleElement() {
-                this.currentElement = this.currentElement === 'A' ? 'B' : 'A'
-            },
-            toggleComponent() {
-                this.currentComponent = this.currentComponent === 'component-a' ? 'component-b' : 'component-a'
-            },
+<div id="app">
+  <ul>
+    <li v-for="user in tasks">{{ user.name }}</li>
+  </ul>
+    <ul>
+    <li v-for="user in tasks">{{ user.task }}</li>
+  </ul>
+</div>
+<script>
+  new Vue({
+    el: "#app",
+    data() {
+        return {
+            tasks: [],
         }
-    });
-});
+    },
+    mounted(){
+        axios.get('http://localhost:3000/api/tasks/show.json')
+        .then(response => this.tasks = response.data)
+        .catch(error => console.log(error))
+      },
+  })
 </script>

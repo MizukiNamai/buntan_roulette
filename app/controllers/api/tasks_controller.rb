@@ -1,14 +1,10 @@
 class Api::TasksController < ApplicationController
   def show
-    @tasks = Task.all
+    @tasks = Task.select MAX(created_date) from tables group by page_id;
+binding.pry
     respond_to do |format|
       format.html
       format.json {render json: @tasks}
-    end
-    require 'json'
-    File.open("sample.json", "a") do |file|
-      hash = {"ID" => 1, "title" => "memo", "content" => "1 memo"}
-      JSON.dump(hash, file)
     end
   end
 end
