@@ -4,5 +4,6 @@ FactoryBot.define do
     task { "MyString" }
     status { "MyString" }
     name { "MyString" }
+    user_id { 1 }
   end
 end

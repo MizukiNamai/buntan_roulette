@@ -37,6 +37,7 @@
               <%= f.text_field :name ,class: "name", value: name %>
               <%= f.text_field :status , value: "todo" %>
               <%= f.text_field :page_id , value: @page  %>
+              <%= f.text_field :user_id , value: @user  %>
             <% end%>
           <% end %>
           <%= f.submit "ToDoリストを作成する", class: "btn_todo" %>

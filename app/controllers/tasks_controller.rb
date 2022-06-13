@@ -9,6 +9,7 @@ class TasksController < ApplicationController
       end
     end
     @hiddenform = array
+    @user = current_user.id
     @tasks = Form::TaskCollection.new
   end
 
