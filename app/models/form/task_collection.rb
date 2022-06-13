@@ -15,7 +15,8 @@ class Form::TaskCollection
           task: value['task'],
           name: value['name'],
           status: value['status'],
-          page_id: value['page_id']
+          page_id: value['page_id'],
+          user_id: value['user_id']
         )
       end
     else
