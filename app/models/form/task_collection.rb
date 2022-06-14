@@ -14,7 +14,7 @@ class Form::TaskCollection
         Task.new(
           task: value['task'],
           name: value['name'],
-          status: value['status'],
+          status_id: value['status_id'],
           page_id: value['page_id'],
           user_id: value['user_id']
         )

@@ -1,54 +1,102 @@
 <div id="app">
-  <ul>
-    <li v-for="user in tasks">{{ user.name }}</li>
-  </ul>
-    <ul>
-    <li v-for="user in tasks">{{ user.task }}</li>
-  </ul>
+  <div id="trello-header" class="name">
+    <h1 class="text-sm font-bold">Trello風タスク管理</h1>
+  </div>
+  <div id="trello-content" class="flex">
+    <div
+      v-for="(statuses,index) in displayCategories"
+      :key="index"
+      class= "links"
+      @dragover="dragOverCategory(statuses)"
+      >
+      <div
+      class= "statuses"
+      >
+        {{ statuses.name }}
+        <div
+          v-for="(tasks,index) in statuses.tasks"
+          :key="index"
+          class="task_name"
+          @dragstart="dragTask(tasks)"
+          @dragover.prevent="dragOverTask(tasks)"
+          draggable=true
+          >
+          <p >{{ tasks.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <script>
   new Vue({
     el: "#app",
     data() {
-        return {
-            categories: [
-              {
-                id: 1,
-                name: 'テストA',
-                collapsed: false,
-              },
-              {
-                id: 2,
-                name: 'テストB',
-                collapsed: false,
-              },
-              {
-              id: 3,
-              name: 'テストC',
-              collapsed: false,
-              },
-            ],
-            tasks: [],
-        }
+      return {
+        task:'',
+        statuses: [
+          {
+            id: 1,
+            name: 'ToDo',
+            collapsed: false,
+          },
+          {
+            id: 2,
+            name: 'Doing',
+            collapsed: false,
+          },
+          {
+            id: 3,
+            name: 'Done',
+            collapsed: false,
+          },
+        ],
+        tasks: [],
+      }
+    },
+    mounted(){
+      axios.get('http://localhost:3000/api/tasks/show.json')
+      .then(response => this.tasks = response.data)
+      .catch(error => console.log(error))
     },
     computed: {
       displayCategories() {
-        return this.categories.map((category) => {
+        return this.statuses.map((status) => {
           const tasks = this.tasks.filter(
-            (task) => task.category_id === category.id
+            (task) => task.status_id === status.id
           );
           return {
-            id: category.id,
-            name: category.name,
+            id: status.id,
+            name: status.name,
             tasks,
           };
         });
       },
     },
-    mounted(){
-        axios.get('http://localhost:3000/api/tasks/show.json')
-        .then(response => this.tasks = response.data)
-        .catch(error => console.log(error))
+    methods:{
+      dragTask(tasks){
+        this.task = tasks;
       },
+      dragOverTask(overTask) {
+      if (overTask.id !== this.task.id) {
+        const deleteIndex = this.tasks.findIndex(
+          (task) => task.id === this.task.id
+        );
+        const addIndex = this.tasks.findIndex(
+          (task) => task.id === overTask.id
+        );
+        this.tasks.splice(deleteIndex, 1);
+        this.task.status_id = overTask.status_id;
+        this.tasks.splice(addIndex, 0, this.task);
+      }
+    },
+      dragOverCategory(overCategory) {
+      if (this.task.status_id !== overCategory.id) {
+        const tasks = this.tasks.filter(
+          (task) => task.status_id === overCategory.id
+        );
+        if (tasks.length === 0) this.task.status_id = overCategory.id;
+      }
+    },
+    },
   })
 </script>
