@@ -11,8 +11,39 @@
     el: "#app",
     data() {
         return {
+            categories: [
+              {
+                id: 1,
+                name: 'テストA',
+                collapsed: false,
+              },
+              {
+                id: 2,
+                name: 'テストB',
+                collapsed: false,
+              },
+              {
+              id: 3,
+              name: 'テストC',
+              collapsed: false,
+              },
+            ],
             tasks: [],
         }
+    },
+    computed: {
+      displayCategories() {
+        return this.categories.map((category) => {
+          const tasks = this.tasks.filter(
+            (task) => task.category_id === category.id
+          );
+          return {
+            id: category.id,
+            name: category.name,
+            tasks,
+          };
+        });
+      },
     },
     mounted(){
         axios.get('http://localhost:3000/api/tasks/show.json')
