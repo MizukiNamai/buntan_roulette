@@ -1,13 +1,13 @@
 <div id="app">
   <div id="trello-header" class="name">
-    <h1 class="text-sm font-bold">Trello風タスク管理</h1>
+    <h1 class="text-sm font-bold">ToDoリスト</h1>
   </div>
   <div id="trello-content" class="flex">
     <div
-      v-for="(statuses,index) in displayCategories"
+      v-for="(statuses,index) in displayStatuses"
       :key="index"
       class= "links"
-      @dragover="dragOverCategory(statuses)"
+      @dragover="dragOverStatus(statuses)"
       >
       <div
       class= "statuses"
@@ -15,13 +15,13 @@
         {{ statuses.name }}
         <div
           v-for="(tasks,index) in statuses.tasks"
-          :key="index"
+          :key="`first-${index}`"
           class="task_name"
           @dragstart="dragTask(tasks)"
           @dragover.prevent="dragOverTask(tasks)"
           draggable=true
           >
-          <p >{{ tasks.name}}</p>
+          {{ tasks.name}}
         </div>
       </div>
     </div>
@@ -59,7 +59,7 @@
       .catch(error => console.log(error))
     },
     computed: {
-      displayCategories() {
+      displayStatuses() {
         return this.statuses.map((status) => {
           const tasks = this.tasks.filter(
             (task) => task.status_id === status.id
@@ -88,15 +88,15 @@
         this.task.status_id = overTask.status_id;
         this.tasks.splice(addIndex, 0, this.task);
       }
-    },
-      dragOverCategory(overCategory) {
-      if (this.task.status_id !== overCategory.id) {
+      },
+      dragOverStatus(overStatus) {
+      if (this.task.status_id !== overStatus.id) {
         const tasks = this.tasks.filter(
-          (task) => task.status_id === overCategory.id
+          (task) => task.status_id === overStatus.id
         );
-        if (tasks.length === 0) this.task.status_id = overCategory.id;
+        if (tasks.length === 0) this.task.status_id = overStatus.id;
       }
-    },
+      },
     },
   })
 </script>
