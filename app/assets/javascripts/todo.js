@@ -1,5 +1,8 @@
 window.addEventListener('DOMContentLoaded', function (){
   const todo = document.getElementById('todo');
+  var input = $('.name').map(function(index, element){
+    return element.value;
+  }).get();
 
   todo.addEventListener('click', () => {
   var props = $('#roulettes').css('transform');
@@ -18,8 +21,8 @@ window.addEventListener('DOMContentLoaded', function (){
   var flag=(Math.sign(a));
   var fleg=(Math.sign(b));
   if(flag==1 && fleg== -1) {
-    var input = $('.todolists [name=my-text]').val();
-    console.log(input);
+    $('#tasks__name2').val(input[3]);
+
   }
   })
 });

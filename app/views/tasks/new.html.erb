@@ -30,13 +30,13 @@
       </table>
     <% end %>
     <% if params[:formdate].present?%>
-        <%= form_with model: @tasks, url: tasks_path, class: "todolists", method: :post ,class: "todolist", local: true do |f| %>
+        <%= form_with model: @tasks, url: tasks_path, method: :post ,class: "todolist", local: true do |f| %>
           <%= fields_for 'tasks[]', @tasks do |f| %>
             <% @hiddenform.product.each_slice(2) do |task,name|%>
               <%= f.text_field :task , value: task %>
               <%= f.text_field :name ,class: "name", value: name %>
               <%= f.text_field :status_id , value: "1" %>
-              <%= f.text_field :page_id , value: @page ,name: "my-text" %>
+              <%= f.text_field :page_id , value: @page  %>
               <%= f.text_field :user_id , value: @user  %>
             <% end%>
           <% end %>
