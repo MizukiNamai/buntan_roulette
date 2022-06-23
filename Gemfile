@@ -85,7 +85,6 @@ end
 
 gem 'devise'
 gem 'devise-i18n'
-gem 'devise-i18n-views'
 gem 'font-awesome-sass', '~> 5.15.1'
 gem 'high_voltage'
 gem 'meta-tags'
