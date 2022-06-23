@@ -174,14 +174,78 @@
       color: #515353;
     }
   }
-}
-
-.stop {
-  animation-play-state: paused;
-}
-
-.todolist{
-  position: absolute;
-  top: 600px;
-  left: 400px;
+  .defaulttasks_form{
+    border: 3.5px outset #e7a8a8;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name1]"]{
+    border: 3.5px outset #85d67e;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name2]"]{
+    border: 3.5px outset #e9e625;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name3]"]{
+    border: 3.5px outset #8497e9;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name4]"]{
+    border: 3.5px outset #84dae9;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name5]"]{
+    border: 3.5px outset #acabab;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name6]"]{
+    border: 3.5px outset #f5d784;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name7]"]{
+    border: 3.5px outset #a38ae6;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name8]"]{
+    border: 3.5px outset #e7a9e7;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name9]"]{
+    border: 3.5px outset #e2908a;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name10]"]{
+    border: 3.5px outset #a5cbfd;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  .todolist{
+    position: absolute;
+    top: 470px;
+    left: 400px;
+  }
+  .stop {
+    animation-play-state: paused;
+  }
 }

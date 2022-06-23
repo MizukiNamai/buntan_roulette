@@ -8,7 +8,7 @@ class TasksController < ApplicationController
         binding.eval("#{var} = @hiddenform[#{i}-1]")
       end
     end
-    @user = current_user.id
+    @user = current_user.id if user_signed_in?
     @tasks = Form::TaskCollection.new
   end
 

@@ -1,6 +1,6 @@
 <div id="app">
   <div id="trello-header" class="name">
-    <h1 class="text-sm font-bold">ToDoリスト</h1>
+    <h2 class="text-sm font-bold">ToDoリスト</h2>
   </div>
   <div id="trello-content" class="flex">
     <div
@@ -9,9 +9,7 @@
       class= "links"
       @dragover="dragOverStatus(statuses)"
       >
-      <div
-      class= "statuses"
-      >
+      <div class= "statuses">
         {{ statuses.name }}
         <div
           v-for="(tasks,index) in statuses.tasks"

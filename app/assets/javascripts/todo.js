@@ -3,10 +3,15 @@ window.addEventListener('DOMContentLoaded', function (){
   var input = $('.name').map(function(index, element){
     return element.value;
   }).get();
+
   $('input.name').each(function(i){
     $(this).attr('id','tasks__name' + (i+1));
   });
+  $('.statuses').each(function(i){
+    $(this).attr('id','status__name' + (i+1));
+  });
   var roulettetype = $('p').data('name');
+
   function decimalPart(deg, decDigits){
     var decPart = deg - ((deg >= 0) ? Math.floor(deg) : Math.ceil(deg));
     return decPart.toFixed(decDigits);
