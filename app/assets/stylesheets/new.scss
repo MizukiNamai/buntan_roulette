@@ -249,3 +249,20 @@
     animation-play-state: paused;
   }
 }
+
+.notice {
+  color: white;
+  background-color: blue;
+  text-align: center;
+}
+.alert {
+  color: white;
+  background-color: red;
+  text-align: center;
+}
+
+#error_explanation{
+  color: white;
+  background-color: red;
+  text-align: center;
+}
