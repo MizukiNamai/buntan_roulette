@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', function (){
       }else{
       var tr_form = '' +
         '<tr>'+
-        '<td><input type="text" class="defaulttasks_form" placeholder= "タスク記入(5文字以内)" maxlength= 5 autocomplete="off"></td>' +
+        '<td><input type="text" class="task" placeholder= "タスク記入(5文字以内)" maxlength= 5 autocomplete="off"></td>' +
         '<td><input type="text" class="name" placeholder= "名前記入(5文字以内)" maxlength= 5 autocomplete="off"></td>' +
         '</tr>';
       $(tr_form).appendTo($('table > tbody'));
