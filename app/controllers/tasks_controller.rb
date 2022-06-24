@@ -14,8 +14,12 @@ class TasksController < ApplicationController
 
   def create
     @tasks = Form::TaskCollection.new(tasks_collection_params)
-    @tasks.save
-    redirect_to api_tasks_show_path
+    if @tasks.save
+      redirect_to api_tasks_show_path
+    else
+      flash[:alert] = "このサービスを利用するにはログインしてください"
+      redirect_to new_user_session_path
+    end
   end
 
   private

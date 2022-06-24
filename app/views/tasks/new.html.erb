@@ -35,8 +35,8 @@
             <% @hiddenform.product.each_slice(2) do |task,name|%>
               <%= f.hidden_field :task , value: task %>
               <%= f.hidden_field :name ,class: "name", value: name %>
-              <%= f.text_field :status_id , value: "1" %>
-              <%= f.text_field :page_id , value: @page  %>
+              <%= f.hidden_field :status_id , value: "1" %>
+              <%= f.hidden_field :page_id , value: @page  %>
               <%= f.hidden_field :user_id , value: @user  %>
             <% end%>
           <% end %>
