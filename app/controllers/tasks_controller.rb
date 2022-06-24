@@ -17,7 +17,7 @@ class TasksController < ApplicationController
     if @tasks.save
       redirect_to api_tasks_show_path
     else
-      flash[:alert] = "このサービスを利用するにはログインしてください"
+      flash[:alert] = 'このサービスを利用するにはログインしてください'
       redirect_to new_user_session_path
     end
   end

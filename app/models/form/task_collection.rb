@@ -26,10 +26,10 @@ class Form::TaskCollection
 
   def save
     Task.transaction do
-      self.products.map(&:save!)
+      products.map(&:save!)
     end
-      return true
-    rescue => e
-      return false
+    true
+  rescue StandardError
+    false
   end
 end
