@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     get 'tasks/show'
   end
-  devise_for :users, controllers: {
+  devise_for :users,controllers: {
     registrations: 'users/registrations',
     sessions: 'users/sessions'
   }
