@@ -14,33 +14,35 @@
     <%= form_with  class: "todoform", method: :get, scope: :formdate, local: true do |f| %>
       <table>
         <tbody>
-          <% 1.step(7, 2) do |num| %>
+          <% (1..4).each do |num| %>
             <tr>
-              <td><%= f.text_field :task ,name: "formdate[form#{num}]", placeholder: "タスク記入(5文字以内）" , maxlength: 5, size: 20 ,autocomplete:"off"%></td>
-              <td><%= f.text_field :name ,name: "formdate[form#{num+1}]", placeholder: "名前記入(5文字以内）" , maxlength: 5, size: 20 ,autocomplete:"off"%></td>
+              <td><%= f.text_field :task ,name: "formdate[task#{num}]", placeholder: "タスク記入(5文字以内）" ,class: "defaulttasks_form", maxlength: 5, size: 20 ,autocomplete:"off"%></td>
+              <td><%= f.text_field :name ,name: "formdate[name#{num}]", placeholder: "名前記入(5文字以内）" , maxlength: 5, size: 20 ,autocomplete:"off"%></td>
             </tr>
           <% end %>
         </tbody>
         <tfoot>
           <tr>
-            <td ><button id="addbtn" type="button" >追加</button></td>
+            <td ><button id="btn_add" type="button" >追加</button></td>
             <td ><%= f.submit "反映", class: "formbtn" %></td>
           </tr>
         </tfoot>
       </table>
-
     <% end %>
-    <%= form_with model: @tasks, url: tasks_path, class: "todolists", method: :post ,class: "todolist", local: true do |f| %>
-    <% 4.times do%>
-        <%= fields_for 'tasks[]', @tasks do |f| %>
-          <%= f.text_field :task , value: @form1  %>
-          <%= f.text_field :name , value: @form5  %>
-          <%= f.text_field :status , value: "todo"  %>
-          <%= f.text_field :roulette_id , value: "4"  %>
+    <% if params[:formdate].present?%>
+        <%= form_with model: @tasks, url: tasks_path, method: :post ,class: "todolist", local: true do |f| %>
+          <%= fields_for 'tasks[]', @tasks do |f| %>
+            <% @hiddenform.product.each_slice(2) do |task,name|%>
+              <%= f.hidden_field :task , value: task %>
+              <%= f.hidden_field :name ,class: "name", value: name %>
+              <%= f.hidden_field :status_id , value: "1" %>
+              <%= f.hidden_field :page_id , value: @page  %>
+              <%= f.hidden_field :user_id , value: @user  %>
+            <% end%>
+          <% end %>
+          <%= f.submit "ToDoリストを作成する", class: "btn_todo" %>
         <% end%>
-      <%= f.submit "ToDoリストを作成する", class: "btn_todo" %>
-    <% end %>
-  <% end%>
+    <% end%>
     <div class="roulettebutton">
       <div class="tow_buttons">
         <input type="button" value="スタート", id= "start", class= "myButton">

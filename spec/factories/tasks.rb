@@ -1,8 +1,9 @@
 FactoryBot.define do
   factory :task do
-    roulette_id { 1 }
+    page { nil }
     task { 'MyString' }
-    status { 'MyString' }
+    status_id { 1 }
     name { 'MyString' }
+    user_id { 1 }
   end
 end

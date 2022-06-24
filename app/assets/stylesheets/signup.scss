@@ -1,13 +1,27 @@
 .field{
   text-align: center;
+  margin : 30px;
 }
+
 .actions{
   text-align: center;
 }
 .links{
   text-align: center;
 }
-
+.loginactions{
+  text-align: center;
+  margin : 10px ;
+}
+.form{
+  border: 3.5px solid #5d83e9;
+  background-color: #d6ebfc;
+  border-radius: 0.25em;
+  width: 400px;
+}
+.login_maillabel{
+  text-align: left;
+}
 .myButton {
   box-shadow:inset 0px 1px 0px 0px #bbdaf7;
   background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
@@ -32,6 +46,11 @@
 h2{
   text-align: center;
 }
-.links{
+.loginlink{
   text-align: center;
+  margin : 10px;
+}
+.passlink{
+  text-align: center;
+  margin : 10px;
 }

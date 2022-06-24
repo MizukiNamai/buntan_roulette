@@ -6,11 +6,7 @@
       <li><h5>フォームの上から４つまでにタスクを記入すると外円の赤い部分に反映され、フォームの下から４つまでに名前を記入すると中円の部分に反映されます</h5></li>
       <li><h5>「完了」ボタンを押してフォームの内容を反映させたあと、スタートボタンを押すとルーレットが回転しストップボタンで停止します</h5></li>
       <%= image_tag 'howto.jpg',:size => '500x250' %>
-      <% if user_signed_in? %>
       <li><%= button_to "ルーレットを回す", new_page_path, {method: :get, class: "myButton"} %></li>
-      <% else %>
-      <li><%= button_to "ルーレットを回す", pages_choice_path, {method: :get, class: "myButton"} %></li>
-      <% end %>
     </ul>
   </div>
 </div>

@@ -5,17 +5,14 @@ class Form::TaskCollection
   extend ActiveModel::Translation
   include ActiveModel::AttributeMethods
   include ActiveModel::Validations
-  TASK_COUNT = 4
+  TASK_COUNT = 10
   attr_accessor :products
 
   def initialize(attributes = {})
     if attributes.present?
       self.products = attributes.map do |value|
         Task.new(
-          task: value['task'],
-          name: value['name'],
-          status: value['status'],
-          roulette_id: value['roulette_id']
+          task: value['task'], name: value['name'], status_id: value['status_id'], page_id: value['page_id'], user_id: value['user_id']
         )
       end
     else
@@ -31,5 +28,8 @@ class Form::TaskCollection
     Task.transaction do
       products.map(&:save!)
     end
+    true
+  rescue StandardError
+    false
   end
 end

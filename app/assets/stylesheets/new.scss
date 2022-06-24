@@ -24,8 +24,8 @@
   }
   .btn_todo{
     position: absolute;
-    top: 537px;
-    left: 1200px;
+    top: 120px;
+    left: 512px;
     box-shadow:inset 0px 1px 0px 0px #bbdaf7;
     background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
     background-color:#79bbff;
@@ -45,7 +45,7 @@
     background-color:#378de5;
   }
   }
-  #addbtn{
+  #btn_add{
     box-shadow:inset 0px 1px 0px 0px #bbdaf7;
     background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
     background-color:#79bbff;
@@ -89,7 +89,7 @@
   }
   .todoform{
     position: relative;
-    top: 100px;
+    bottom: 170px;
     left: 900px;
   }
   .taskform1{
@@ -174,14 +174,95 @@
       color: #515353;
     }
   }
+  .defaulttasks_form{
+    border: 3.5px outset #e7a8a8;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name1]"]{
+    border: 3.5px outset #85d67e;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name2]"]{
+    border: 3.5px outset #e9e625;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name3]"]{
+    border: 3.5px outset #8497e9;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name4]"]{
+    border: 3.5px outset #84dae9;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name5]"]{
+    border: 3.5px outset #acabab;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name6]"]{
+    border: 3.5px outset #f5d784;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name7]"]{
+    border: 3.5px outset #a38ae6;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name8]"]{
+    border: 3.5px outset #e7a9e7;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name9]"]{
+    border: 3.5px outset #e2908a;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  input[name="formdate[name10]"]{
+    border: 3.5px outset #a5cbfd;
+    border-radius: 0.25em;
+    width: 13em;
+    line-height: 1.7;
+  }
+  .todolist{
+    position: absolute;
+    top: 470px;
+    left: 400px;
+  }
+  .stop {
+    animation-play-state: paused;
+  }
 }
 
-.stop {
-  animation-play-state: paused;
+.notice {
+  color: white;
+  background-color: blue;
+  text-align: center;
+}
+.alert {
+  color: white;
+  background-color: red;
+  text-align: center;
 }
 
-.todolist{
-  position: absolute;
-  top: 400px;
-  left: 400px;
+#error_explanation{
+  color: white;
+  background-color: red;
+  text-align: center;
 }

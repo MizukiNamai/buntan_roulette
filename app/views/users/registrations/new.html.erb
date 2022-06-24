@@ -5,20 +5,20 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email,class: "form", autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> 文字以上)</em>
+    <em>(半角<%= @minimum_password_length %> 文字~12文字で英大文字・英小文字・数字を各1字以上含む)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password,class: "form", autocomplete: "new-password" %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation,class: "form", autocomplete: "new-password" %>
   </div>
 
   <div class="actions">
