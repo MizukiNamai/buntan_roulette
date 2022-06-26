@@ -1,14 +1,20 @@
+* {
+  box-sizing: border-box;
+}
 header {
-    position: flex-end;
+    position: fixed;
     background-image: image-url("top.jpg");
     background-size: contain;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 999;
+    z-index: 10;
     height: 70px;
     width: 100%;
     margin: 0 auto;
+    top: 0;
+    display: right;
+    padding: 0px 15px;
 }
 
 .header-background{
@@ -35,4 +41,102 @@ header ul {
 
 .header_link:hover {
     color:rgb(0, 0, 0)
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: #f0f8ff;
+}
+
+nav {
+  margin: 0 0 0 auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  padding: 0 20px;
+}
+
+.sm {
+  display: none;
+}
+
+
+
+@media (max-width: 600px) {
+  .pc {
+    display: none;
+  }
+
+  #hamburger {
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 60px;
+    width: 60px;
+  }
+
+  .icon span {
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    transition: ease 0.75s;
+  }
+
+  .icon span:nth-of-type(1) {
+    top: 16px;
+  }
+  .icon span:nth-of-type(2) {
+    top: 28px;
+  }
+  .icon span:nth-of-type(3) {
+    bottom: 16px;
+  }
+
+  .close span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 28px;
+  }
+
+  .close span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .close span:nth-of-type(3) {
+      transform: rotate(-45deg);
+      top: 28px;
+  }
+
+  .sm {
+      top: 60px;
+      left: 0px;
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      background-color: rgba(81, 141, 231, 0.9);
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  a {
+    text-align: center;
+    border-top: solid 0.5px rgba(255, 255, 255, 0.6);
+  }
 }

@@ -16,7 +16,7 @@
         <tbody>
           <% (1..4).each do |num| %>
             <tr>
-              <td><%= f.text_field :task ,name: "formdate[task#{num}]", placeholder: "タスク記入(5文字以内）" ,class: "task", maxlength: 5, size: 20 ,autocomplete:"off"%></td>
+              <td><%= f.text_field :task ,name: "formdate[task#{num}]", placeholder: "タスク記入(5文字以内）" ,class: "defaulttasks_form", maxlength: 5, size: 20 ,autocomplete:"off"%></td>
               <td><%= f.text_field :name ,name: "formdate[name#{num}]", placeholder: "名前記入(5文字以内）" , maxlength: 5, size: 20 ,autocomplete:"off"%></td>
             </tr>
           <% end %>
