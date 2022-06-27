@@ -43,23 +43,18 @@ footer li {
 
 .copywrite{
   margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 600px) {
-  footer ul {
-    justify-content:flex-start;
-    position: flex;
-    color:rgba(10, 10, 10, 0.5);
-    list-style: none;
-    margin-right: 0;
+  .footer-container{
+    font-size: 3px;
   }
-  footer li {
-    font-size: 13px;
-    min-width: 100px;
-  }
-
-  .footer_link {
-    font-size: 5px;
+  .footer_link{
     color:rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
   }
 }
