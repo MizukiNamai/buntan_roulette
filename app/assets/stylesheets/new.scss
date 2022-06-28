@@ -44,7 +44,7 @@
   }
   .todoform{
     position: relative;
-    bottom: 70px;
+    bottom: 130px;
     transform: scale(0.7);
   }
   .todolist{
@@ -218,11 +218,13 @@ input[name="formdate[name10]"]{
   color: white;
   background-color: rgb(41, 41, 240);
   text-align: center;
+  margin-top: 80px;
 }
 .alert {
   color: white;
   background-color: rgb(255, 58, 58);
   text-align: center;
+  margin-top: 80px;
 }
 
 #error_explanation{
