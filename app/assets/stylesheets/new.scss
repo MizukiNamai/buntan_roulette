@@ -3,248 +3,20 @@
     position: absolute;
     top: 360px;
     left: 150px;
-    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-    background-color:#79bbff;
-    border-radius:6px;
-    border:1px solid #84bbf3;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial,sans-serif;
-    font-size:15px;
-    font-weight:bold;
-    padding:6px 24px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #438ed9;
-    &:hover {
-    background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-    background-color:#378de5;
   }
-  }
-  .btn_todo{
+  #btn_todo{
     position: absolute;
     top: 120px;
     left: 512px;
-    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-    background-color:#79bbff;
-    border-radius:6px;
-    border:1px solid #84bbf3;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    padding:6px 24px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #438ed9;
-    &:hover {
-    background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-    background-color:#378de5;
   }
-  }
-  #btn_add{
-    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-    background-color:#79bbff;
-    border-radius:6px;
-    border:1px solid #84bbf3;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    padding:6px 24px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #438ed9;
-    &:hover {
-    background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-    background-color:#378de5;
-  }
-  }
-    .formbtn{
+  #formbtn{
     position: relative;
     right: 50px;
-    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-    background-color:#79bbff;
-    border-radius:6px;
-    border:1px solid #84bbf3;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    padding:6px 24px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #438ed9;
-    &:hover {
-    background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-    background-color:#378de5;
-  }
   }
   .todoform{
     position: relative;
     bottom: 170px;
     left: 900px;
-  }
-  .taskform1{
-    input[type="text"]{
-      width: 200px;
-      height: 30px;
-      font-size: 14px;
-      text-align: center;
-      border: 4px outset #e7a8a8;
-      border-radius: 5px 5px 5px 5px;
-    }
-    ::placeholder{
-      padding: 5px 5px;
-      color: #515353;
-    }
-  }
-  .nameform1{
-    position: absolute;
-    top : 0px;
-    left: 270px;
-    input[type="text"]{
-      width: 200px;
-      height: 30px;
-      font-size: 14px;
-      text-align: center;
-      border: 4px outset #85d67e;
-      border-radius: 5px 5px 5px 5px;
-    }
-    ::placeholder{
-      padding: 5px 5px;
-      color: #515353;
-    }
-  }
-  .nameform2{
-    position: absolute;
-    top : 40px;
-    left: 270px;
-    input[type="text"]{
-      width: 200px;
-      height: 30px;
-      font-size: 14px;
-      text-align: center;
-      border: 4px outset #e9e625;
-      border-radius: 5px 5px 5px 5px;
-    }
-    ::placeholder{
-      padding: 5px 5px;
-      color: #515353;
-    }
-  }
-  .nameform3{
-    position: absolute;
-    top : 80px;
-    left: 270px;
-    input[type="text"]{
-      width: 200px;
-      height: 30px;
-      font-size: 14px;
-      text-align: center;
-      border: 4px outset #8497e9;
-      border-radius: 5px 5px 5px 5px;
-    }
-    ::placeholder{
-      padding: 5px 5px;
-      color: #515353;
-    }
-  }
-  .nameform4{
-    position: absolute;
-    top : 120px;
-    left: 270px;
-    input[type="text"]{
-      width: 200px;
-      height: 30px;
-      font-size: 14px;
-      text-align: center;
-      border-radius: 5px 5px 5px 5px;
-      border: 4px outset #84dae9;
-    }
-    ::placeholder{
-      padding: 5px 5px;
-      color: #515353;
-    }
-  }
-  .defaulttasks_form{
-    border: 3.5px outset #e7a8a8;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  .task{
-    border: 3.5px outset #e7a8a8;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  input[name="formdate[name1]"]{
-    border: 3.5px outset #85d67e;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  input[name="formdate[name2]"]{
-    border: 3.5px outset #e9e625;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  input[name="formdate[name3]"]{
-    border: 3.5px outset #8497e9;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  input[name="formdate[name4]"]{
-    border: 3.5px outset #84dae9;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  input[name="formdate[name5]"]{
-    border: 3.5px outset #acabab;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  input[name="formdate[name6]"]{
-    border: 3.5px outset #f5d784;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  input[name="formdate[name7]"]{
-    border: 3.5px outset #a38ae6;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  input[name="formdate[name8]"]{
-    border: 3.5px outset #e7a9e7;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  input[name="formdate[name9]"]{
-    border: 3.5px outset #e2908a;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
-  }
-  input[name="formdate[name10]"]{
-    border: 3.5px outset #a5cbfd;
-    border-radius: 0.25em;
-    width: 13em;
-    line-height: 1.7;
   }
   .todolist{
     position: absolute;
@@ -255,7 +27,196 @@
     animation-play-state: paused;
   }
 }
-
+@media (max-width: 600px) {
+  .btn_reflection{
+    position: absolute;
+    top: 360px;
+    left: 150px;
+  }
+  #btn_todo{
+    position: absolute;
+    top: 120px;
+    left: 512px;
+  }
+  #formbtn{
+    position: relative;
+    right: 50px;
+  }
+  .todoform{
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+    transform: scale(0.7);
+  }
+  .todolist{
+    position: absolute;
+    top: 470px;
+    left: 400px;
+  }
+  .tow_buttons{
+    position: relative;
+    bottom: 120px;
+    right: 60px;
+    transform: scale(0.8);
+  }
+}
+.roulette-container{
+  margin-top: 100px;
+}
+.taskform1{
+  input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border: 4px outset #e7a8a8;
+    border-radius: 5px 5px 5px 5px;
+  }
+  ::placeholder{
+    padding: 5px 5px;
+    color: #515353;
+  }
+}
+.nameform1{
+  position: absolute;
+  top : 0px;
+  left: 270px;
+  input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border: 4px outset #85d67e;
+    border-radius: 5px 5px 5px 5px;
+  }
+  ::placeholder{
+    padding: 5px 5px;
+    color: #515353;
+  }
+}
+.nameform2{
+  position: absolute;
+  top : 40px;
+  left: 270px;
+  input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border: 4px outset #e9e625;
+    border-radius: 5px 5px 5px 5px;
+  }
+  ::placeholder{
+    padding: 5px 5px;
+    color: #515353;
+  }
+}
+.nameform3{
+  position: absolute;
+  top : 80px;
+  left: 270px;
+  input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border: 4px outset #8497e9;
+    border-radius: 5px 5px 5px 5px;
+  }
+  ::placeholder{
+    padding: 5px 5px;
+    color: #515353;
+  }
+}
+.nameform4{
+  position: absolute;
+  top : 120px;
+  left: 270px;
+  input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    border: 4px outset #84dae9;
+  }
+  ::placeholder{
+    padding: 5px 5px;
+    color: #515353;
+  }
+}
+.defaulttasks_form{
+  border: 3.5px outset #e7a8a8;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+.task{
+  border: 3.5px outset #e7a8a8;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+input[name="formdate[name1]"]{
+  border: 3.5px outset #85d67e;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+input[name="formdate[name2]"]{
+  border: 3.5px outset #e9e625;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+input[name="formdate[name3]"]{
+  border: 3.5px outset #8497e9;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+input[name="formdate[name4]"]{
+  border: 3.5px outset #84dae9;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+input[name="formdate[name5]"]{
+  border: 3.5px outset #acabab;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+input[name="formdate[name6]"]{
+  border: 3.5px outset #f5d784;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+input[name="formdate[name7]"]{
+  border: 3.5px outset #a38ae6;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+input[name="formdate[name8]"]{
+  border: 3.5px outset #e7a9e7;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+input[name="formdate[name9]"]{
+  border: 3.5px outset #e2908a;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
+input[name="formdate[name10]"]{
+  border: 3.5px outset #a5cbfd;
+  border-radius: 0.25em;
+  width: 13em;
+  line-height: 1.7;
+}
 .notice {
   color: white;
   background-color: rgb(41, 41, 240);

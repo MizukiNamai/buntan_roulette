@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function (){
   start.addEventListener('click', () => {
       if(!move) {
         move = true;
-        roulettetype = $('span').data('name');
+        roulettetype = $('em').data('name');
           if (roulettetype== "4"){
             speed = 90;
           }else if(roulettetype== "5"){
