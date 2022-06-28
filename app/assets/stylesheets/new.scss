@@ -34,9 +34,9 @@
     left: 150px;
   }
   #btn_todo{
-    position: absolute;
-    top: 120px;
-    left: 512px;
+    position: relative;
+    bottom: 60px;
+    left: 70px;
   }
   #formbtn{
     position: relative;
@@ -44,19 +44,16 @@
   }
   .todoform{
     position: relative;
-    bottom: 100px;
-    right: 50px;
+    bottom: 70px;
     transform: scale(0.7);
   }
   .todolist{
     position: absolute;
     top: 470px;
-    left: 400px;
   }
   .tow_buttons{
     position: relative;
     bottom: 120px;
-    right: 60px;
     transform: scale(0.8);
   }
 }
