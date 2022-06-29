@@ -1,3 +1,4 @@
+@media screen and (min-width: 1366px) {
 .text{
   text-align: center;
 }
@@ -13,6 +14,7 @@
   font-size: 0.875rem;
   font-weight: 700;
 }
+}
 .task_name{
   margin: 0.5rem;
   padding: 0.5rem;
@@ -26,4 +28,22 @@
 }
 #status__name3{
   background-color: #adf7cc;
+}
+
+@media (max-width: 600px) {
+  .text{
+    text-align: center;
+  }
+  .flex{
+    display: block;
+  }
+  .links{
+    max-width: 450px;
+  }
+  .statuses{
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
 }
