@@ -209,3 +209,93 @@
     transform: rotate(340deg);
   }
 }
+@media (max-width: 600px) {
+  .tenstripe_f1{
+    position: absolute;
+    top: 116px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(54deg);
+  }
+  .tenstripe_f2{
+    position: absolute;
+    top: 116px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .tenstripe_f3{
+    position: absolute;
+    top: 116px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(125deg);
+  }
+  .tenstripe_f4{
+    position: absolute;
+    top: 116px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(162deg);
+  }
+  .tenstripe_f5{
+    position: absolute;
+    top: 116px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(197deg);
+  }
+  .top_roulettes10{
+    transform: rotate(0);
+    height: 160px;
+    width: 160px;
+    background-image: conic-gradient(#b2f1ac 0% 10%, #fffd95 10% 20%,#8497e9 20% 30%,#84dae9 30% 40%, #d9d9d9 40% 50%,#fade92  50% 60%,#b89eff 60% 70%,#ffc1ff  70% 80%,#ffada7  80% 90%,#c9ddf8 90% 100%);
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+  }
+  .tenstripe_t1{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(54deg);
+  }
+  .tenstripe_t2{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .tenstripe_t3{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(125deg);
+  }
+  .tenstripe_t4{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(162deg);
+  }
+  .tenstripe_t5{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(197deg);
+  }
+}
