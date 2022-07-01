@@ -377,72 +377,91 @@
   }
   .tenform_name1{
     position: absolute;
-    bottom: 125px;
+    bottom: 115px;
     left: 80px;
     transform: rotate(20deg);
-    font-size: 6px;
+    font-size: 4px;
+    width: 30px;
+    word-wrap: break-word;
   }
   .tenform_name2{
     position: absolute;
-    top: 26px;
+    top: 23px;
     left: 113px;
     transform: rotate(55deg);
     font-size: 6px;
+    width: 30px;
+    word-wrap: break-word;
   }
   .tenform_name3{
     position: absolute;
-    top: 60px;
+    top: 63px;
     left: 120px;
     transform: rotate(90deg);
     font-size: 6px;
+    width: 30px;
+    word-wrap: break-word;
   }
   .tenform_name4{
     position: absolute;
-    top: 103px;
-    left: 106px;
+    top: 96px;
+    left: 110px;
     transform: rotate(125deg);
     font-size: 6px;
+    width: 30px;
+    word-wrap: break-word;
   }
   .tenform_name5{
     position: absolute;
-    top: 133px;
-    left: 79px;
+    top: 118px;
+    left: 82px;
     transform: rotate(160deg);
     font-size: 6px;
-    overflow-wrap: normal;
+    width: 30px;
+    word-wrap: break-word;
   }
   .tenform_name6{
     position: absolute;
-    top: 120px;
-    left: 60px;
+    top: 110px;
+    left: 45px;
     transform: rotate(200deg);
     font-size: 6px;
+    width: 30px;
+    word-wrap: break-word;
   }
   .tenform_name7{
     position: absolute;
-    top: 90px;
-    right: 116px;
+    top: 98px;
+    right: 110px;
     transform: rotate(235deg);
     font-size: 6px;
+    width: 30px;
+    word-wrap: break-word;
   }
   .tenform_name8{
     position: absolute;
-    bottom: 60px;
-    right: 140px;
+    bottom: 62px;
+    right: 120px;
     transform: rotate(270deg);
     font-size: 6px;
+    width: 30px;
+    word-wrap: break-word;
   }
   .tenform_name9{
     position: absolute;
-    top: 30px;
-    left: 20px;
+    top: 25px;
+    left: 18px;
     transform: rotate(305deg);
     font-size: 6px;
+    width: 30px;
+    word-wrap: break-word;
   }
   .tenform_name10{
     position: absolute;
-    left: 60px;
+    left: 48px;
     transform: rotate(340deg);
     font-size: 6px;
+    width: 30px;
+    word-wrap: break-word;
   }
 }
