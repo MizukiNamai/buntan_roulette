@@ -1,40 +1,40 @@
 @media screen and (min-width: 1366px) {
   .tenstripe_f1{
     position: absolute;
-    top: 222px;
-    width: 446px;
+    top: 220px;
+    width: 442px;
     height: 4px;
     background-color: #000000;
     transform: rotate(54deg);
   }
   .tenstripe_f2{
     position: absolute;
-    top: 222px;
-    width: 446px;
+    top: 220px;
+    width: 442px;
     height: 4px;
     background-color: #000000;
     transform: rotate(90deg);
   }
   .tenstripe_f3{
     position: absolute;
-    top: 222px;
-    width: 446px;
+    top: 220px;
+    width: 442px;
     height: 4px;
     background-color: #000000;
     transform: rotate(125deg);
   }
   .tenstripe_f4{
     position: absolute;
-    top: 222px;
-    width: 446px;
+    top: 220px;
+    width: 442px;
     height: 4px;
     background-color: #000000;
     transform: rotate(162deg);
   }
   .tenstripe_f5{
     position: absolute;
-    top: 222px;
-    width: 446px;
+    top: 220px;
+    width: 442px;
     height: 4px;
     background-color: #000000;
     transform: rotate(197deg);
@@ -91,7 +91,7 @@
   .tenform_task1{
     position: absolute;
     top: 20px;
-    left: 250px;
+    left: 235px;
     transform: rotate(20deg);
   }
   .tenform_task2{
@@ -121,7 +121,7 @@
   .tenform_task6{
     position: absolute;
     top: 360px;
-    left: 140px;
+    left: 125px;
     transform: rotate(200deg);
   }
   .tenform_task7{
@@ -145,68 +145,76 @@
   .tenform_task10{
     position: absolute;
     top: 20px;
-    left: 140px;
+    left: 125px;
     transform: rotate(340deg);
   }
   .tenform_name1{
     position: absolute;
     top: 5px;
-    left: 135px;
+    left: 130px;
     transform: rotate(20deg);
+    font-size: 12px;
   }
   .tenform_name2{
     position: absolute;
     top: 40px;
     left: 180px;
     transform: rotate(55deg);
+    font-size: 12px;
   }
   .tenform_name3{
     position: absolute;
-    top: 90px;
-    left: 190px;
+    top: 102px;
+    left: 200px;
     transform: rotate(90deg);
+    font-size: 12px;
   }
   .tenform_name4{
     position: absolute;
     top: 160px;
     left: 185px;
     transform: rotate(125deg);
+    font-size: 12px;
   }
   .tenform_name5{
     position: absolute;
     top: 190px;
-    left: 130px;
+    left: 126px;
     transform: rotate(160deg);
+    font-size: 12px;
   }
   .tenform_name6{
     position: absolute;
     top: 190px;
     left: 70px;
     transform: rotate(200deg);
+    font-size: 12px;
   }
   .tenform_name7{
     position: absolute;
-    top: 150px;
-    left: 20px;
+    top: 164px;
+    left: 18px;
     transform: rotate(235deg);
+    font-size: 12px;
   }
   .tenform_name8{
     position: absolute;
-    top: 100px;
-    left: 2px;
+    top: 102px;
     transform: rotate(270deg);
+    font-size: 12px;
   }
   .tenform_name9{
     position: absolute;
-    top: 40px;
-    left: 20px;
+    top: 43px;
+    left: 17px;
     transform: rotate(305deg);
+    font-size: 12px;
   }
   .tenform_name10{
     position: absolute;
-    top: 0px;
-    left: 70px;
+    left: 65px;
     transform: rotate(340deg);
+    font-size: 12px;
   }
 }
 @media (max-width: 600px) {
@@ -300,142 +308,141 @@
   }
   .tenform_task1{
     position: absolute;
-    top: 20px;
-    left: 250px;
+    bottom: 200px;
+    left: 130px;
     transform: rotate(20deg);
-    font-size: 14px;
+    font-size: 10px;
   }
   .tenform_task2{
     position: absolute;
-    top: 80px;
-    left: 340px;
+    top: 40px;
+    left: 185px;
     transform: rotate(55deg);
-    font-size: 14px;
+    font-size: 10px;
   }
   .tenform_task3{
     position: absolute;
-    top: 190px;
-    left: 360px;
+    top: 95px;
+    left: 198px;
     transform: rotate(90deg);
-    font-size: 14px;
+    font-size: 10px;
   }
   .tenform_task4{
     position: absolute;
-    top: 290px;
-    left: 340px;
+    top: 155px;
+    left: 180px;
     transform: rotate(130deg);
-    font-size: 14px;
+    font-size: 10px;
   }
   .tenform_task5{
     position: absolute;
-    top: 360px;
-    left: 240px;
+    top: 200px;
+    left: 125px;
     transform: rotate(160deg);
-    font-size: 14px;
+    font-size: 10px;
   }
   .tenform_task6{
     position: absolute;
-    top: 360px;
-    left: 140px;
+    top: 200px;
+    left: 68px;
     transform: rotate(200deg);
-    font-size: 14px;
+    font-size: 10px;
   }
   .tenform_task7{
     position: absolute;
-    top: 280px;
-    left: 50px;
+    top: 160px;
+    left: 17px;
     transform: rotate(235deg);
-    font-size: 14px;
+    font-size: 10px;
   }
   .tenform_task8{
     position: absolute;
-    top: 190px;
-    left: 20px;
+    top: 105px;
     transform: rotate(270deg);
-    font-size: 14px;
+    font-size: 10px;
   }
   .tenform_task9{
     position: absolute;
-    top: 90px;
-    left: 30px;
+    top: 50px;
+    left: 15px;
     transform: rotate(305deg);
-    font-size: 14px;
+    font-size: 10px;
   }
   .tenform_task10{
     position: absolute;
-    top: 20px;
-    left: 140px;
+    top: 6px;
+    left: 65px;
     transform: rotate(340deg);
-    font-size: 14px;
+    font-size: 10px;
   }
   .tenform_name1{
     position: absolute;
-    top: 5px;
-    left: 135px;
+    bottom: 125px;
+    left: 80px;
     transform: rotate(20deg);
-    font-size: 14px;
+    font-size: 6px;
   }
   .tenform_name2{
     position: absolute;
-    top: 40px;
-    left: 180px;
+    top: 26px;
+    left: 113px;
     transform: rotate(55deg);
-    font-size: 14px;
+    font-size: 6px;
   }
   .tenform_name3{
     position: absolute;
-    top: 90px;
-    left: 190px;
+    top: 60px;
+    left: 120px;
     transform: rotate(90deg);
-    font-size: 14px;
+    font-size: 6px;
   }
   .tenform_name4{
     position: absolute;
-    top: 160px;
-    left: 185px;
+    top: 103px;
+    left: 106px;
     transform: rotate(125deg);
-    font-size: 14px;
+    font-size: 6px;
   }
   .tenform_name5{
     position: absolute;
-    top: 190px;
-    left: 130px;
+    top: 133px;
+    left: 79px;
     transform: rotate(160deg);
-    font-size: 14px;
+    font-size: 6px;
+    overflow-wrap: normal;
   }
   .tenform_name6{
     position: absolute;
-    top: 190px;
-    left: 70px;
+    top: 120px;
+    left: 60px;
     transform: rotate(200deg);
-    font-size: 14px;
+    font-size: 6px;
   }
   .tenform_name7{
     position: absolute;
-    top: 150px;
-    left: 20px;
+    top: 90px;
+    right: 116px;
     transform: rotate(235deg);
-    font-size: 14px;
+    font-size: 6px;
   }
   .tenform_name8{
     position: absolute;
-    top: 100px;
-    left: 2px;
+    bottom: 60px;
+    right: 140px;
     transform: rotate(270deg);
-    font-size: 14px;
+    font-size: 6px;
   }
   .tenform_name9{
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 20px;
     transform: rotate(305deg);
-    font-size: 14px;
+    font-size: 6px;
   }
   .tenform_name10{
     position: absolute;
-    top: 0px;
-    left: 70px;
+    left: 60px;
     transform: rotate(340deg);
-    font-size: 14px;
+    font-size: 6px;
   }
 }
