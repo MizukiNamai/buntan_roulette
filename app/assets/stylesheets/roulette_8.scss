@@ -41,34 +41,32 @@
   }
   .eightstripe_t1{
     position: absolute;
-    top: 126px;
-    width: 256px;
+    top: 124px;
+    width: 252px;
     height: 2px;
     background-color: #000000;
     transform: rotate(45deg);
   }
   .eightstripe_t2{
     position: absolute;
-    top: 126px;
-    left: 1px;
-    width: 256px;
+    top: 125px;
+    width: 252px;
     height: 2px;
     background-color: #000000;
     transform: rotate(90deg);
   }
   .eightstripe_t3{
     position: absolute;
-    top: 127px;
-    left: 1px;
-    width: 256px;
+    top: 126px;
+    width: 252px;
     height: 2px;
     background-color: #000000;
     transform: rotate(135deg);
   }
   .eightstripe_t4{
     position: absolute;
-    top: 127px;
-    width: 256px;
+    top: 125px;
+    width: 252px;
     height: 2px;
     background-color: #000000;
     transform: rotate(180deg);
@@ -78,6 +76,7 @@
     top: 20px;
     left: 250px;
     transform: rotate(30deg);
+    font-size: 15px;
   }
   .eightform_task2{
     position: absolute;
@@ -125,48 +124,242 @@
     position: absolute;
     top: 10px;
     left: 135px;
-    transform: rotate(30deg)
+    transform: rotate(30deg);
+    font-size: 15px;
   }
   .eightform_name2{
     position: absolute;
     top: 60px;
     left: 180px;
-    transform: rotate(65deg)
+    transform: rotate(65deg);
+    font-size: 15px;
   }
   .eightform_name3{
     position: absolute;
-    top: 140px;
+    top: 130px;
     left: 190px;
     transform: rotate(120deg);
+    font-size: 15px;
   }
   .eightform_name4{
     position: absolute;
     top: 190px;
     left: 130px;
     transform: rotate(160deg);
+    font-size: 15px;
   }
   .eightform_name5{
     position: absolute;
     top: 190px;
     left: 60px;
     transform: rotate(210deg);
+    font-size: 15px;
   }
   .eightform_name6{
     position: absolute;
     top: 130px;
-    left: 15px;
+    left: 5px;
     transform: rotate(250deg);
+    font-size: 15px;
   }
   .eightform_name7{
     position: absolute;
     top: 60px;
-    left: 15px;
+    left: 5px;
     transform: rotate(295deg);
+    font-size: 15px;
   }
   .eightform_name8{
     position: absolute;
-    top: 15px;
-    left: 65px;
+    top: 10px;
+    left: 55px;
     transform: rotate(335deg);
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .eightstripe_f1{
+    position: absolute;
+    top: 117px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+  .eightstripe_f2{
+    position: absolute;
+    top: 117px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .eightstripe_f3{
+    position: absolute;
+    top: 117px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(135deg);
+  }
+  .eightstripe_f4{
+    position: absolute;
+    top: 117px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(180deg);
+  }
+  .top_roulettes8{
+    transform: rotate(0);
+    height: 160px;
+    width: 160px;
+    background-image: conic-gradient(#b2f1ac 0% 12.5%,#fffd95 12.5% 25%, #8497e9 25% 37.5%, #84dae9  37.5% 50%, #d9d9d9 50% 62.5%,#fade92 62.5% 75%,#b89eff 75% 87.5%,#ffc1ff 87.5% 100%);
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+  }
+  .eightstripe_t1{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+  .eightstripe_t2{
+    position: absolute;
+    top: 78px;
+    left: 1px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .eightstripe_t3{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(135deg);
+  }
+  .eightstripe_t4{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(180deg);
+  }
+  .eightform_task1{
+    position: absolute;
+    bottom: 200px;
+    left: 130px;
+    transform: rotate(28deg);
+    font-size: 10px;
+  }
+  .eightform_task2{
+    position: absolute;
+    top: 50px;
+    left: 195px;
+    transform: rotate(68deg);
+    font-size: 10px;
+  }
+  .eightform_task3{
+    position: absolute;
+    top: 125px;
+    left: 198px;
+    transform: rotate(120deg);
+    font-size: 10px;
+  }
+  .eightform_task4{
+    position: absolute;
+    top: 185px;
+    left: 140px;
+    transform: rotate(150deg);
+    font-size: 10px;
+  }
+  .eightform_task5{
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    transform: rotate(210deg);
+    font-size: 10px;
+  }
+  .eightform_task6{
+    position: absolute;
+    top: 125px;
+    left: 10px;
+    transform: rotate(250deg);
+    font-size: 10px;
+  }
+  .eightform_task7{
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    transform: rotate(295deg);
+    font-size: 10px;
+  }
+  .eightform_task8{
+    position: absolute;
+    left: 60px;
+    transform: rotate(334deg);
+    font-size: 10px;
+  }
+  .eightform_name1{
+    position: absolute;
+    bottom: 120px;
+    left: 80px;
+    transform: rotate(28deg);
+    font-size: 10px;
+  }
+  .eightform_name2{
+    position: absolute;
+    top: 30px;
+    left: 116px;
+    transform: rotate(65deg);
+    font-size: 10px;
+  }
+  .eightform_name3{
+    position: absolute;
+    top: 74px;
+    left: 116px;
+    transform: rotate(120deg);
+    font-size: 10px;
+  }
+  .eightform_name4{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    transform: rotate(160deg);
+    font-size: 10px;
+  }
+  .eightform_name5{
+    position: absolute;
+    top: 118px;
+    left: 28px;
+    transform: rotate(210deg);
+    font-size: 10px;
+  }
+  .eightform_name6{
+    position: absolute;
+    top: 80px;
+    right: 115px;
+    transform: rotate(250deg);
+    font-size: 10px;
+  }
+  .eightform_name7{
+    position: absolute;
+    top: 30px;
+    right: 116px;
+    transform: rotate(295deg);
+    font-size: 10px;
+  }
+  .eightform_name8{
+    position: absolute;
+    bottom: 120px;
+    right: 80px;
+    transform: rotate(335deg);
+    font-size: 10px;
   }
 }

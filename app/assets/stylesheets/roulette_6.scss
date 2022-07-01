@@ -33,25 +33,24 @@
   }
   .sixstripe_t1{
     position: absolute;
-    top: 127px;
-    width: 256px;
+    top: 125px;
+    width: 253px;
     height: 2px;
     background-color: #000000;
     transform: rotate(30deg);
   }
   .sixstripe_t2{
     position: absolute;
-    top: 126px;
-    left: 1px;
-    width: 256px;
+    top: 125px;
+    width: 253px;
     height: 2px;
     background-color: #000000;
     transform: rotate(90deg);
   }
   .sixstripe_t3{
     position: absolute;
-    top: 126px;
-    width: 256px;
+    top: 124px;
+    width: 253px;
     height: 2px;
     background-color: #000000;
     transform: rotate(150deg);
@@ -60,13 +59,13 @@
     position: absolute;
     top: 40px;
     left: 280px;
-    transform: rotate(40deg)
+    transform: rotate(40deg);
   }
   .sixform_task2{
     position: absolute;
     top: 190px;
     left: 370px;
-    transform: rotate(90deg)
+    transform: rotate(90deg);
   }
   .sixform_task3{
     position: absolute;
@@ -96,13 +95,13 @@
     position: absolute;
     top: 20px;
     left: 135px;
-    transform: rotate(40deg)
+    transform: rotate(40deg);
   }
   .sixform_name2{
     position: absolute;
     top: 90px;
     left: 180px;
-    transform: rotate(90deg)
+    transform: rotate(90deg);
   }
   .sixform_name3{
     position: absolute;
@@ -119,13 +118,151 @@
   .sixform_name5{
     position: absolute;
     top: 90px;
-    left: 20px;
+    left: 5px;
     transform: rotate(270deg);
   }
   .sixform_name6{
     position: absolute;
-    top: 30px;
-    left: 60px;
+    top: 20px;
+    left: 45px;
     transform: rotate(325deg);
+  }
+}
+@media (max-width: 600px) {
+  .sixstripe_f1{
+    position: absolute;
+    top: 117px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(30deg);
+  }
+  .sixstripe_f2{
+    position: absolute;
+    top: 116px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .sixstripe_f3{
+    position: absolute;
+    top: 117px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(150deg);
+  }
+  .top_roulettes6{
+    transform: rotate(0);
+    height: 160px;
+    width: 160px;
+    background-image: conic-gradient(#b2f1ac 0% 16.66%, #fffd95 16.66% 33.32%,#8497e9 33.32% 50%,#84dae9 50% 66.66%,#d9d9d9 66.66% 83.32%,#fade92 83.32% 100%);
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+  }
+  .sixstripe_t1{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(30deg);
+  }
+  .sixstripe_t2{
+    position: absolute;
+    top: 76px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .sixstripe_t3{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(150deg);
+  }
+  .sixform_task1{
+    position: absolute;
+    bottom: 175px;
+    left: 140px;
+    transform: rotate(35deg);
+    font-size: 12px;
+  }
+  .sixform_task2{
+    position: absolute;
+    top: 90px;
+    left: 201px;
+    transform: rotate(90deg);
+    font-size: 12px;
+  }
+  .sixform_task3{
+    position: absolute;
+    top: 170px;
+    left: 150px;
+    transform: rotate(150deg);
+    font-size: 12px;
+  }
+  .sixform_task4{
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    transform: rotate(215deg);
+    font-size: 12px;
+  }
+  .sixform_task5{
+    position: absolute;
+    top: 85px;
+    transform: rotate(270deg);
+    font-size: 12px;
+  }
+  .sixform_task6{
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    transform: rotate(328deg);
+    font-size: 12px;
+  }
+  .sixform_name1{
+    position: absolute;
+    left: 80px;
+    transform: rotate(40deg);
+    font-size: 12px;
+  }
+  .sixform_name2{
+    position: absolute;
+    top: 50px;
+    left: 110px;
+    transform: rotate(90deg);
+    font-size: 12px;
+  }
+  .sixform_name3{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    transform: rotate(150deg);
+    font-size: 12px;
+  }
+  .sixform_name4{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    transform: rotate(215deg);
+    font-size: 12px;
+  }
+  .sixform_name5{
+    position: absolute;
+    top: 52px;
+    transform: rotate(270deg);
+    font-size: 12px;
+  }
+  .sixform_name6{
+    position: absolute;
+    left: 27px;
+    transform: rotate(325deg);
+    font-size: 12px;
   }
 }

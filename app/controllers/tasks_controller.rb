@@ -29,6 +29,7 @@ class TasksController < ApplicationController
   end
 
   def formdate_params
-    params.require(:formdate).permit(:task1, :name1, :task2, :name2, :task3, :name3, :task4, :name4,:task5, :name5, :task6, :name6, :task7, :name7, :task8, :name8, :task9, :name9, :task10, :name10)
+    params.require(:formdate).permit(:task1, :name1, :task2, :name2, :task3, :name3, :task4, :name4,
+                                     :task5, :name5, :task6, :name6, :task7, :name7, :task8, :name8, :task9, :name9, :task10, :name10)
   end
 end

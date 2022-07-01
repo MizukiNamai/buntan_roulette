@@ -6,7 +6,7 @@
   }
   .foundation_roulette{
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 10px;
     width: 445px;
     height: 445px;
@@ -17,23 +17,23 @@
   .fourstripe_f1{
     position: absolute;
     top: 222px;
-    width: 446px;
+    width: 442px;
     height: 4px;
     background-color: #000000;
     transform: rotate(0deg);
   }
   .fourstripe_f2{
     position: absolute;
-    top: 222px;
-    width: 446px;
+    top: 220px;
+    width: 444px;
     height: 4px;
     background-color: #000000;
     transform: rotate(90deg);
   }
   .roulettewrapper_top{
     position: relative;
-    top: 160px;
-    left: 480px;
+    top: 153px;
+    left: 482px;
   }
   .top_roulettes4{
     transform: rotate(0);
@@ -45,16 +45,16 @@
   }
   .fourstripe_t1{
     position: absolute;
-    top: 127px;
-    width: 258px;
+    top: 125px;
+    width: 254px;
     height: 2px;
     background-color: #000000;
     transform: rotate(0deg);
   }
   .fourstripe_t2{
     position: absolute;
-    top: 126px;
-    width: 258px;
+    top: 125px;
+    width: 253px;
     height: 2px;
     background-color: #000000;
     transform: rotate(90deg);
@@ -63,13 +63,13 @@
     position: absolute;
     top: 70px;
     left: 320px;
-    transform: rotate(50deg)
+    transform: rotate(50deg);
   }
   .fourform_task2{
     position: absolute;
     top: 320px;
     left: 320px;
-    transform: rotate(138deg)
+    transform: rotate(138deg);
   }
   .fourform_task3{
     position: absolute;
@@ -87,13 +87,13 @@
     position: absolute;
     top: 40px;
     left: 160px;
-    transform: rotate(50deg)
+    transform: rotate(50deg);
   }
   .fourform_name2{
     position: absolute;
     top: 140px;
     left: 140px;
-    transform: rotate(138deg)
+    transform: rotate(138deg);
   }
   .fourform_name3{
     position: absolute;
@@ -106,5 +106,127 @@
     top: 30px;
     left: 30px;
     transform: rotate(312deg);
+  }
+}
+@media (max-width: 600px) {
+  .fourversion_roulette{
+    overflow: hidden;
+  }
+  .roulettewrapper{
+    position: relative;
+    bottom: 16px;
+    left: 70px;
+    max-width: 240px;
+  }
+  .foundation_roulette{
+    position: relative;
+    top: 20px;
+    width: 240px;
+    height: 240px;
+    background-color: #ffe7e7;
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+  }
+  .fourstripe_f1{
+    position: absolute;
+    top: 116px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(0deg);
+  }
+  .fourstripe_f2{
+    position: absolute;
+    top: 117px;
+    width: 238px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .roulettewrapper_top{
+    position: relative;
+    bottom: 197px;
+    left: 110px;
+    max-width: 160px;
+  }
+  .top_roulettes4{
+    transform: rotate(0);
+    height: 160px;
+    width: 160px;
+    background-image: conic-gradient(#b2f1ac 0% 25%,#fffd95 25% 50%,#8497e9 50% 75%,#84dae9 75% 100%);
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+  }
+  .fourstripe_t1{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(0deg);
+  }
+  .fourstripe_t2{
+    position: absolute;
+    top: 78px;
+    width: 158px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+  .fourform_task1{
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    transform: rotate(50deg);
+    font-size: 12px;
+  }
+  .fourform_task2{
+    position: absolute;
+    top: 155px;
+    left: 170px;
+    transform: rotate(138deg);
+    font-size: 12px;
+  }
+  .fourform_task3{
+    position: absolute;
+    top: 155px;
+    left: 30px;
+    transform: rotate(228deg);
+    font-size: 12px;
+  }
+  .fourform_task4{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    transform: rotate(320deg);
+    font-size: 12px;
+  }
+  .fourform_name1{
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    transform: rotate(50deg);
+    font-size: 12px;
+  }
+  .fourform_name2{
+    position: absolute;
+    top: 70px;
+    left: 90px;
+    transform: rotate(138deg);
+    font-size: 12px;
+  }
+  .fourform_name3{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    transform: rotate(228deg);
+    font-size: 12px;
+  }
+  .fourform_name4{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    transform: rotate(312deg);
+    font-size: 12px;
   }
 }

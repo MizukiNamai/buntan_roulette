@@ -1,12 +1,4 @@
 @media screen and (min-width: 1366px) {
-  .choice_button{
-    display: flex;
-    justify-content: center;
-  }
-
-  ul{
-    list-style-type: none;
-  }
 
   li{
     margin: 20px;
@@ -33,4 +25,13 @@
     background-color:#378de5;
   }
   }
+}
+.choice_button{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+ul{
+  list-style-type: none;
 }
