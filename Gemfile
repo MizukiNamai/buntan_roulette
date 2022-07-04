@@ -95,4 +95,7 @@ gem 'omniauth-rails_csrf_protection'
 gem 'rails-i18n'
 gem 'seed-fu'
 
-gem 'thin'
+source "https://rubygems.org"
+gem 'sinatra'
+gem 'line-bot-api'
+

@@ -88,7 +88,6 @@ GEM
     coderay (1.1.3)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
-    daemons (1.4.1)
     debug (1.5.0)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
@@ -108,7 +107,6 @@ GEM
       dotenv (= 2.7.6)
       railties (>= 3.2)
     erubi (1.10.0)
-    eventmachine (1.2.7)
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.2.0)
@@ -142,6 +140,7 @@ GEM
       activesupport (>= 5.0.0)
     json (2.6.2)
     jwt (2.4.1)
+    line-bot-api (1.24.0)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -160,6 +159,8 @@ GEM
     minitest (5.16.1)
     msgpack (1.5.3)
     multi_xml (0.6.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -329,6 +330,11 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
+    sinatra (2.2.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
+      tilt (~> 2.0)
     spring (4.0.0)
     sprockets (4.1.1)
       concurrent-ruby (~> 1.0)
@@ -340,10 +346,6 @@ GEM
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
     strscan (3.0.3)
-    thin (1.8.1)
-      daemons (~> 1.0, >= 1.0.9)
-      eventmachine (~> 1.0, >= 1.0.4)
-      rack (>= 1, < 3)
     thor (1.2.1)
     tilt (2.0.10)
     timeout (0.3.0)
@@ -393,6 +395,7 @@ DEPENDENCIES
   hirb-unicode-steakknife
   importmap-rails
   jbuilder
+  line-bot-api
   listen (~> 3.3)
   meta-tags
   omniauth (~> 2.0)
@@ -412,10 +415,10 @@ DEPENDENCIES
   seed-fu
   selenium-webdriver
   simplecov
+  sinatra
   spring
   sprockets-rails
   stimulus-rails
-  thin
   turbo-rails
   tzinfo-data
   web-console
