@@ -85,8 +85,17 @@ end
 
 gem 'devise'
 gem 'devise-i18n'
+gem 'dotenv-rails'
 gem 'font-awesome-sass', '~> 5.15.1'
 gem 'high_voltage'
 gem 'meta-tags'
+gem 'omniauth', '~> 2.0'
+gem 'omniauth-line'
+gem 'omniauth-rails_csrf_protection'
 gem 'rails-i18n'
 gem 'seed-fu'
+
+source "https://rubygems.org"
+gem 'sinatra'
+gem 'line-bot-api'
+
