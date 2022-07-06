@@ -8,11 +8,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :omniauthable, omniauth_providers: %i[line]
 
-  VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?[A-Z])(?=.*?\d)\w{6,12}\z/
 
   validates :email, presence: true
   validates :password, presence: true, length: { minimum: 6 }
-  validates :password, presence: true, format: { with: VALID_PASSWORD_REGEX }
 
   def social_profile(provider)
     social_profiles.select { |sp| sp.provider == provider.to_s }.first
