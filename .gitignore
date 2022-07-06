@@ -31,7 +31,7 @@ vendor/bundle
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-/config/.env
+/.env
 /public/packs
 /public/packs-test
 /node_modules
