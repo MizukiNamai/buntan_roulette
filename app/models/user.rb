@@ -8,7 +8,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :omniauthable, omniauth_providers: %i[line]
 
-
   validates :email, presence: true
   validates :password, presence: true, length: { minimum: 6 }
 
