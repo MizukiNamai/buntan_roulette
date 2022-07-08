@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
   root 'pages#top'
+  post :linebot, to: 'linebot#recieve'
   resources :pages, only: %i[create new]
   resources :tasks, only: %i[create new]
   get 'pages/guide'
