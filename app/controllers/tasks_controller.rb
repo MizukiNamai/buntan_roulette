@@ -1,16 +1,5 @@
 class TasksController < ApplicationController
-  def new
-    @page = Page.order(updated_at: :desc).limit(1).pluck(:participant)
-    if params[:formdate].present?
-      @hiddenform = formdate_params.values
-      (1..@hiddenform.size).each do |i|
-        var = "@form#{i}"
-        binding.eval("#{var} = @hiddenform[#{i}-1]")
-      end
-    end
-    @user = current_user.id if user_signed_in?
-    @tasks = Form::TaskCollection.new
-  end
+  def new = task_action
 
   def create
     @tasks = Form::TaskCollection.new(tasks_collection_params)
@@ -23,6 +12,19 @@ class TasksController < ApplicationController
   end
 
   private
+
+  def task_action
+    @page = Page.order(updated_at: :desc).limit(1).pluck(:participant)
+    if params[:formdate].present?
+      @hiddenform = formdate_params.values
+      (1..@hiddenform.size).each do |i|
+        var = "@form#{i}"
+        binding.eval("#{var} = @hiddenform[#{i}-1]")
+      end
+    end
+    @user = current_user.id if user_signed_in?
+    @tasks = Form::TaskCollection.new
+  end
 
   def tasks_collection_params
     params.require(:tasks)
