@@ -9,7 +9,7 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
-  config.hosts << 'fdab-240b-12-ba0-500-5592-bb11-30aa-3747.jp.ngrok.io'
+  config.hosts << 'afa9-240b-12-ba0-500-fc83-40b4-5017-5cf9.jp.ngrok.io'
   # Show full error reports.
   config.consider_all_requests_local = true
   # Enable server timing

@@ -3,6 +3,7 @@ class TasksController < ApplicationController
 
   def create
     @tasks = Form::TaskCollection.new(tasks_collection_params)
+    binding.pry
     if @tasks.save
       redirect_to api_tasks_show_path
     else
