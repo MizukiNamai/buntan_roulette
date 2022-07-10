@@ -1,5 +1,10 @@
 <div id="app">
-  <h3 class="text">ToDoリスト</h3>
+  <div class="showbutton">
+    <h3 class="text">【ToDoリスト】</h3>
+    <div class="line-it-button" data-lang="ja" data-type="friend" data-env="REAL"   data-lineId="@316alitb" style="display: none;"></div>
+    <script class="line-it-button" src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+    <div class="btn_line"><%= button_to "分担表をLINEで受け取る",linebot_push_path, {method: :get } %></div>
+  </div>
   <div class="flex">
     <div
       v-for="(statuses,index) in displayStatuses"
@@ -18,12 +23,14 @@
           draggable=true
           >
           {{ tasks.name}}
+          :
           {{ tasks.task}}
         </div>
       </div>
     </div>
   </div>
 </div>
+
 <script>
   const app = Vue.createApp({
     el: "#app",
@@ -51,7 +58,7 @@
       }
     },
     mounted(){
-      axios.get('https://fdab-240b-12-ba0-500-5592-bb11-30aa-3747.jp.ngrok.io/api/tasks/show.json')
+      axios.get('https://7f96-240b-12-ba0-500-c5fc-f999-bb08-dd50.jp.ngrok.io/api/tasks/show.json')
       .then(response => this.tasks = response.data)
       .catch(error => console.log(error))
     },

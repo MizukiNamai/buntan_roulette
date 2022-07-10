@@ -1,6 +1,10 @@
 @media screen and (min-width: 1366px) {
 .text{
-  text-align: center;
+  display: inline-block;
+}
+.showbutton{
+  height: 50px;
+  overflow: hidden;
 }
 .flex{
   display: flex;
@@ -29,7 +33,15 @@
 #status__name3{
   background-color: #adf7cc;
 }
-
+.line-it-button{
+  display: inline-block;
+  margin-left: 100px;
+  transform: scale(1.5, 1.5);
+}
+.btn_line{
+  display: inline-block;
+  margin-left: 100px;
+}
 @media (max-width: 600px) {
   .text{
     text-align: center;
