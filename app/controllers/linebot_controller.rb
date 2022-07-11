@@ -11,7 +11,6 @@ class LinebotController < ApplicationController
   def push
     page = Page.order(updated_at: :desc).limit(1).pluck(:participant)
     limit_tasks = Task.where(user_uid: current_user.uid, page_id: page).where(updated_at: Time.now - 60.minutes...Time.now)
-    binding.pry
     limit_tasks.each do |t|
       message = {
           type: 'text',
