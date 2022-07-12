@@ -38,11 +38,12 @@
   margin-left: 100px;
   transform: scale(1.5, 1.5);
 }
-.btn_line{
+#btn_line{
   display: inline-block;
   margin-left: 100px;
+  margin-top: 0px;
 }
-@media (max-width: 600px) {
+@media (max-width: 1395px) {
   .text{
     text-align: center;
   }
