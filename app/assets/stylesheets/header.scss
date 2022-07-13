@@ -75,6 +75,9 @@ a {
 
 
 @media (max-width: 600px) {
+  header {
+    height: 55px;
+  }
   .pc {
     display: none;
   }
