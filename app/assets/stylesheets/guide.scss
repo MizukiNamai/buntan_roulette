@@ -1,15 +1,19 @@
-  .guide_contents {
-    display: flex;
-    justify-content: center;
-  }
-
-  .guide_ul{
-    display: inline;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-  }
-
   .guide_li{
     margin: 50px;
   }
+
+.guide_contents {
+  display: flex;
+  justify-content: center;
+}
+
+.guide_ul{
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.choice_button{
+  margin-top: 0px;
+}
