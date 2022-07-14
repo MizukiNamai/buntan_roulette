@@ -1,10 +1,9 @@
-<template>
 <div id="app">
   <div class="showbutton">
     <h3 class="text">【ToDoリスト】</h3>
-    <div class="line-it-button" data-lang="ja" data-type="friend" data-env="REAL"   data-lineId="@316alitb" style="display: none;"></div>
-    <script is="a"class="line-it-button" src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
-    <div class="btn_line"><%= button_to "分担表をLINEで受け取る",linebot_push_path, {method: :get } %></div>
+    <div class="line-it-button" data-lang="ja" data-type="friend" data-env="REAL"   data-lineId="@316alitb" ></div>
+    <component :is="'script'"class="line-it-button" src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></component>
+    <button onclick="location.href='../../linebot/push.html'" @click="confirm" class="myButton" id="btn_line">LINEで分担表を送る</button>
   </div>
   <div class="flex">
     <div
@@ -31,9 +30,9 @@
     </div>
   </div>
 </div>
-</template>
+
 <script>
-  const app = Vue.createApp({
+  const app = new Vue({
     el: "#app",
     data() {
       return {
@@ -59,7 +58,7 @@
       }
     },
     mounted(){
-      axios.get('http://localhost:3000/api/tasks/show.json')
+      axios.get('https://9038-240b-12-ba0-500-9473-886c-595f-8b90.jp.ngrok.io/api/tasks/show.json')
       .then(response => this.tasks = response.data)
       .catch(error => console.log(error))
     },
@@ -101,6 +100,9 @@
         );
         if (tasks.length === 0) this.task.status_id = overStatus.id;
       }
+      },
+      confirm: function() {
+      confirm("公式LINE「分担ルーレット」を友達登録しましたか？");
       },
     },
   }).mount('#app')
