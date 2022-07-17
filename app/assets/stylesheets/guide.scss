@@ -27,3 +27,17 @@
 #guide_line{
   background-color: #cdfdbf;
 }
+
+@media (min-width: 601px) {
+  .sm_roulette {
+  display: none;
+  }
+  .sp {
+  display: none;
+  }
+}
+@media (max-width: 600px) {
+  .pc_roulette {
+    display: none;
+  }
+}
