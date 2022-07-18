@@ -4,9 +4,11 @@ window.addEventListener('DOMContentLoaded', function (){
     return element.value;
   }).get();
 
-  $('input.name').each(function(i){
-    $(this).attr('id','tasks__name' + (i+1));
-  });
+  $('input[name="formdate[task1]"').val("テント設営")
+  $('input[name="formdate[task2]"').val("火起こし")
+  $('input[name="formdate[task3]"').val("食材調理")
+  $('input[name="formdate[task4]"').val("買い出し")
+
   $('.statuses').each(function(i){
     $(this).attr('id','status__name' + (i+1));
   });
