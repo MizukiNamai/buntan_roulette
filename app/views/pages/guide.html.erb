@@ -1,6 +1,8 @@
 <div class="wrapper">
   <div class= guide_contents>
     <ul class="guide_ul">
+      <%= image_tag 'guide_title1.jpg',class:"guide_title1" %>
+      <%= image_tag 'guide_title2.jpg',class:"guide_title2" %>
       <li class="guide_li"><h2>＜使い方＞<h2></li>
       <li class="guide_li"><h3>BBQの際に作業の分担を<br class="sp">自動で決めることができるルーレットです</h3></li>
       <div id="guide_roulette">
@@ -20,7 +22,7 @@
       </div>
       <li class="guide_li"><%= button_to "ルーレットを回す", new_page_path, {method: :get, class: "myButton"} %></li>
 
-      <%= image_tag 'pc_roulette.jpg',:size => '550x250' %>
+      <%= image_tag 'guide_last.jpg',class:"guide_last" %>
     </ul>
   </div>
 </div>
