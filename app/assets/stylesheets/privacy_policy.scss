@@ -1,0 +1,29 @@
+.privacy-policy {
+  max-width: 1500px;
+  margin: 100px auto;
+}
+.privacy_policy__item__title{
+  text-align: left;
+}
+.privacy-policy__item__desc{
+  line-height: 0px;
+}
+li{
+  list-style:none
+}
+@media (max-width: 1395px) {
+  .privacy-policy__item__desc{
+    line-height: 20px;
+  }
+  .privacy-policy {
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  .txt {
+    max-width: 350px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 100px;
+  }
+}
