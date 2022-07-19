@@ -37,6 +37,7 @@ header ul {
     text-decoration: none;
     margin-left: 20px;
     color:rgba(0, 0, 0, 0.7);
+    text-shadow:1px 1px 0 #FFF;
 }
 
 .header_link:hover {
@@ -132,11 +133,12 @@ a {
       position: absolute;
       z-index: 10;
       width: 100%;
-      background-color: rgba(81, 141, 231, 0.9);
+      background-color: rgba(253, 211, 191, 0.9);
   }
 
   ul {
     flex-direction: column;
+
   }
 
   a {

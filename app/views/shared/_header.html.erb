@@ -11,13 +11,13 @@
       <nav class="sm">
         <ul>
           <% if user_signed_in? %>
-            <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to "ログアウト",destroy_user_session_path, method: :delete,class:"black" %></li>
           <% else %>
-            <li><%= link_to "ログイン", new_user_session_path %></li>
+            <li><%= link_to "ログイン", new_user_session_path ,class:"black"%></li>
           <% end %>
-          <li><%= link_to "人数選択", new_page_path %></li>
-          <li><%= link_to "使い方", pages_guide_path %></li>
-          <li><%= link_to "トップページ", '/' %></li>
+          <li><%= link_to "人数選択", new_page_path ,class:"black"%></li>
+          <li><%= link_to "使い方", pages_guide_path,class:"black" %></li>
+          <li><%= link_to "トップページ", '/',class:"black" %></li>
         </ul>
       </nav>
       <nav class= "pc">
