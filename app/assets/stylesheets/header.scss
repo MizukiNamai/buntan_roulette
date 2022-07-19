@@ -3,7 +3,7 @@
 }
 header {
     position: fixed;
-    background-image: image-url("bbq_2.jpg");
+    background-image: image-url("header_pc.jpg");
     background-size: contain;
     background-size: cover;
     background-position: center;
@@ -78,7 +78,7 @@ a {
 @media (max-width: 600px) {
   header {
     height: 55px;
-    background-image: image-url("bbq_last.jpg");
+    background-image: image-url("header_sm.jpg");
   }
   .pc {
     display: none;
