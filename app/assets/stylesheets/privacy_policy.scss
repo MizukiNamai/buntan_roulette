@@ -6,10 +6,15 @@
   text-align: left;
 }
 .privacy-policy__item__desc{
-  line-height: 0px;
+  line-height: 20px;
 }
 li{
   list-style:none
+}
+.privacy-policy__item{
+  text-indent : -1em;
+  padding-left : 1em;
+  line-height: 20px;
 }
 @media (max-width: 1395px) {
   .privacy-policy__item__desc{
@@ -25,5 +30,10 @@ li{
     display: inline-block;
     text-align: left;
     margin-bottom: 100px;
+  }
+  .privacy-policy__item{
+    text-indent : -1em;
+    padding-left : 1em;
+    line-height: 20px;
   }
 }
