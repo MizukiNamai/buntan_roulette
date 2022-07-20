@@ -17,9 +17,13 @@ class User < ApplicationRecord
 
   def values(omniauth)
     return if provider.to_s != omniauth['provider'].to_s || uid != omniauth['uid']
-
+    
+    credentials = omniauth['credentials']
     info = omniauth['info']
-    info['name']
+    access_token = credentials['refresh_token']
+    access_secret = credentials['secret']
+    credentials = credentials.to_json
+    name = info['name']
     # self.set_values_by_raw_info(omniauth['extra']['raw_info'])
   end
 
