@@ -2,9 +2,9 @@
 <html>
   <head prefix="og:http://ogp.me/ns#">
     <meta property="og:title" content="分担ルーレット">
-    <meta property="og:description" content="複数人でタスクを分担したいときに使用する、組み合わせを自動的に決めることができるルーレットです">
+    <meta property="og:description" content="分担ルーレット~BBQver.~は、BBQでの役割分担したいときに使用するルーレットです。その他、決まった分担を管理するToDoリスト機能や分担をLINEで通知するLINE通知機能などもあります">
     <meta property="og:url" content="ページのURL">
-    <meta property="og:image" content="サムネイル画像のURL">
+    <meta property="og:image" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="サイトの名前">
     <title>BuntanRoulette</title>
@@ -12,9 +12,12 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= javascript_include_tag 'application' %>
+    <% if Rails.env.production? %>
+      <%= render 'layouts/google_analytics'%>
+    <% end %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/vue@2.5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
