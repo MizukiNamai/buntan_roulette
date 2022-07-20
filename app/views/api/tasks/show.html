@@ -58,7 +58,7 @@
       }
     },
     mounted(){
-      axios.get('https://9038-240b-12-ba0-500-9473-886c-595f-8b90.jp.ngrok.io/api/tasks/show.json')
+      axios.get('http://localhost:3000/api/tasks/show.json')
       .then(response => this.tasks = response.data)
       .catch(error => console.log(error))
     },
@@ -105,5 +105,5 @@
       confirm("公式LINE「分担ルーレット」を友達登録しましたか？");
       },
     },
-  }).mount('#app')
+  })
 </script>
