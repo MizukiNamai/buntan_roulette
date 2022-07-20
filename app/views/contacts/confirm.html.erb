@@ -1,31 +1,32 @@
-<table>
+<table class="confirm_wrapper">
   <tbody>
     <tr>
-      <td class="text-center" style="width: 30%;">お名前</td>
+      <td class="text-center">お名前</td>
       <td><%= @contact.name %></td>
     </tr>
     <tr>
-      <td class="text-center" style="width: 30%;">メールアドレス</td>
+      <td class="text-center">メールアドレス</td>
       <td><%= @contact.email %></td>
     </tr>
     <tr>
       <td class="text-center">メッセージ</td>
-      <td style="white-space: pre-wrap;"><%= @contact.message %></td>
+      <td><%= @contact.message %></td>
     </tr>
   </tbody>
 </table>
-
+<div id="btn_confirm" >
 <%= form_for(@contact) do |f| %>
   <%= f.hidden_field :name %>
   <%= f.hidden_field :email %>
   <%= f.hidden_field :subject %>
   <%= f.hidden_field :message %>
-  <div><%= f.submit '送信' %></div>
+  <div><%= f.submit '送信',class:"myButton" %></div>
 <% end %>
 <%= form_for @contact, url: back_path do |f| %>
   <%= f.hidden_field :name %>
   <%= f.hidden_field :email %>
   <%= f.hidden_field :subject %>
   <%= f.hidden_field :message %>
-  <div><%= f.submit '入力画面に戻る' %></div>
+  <div><%= f.submit '入力画面に戻る',class:"myButton" %></div>
 <% end %>
+</div>

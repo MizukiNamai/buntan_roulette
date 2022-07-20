@@ -42,6 +42,19 @@ li{
   border-radius: 10px;
   display: inline-block;
 }
+.confirm_wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+#btn_confirm{
+  display: flex;
+  justify-content: center;
+}
+
+form dl dd{
+  padding:10px 0;
+}
 @media (max-width: 1395px) {
   .privacy-policy__item__desc{
     line-height: 20px;
