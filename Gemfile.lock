@@ -106,6 +106,8 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
+    enum_help (0.0.19)
+      activesupport (>= 3.0.0)
     erubi (1.10.0)
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
@@ -159,8 +161,6 @@ GEM
     minitest (5.16.1)
     msgpack (1.5.3)
     multi_xml (0.6.0)
-    mustermann (1.1.1)
-      ruby2_keywords (~> 0.0.1)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -316,9 +316,6 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    seed-fu (2.3.9)
-      activerecord (>= 3.1)
-      activesupport (>= 3.1)
     selenium-webdriver (4.3.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -330,11 +327,6 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    sinatra (2.2.0)
-      mustermann (~> 1.0)
-      rack (~> 2.2)
-      rack-protection (= 2.2.0)
-      tilt (~> 2.0)
     spring (4.0.0)
     sprockets (4.1.1)
       concurrent-ruby (~> 1.0)
@@ -388,6 +380,7 @@ DEPENDENCIES
   devise
   devise-i18n
   dotenv-rails
+  enum_help
   factory_bot_rails
   font-awesome-sass (~> 5.15.1)
   high_voltage
@@ -398,7 +391,6 @@ DEPENDENCIES
   line-bot-api
   listen (~> 3.3)
   meta-tags
-  omniauth (~> 2.0)
   omniauth-line
   omniauth-rails_csrf_protection
   pg (~> 1.1)
@@ -412,10 +404,8 @@ DEPENDENCIES
   rubocop
   rubocop-rails
   sass-rails (>= 6)
-  seed-fu
   selenium-webdriver
   simplecov
-  sinatra
   spring
   sprockets-rails
   stimulus-rails

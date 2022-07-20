@@ -1,5 +1,10 @@
 <div id="app">
-  <h3 class="text">ToDoリスト</h3>
+  <div class="showbutton">
+    <h3 class="text">【ToDoリスト】</h3>
+    <div class="line-it-button" data-lang="ja" data-type="friend" data-env="REAL"   data-lineId="@316alitb" ></div>
+    <component :is="'script'"class="line-it-button" src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></component>
+    <button onclick="location.href='../../linebot/push.html'" @click="confirm" class="myButton" id="btn_line">LINEで分担表を送る</button>
+  </div>
   <div class="flex">
     <div
       v-for="(statuses,index) in displayStatuses"
@@ -18,14 +23,16 @@
           draggable=true
           >
           {{ tasks.name}}
+          :
           {{ tasks.task}}
         </div>
       </div>
     </div>
   </div>
 </div>
+
 <script>
-  new Vue({
+  const app = new Vue({
     el: "#app",
     data() {
       return {
@@ -93,6 +100,9 @@
         );
         if (tasks.length === 0) this.task.status_id = overStatus.id;
       }
+      },
+      confirm: function() {
+      confirm("公式LINE「分担ルーレット」を友達登録しましたか？");
       },
     },
   })

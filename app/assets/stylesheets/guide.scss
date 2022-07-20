@@ -1,15 +1,81 @@
-  .guide_contents {
-    display: flex;
-    justify-content: center;
-  }
-
-  .guide_ul{
-    display: inline;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-  }
-
   .guide_li{
     margin: 50px;
   }
+
+.guide_contents {
+  display: flex;
+  justify-content: center;
+}
+
+.guide_ul{
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.choice_button{
+  margin-top: 0px;
+}
+#guide_roulette{
+  background-color: #fde2bf;
+}
+#guide_todo{
+  background-color: #ffd7f8;
+}
+
+#guide_line{
+  background-color: #cdfdbf;
+}
+
+@media (min-width: 601px) {
+  .sm_roulette {
+  display: none;
+  }
+  .sp {
+  display: none;
+  }
+  .guide_title1{
+    position:relative;
+    top: 180px;
+    left: 550px;
+    width: 200px;
+    height: 150px;
+  }
+  .guide_title2{
+    position:relative;
+    top: 180px;
+    right: 500px;
+    width: 200px;
+    height: 150px;
+  }
+  .guide_last{
+    width: 1800px;
+    height: 200px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .pc_roulette {
+    display: none;
+  }
+  .guide_title1{
+    position:relative;
+    top: 140px;
+    left: 200px;
+    width: 120px;
+    height: 80px;
+  }
+  .guide_title2{
+    position:relative;
+    top: 140px;
+    right: 180px;
+    width: 120px;
+    height: 80px;
+  }
+  .guide_last{
+    width: 600px;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+}

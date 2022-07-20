@@ -1,0 +1,5 @@
+ja:
+  enums:
+    contacts: # モデル名
+      subject: # カラム名
+        inquiry: '問い合わせ'

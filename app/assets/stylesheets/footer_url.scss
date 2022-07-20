@@ -1,0 +1,65 @@
+.privacy-policy {
+  max-width: 1500px;
+  margin: 100px auto;
+}
+.privacy_policy__item__title{
+  text-align: left;
+}
+.privacy-policy__item__desc{
+  line-height: 20px;
+}
+li{
+  list-style:none
+}
+.privacy-policy__item{
+  text-indent : -1em;
+  padding-left : 1em;
+  line-height: 20px;
+}
+.contact_wrapper{
+  margin-top: 150px;
+}
+.form-group{
+  text-align: center;
+  margin-top: 40px;
+}
+.form-control{
+  width: 400px;
+}
+.required::after {
+  content: "必須";
+  background-color: #f04e4e;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 10px;
+  padding: 3px 7px;
+  margin: 0px 5px;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+}
+@media (max-width: 1395px) {
+  .privacy-policy__item__desc{
+    line-height: 20px;
+  }
+  .privacy-policy {
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  .txt {
+    max-width: 350px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 100px;
+  }
+  .privacy-policy__item{
+    text-indent : -1em;
+    padding-left : 1em;
+    line-height: 20px;
+  }
+}

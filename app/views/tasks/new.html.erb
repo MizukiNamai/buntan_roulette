@@ -38,6 +38,9 @@
               <%= f.hidden_field :status_id , value: "1" %>
               <%= f.hidden_field :page_id , value: @page  %>
               <%= f.hidden_field :user_id , value: @user  %>
+              <% if user_signed_in?%>
+                <%= f.hidden_field :user_uid , value: current_user.uid  %>
+              <% end %>
             <% end%>
           <% end %>
           <%= f.submit "ToDoリストを作成する", class: "myButton",id:"btn_todo" %>

@@ -1,0 +1,32 @@
+
+.line_push{
+  margin-top: 200px;
+}
+.push_li{
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.pushsize{
+  width: 600px;
+  height: 400px;
+  float: left;
+  position: relative;
+  left: 2px;
+  top: 4px;
+}
+.push_image{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+@media (max-width: 1395px) {
+  .pushsize{
+    width: 350px;
+    height: 220px;
+    float: left;
+    position: relative;
+    left: 2px;
+    top: 4px;
+  }
+}

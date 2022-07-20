@@ -3,7 +3,7 @@
 }
 header {
     position: fixed;
-    background-image: image-url("top.jpg");
+    background-image: image-url("header_pc.jpg");
     background-size: contain;
     background-size: cover;
     background-position: center;
@@ -37,6 +37,7 @@ header ul {
     text-decoration: none;
     margin-left: 20px;
     color:rgba(0, 0, 0, 0.7);
+    text-shadow:1px 1px 0 #FFF;
 }
 
 .header_link:hover {
@@ -45,7 +46,7 @@ header ul {
 
 body {
   margin: 0;
-  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳＰゴシック", "MS PGothic", sans-serif;
   background-color: #f0f8ff;
 }
 
@@ -75,6 +76,10 @@ a {
 
 
 @media (max-width: 600px) {
+  header {
+    height: 55px;
+    background-image: image-url("header_sm.jpg");
+  }
   .pc {
     display: none;
   }
@@ -128,11 +133,12 @@ a {
       position: absolute;
       z-index: 10;
       width: 100%;
-      background-color: rgba(81, 141, 231, 0.9);
+      background-color: rgba(253, 211, 191, 0.9);
   }
 
   ul {
     flex-direction: column;
+
   }
 
   a {

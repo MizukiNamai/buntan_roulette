@@ -5,7 +5,7 @@
 footer {
     position: fixed;
     bottom: 0;
-    background-image: image-url("top.jpg");
+    background-image: image-url("footer_pc.jpg");
     background-size: contain;
     background-size: cover;
     background-position: center;
@@ -24,6 +24,7 @@ footer {
 footer ul {
     position: fixed;
     color:rgba(10, 10, 10, 0.5);
+    text-shadow:1px 1px 0 #FFF;
     list-style: none;
     bottom:4px;
 }
@@ -39,12 +40,14 @@ footer li {
 .footer_link {
     text-decoration: none;
     color:rgba(0, 0, 0, 0.5);
+    text-shadow:1px 1px 0 #FFF;
 }
 
 .copywrite{
   margin-bottom: 2px;
   display: flex;
   justify-content: center;
+  text-shadow:1px 1px 0 #FFF;
 }
 
 @media (max-width: 600px) {
@@ -56,5 +59,9 @@ footer li {
     box-sizing: border-box;
     display: inline-block;
     text-align: center;
+  }
+  footer{
+    height: 65px;
+    background-image: image-url("footer_sm.jpg");
   }
 }

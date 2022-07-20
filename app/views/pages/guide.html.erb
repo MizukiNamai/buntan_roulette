@@ -1,12 +1,28 @@
 <div class="wrapper">
   <div class= guide_contents>
     <ul class="guide_ul">
+      <%= image_tag 'guide_title1.jpg',class:"guide_title1" %>
+      <%= image_tag 'guide_title2.jpg',class:"guide_title2" %>
       <li class="guide_li"><h2>＜使い方＞<h2></li>
-      <li class="guide_li"><h3>複数人でタスクを分担したいときに、組み合わせを自動的に決めることができるルーレットです</h3></li>
-      <li class="guide_li"><h5>フォームの上から４つまでにタスクを記入すると外円の赤い部分に反映され、フォームの下から４つまでに名前を記入すると中円の部分に反映されます</h5></li>
-      <li class="guide_li"><h5>「完了」ボタンを押してフォームの内容を反映させたあと、スタートボタンを押すとルーレットが回転しストップボタンで停止します</h5></li>
+      <li class="guide_li"><h3>BBQの際に作業の分担を<br class="sp">自動で決めることができるルーレットです</h3></li>
+      <div id="guide_roulette">
+      <li class="guide_li" ><h3>①ルーレット機能</h5></li>
+      <li class="guide_li"><h5>左右のフォームにタスク、名前をそれぞれ記入し<br class="sp">反映ボタンを押すとルーレットに反映されます。<br class="sp">フォームの数が足りないときは「追加」ボタンを押して<br class="sp">フォームを追加してください。<br class="sp">
+                               スタートボタンを押すとルーレットが回転し<br class="sp">ストップボタンで停止します。</h5></li>
+      <%= image_tag 'pc_roulette.jpg',:size => '580x250',class:"pc_roulette" %>
+      <%= image_tag 'sm_roulette.jpg',:size => '180x250',class:"sm_roulette" %>
+      </div>
+      <div id="guide_todo">
+      <li class="guide_li"><h3>②ToDoリスト機能</h5></li>
+      <li class="guide_li"><h5>ログインをした後で<br class="sp">「ToDoリストを追加する」ボタンを押すと、<br class="sp">ルーレットで決まった組み合わせの<br class="sp">タスク管理表が作成されます</h5></li>
+      </div>
+      <div id="guide_line">
+      <li class="guide_li"><h3>③LINE通知機能</h5></li>
+      <li class="guide_li"><h5>⑤さらにLINEで公式botを友達追加し、<br class="sp">「LINEで分担表を送る」ボタンを押すと<br class="sp">分担表をLINE上に送ることができます</h5></li>
+      </div>
       <li class="guide_li"><%= button_to "ルーレットを回す", new_page_path, {method: :get, class: "myButton"} %></li>
-      <%= image_tag 'howto.jpg',:size => '500x250' %>
+
+      <%= image_tag 'guide_last.jpg',class:"guide_last" %>
     </ul>
   </div>
 </div>

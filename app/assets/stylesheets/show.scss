@@ -1,6 +1,10 @@
 @media screen and (min-width: 1366px) {
 .text{
-  text-align: center;
+  display: inline-block;
+}
+.showbutton{
+  height: 50px;
+  overflow: hidden;
 }
 .flex{
   display: flex;
@@ -29,8 +33,17 @@
 #status__name3{
   background-color: #adf7cc;
 }
-
-@media (max-width: 600px) {
+.line-it-button{
+  display: inline-block;
+  margin-left: 100px;
+  transform: scale(1.5, 1.5);
+}
+#btn_line{
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 0px;
+}
+@media (max-width: 1395px) {
   .text{
     text-align: center;
   }
@@ -39,6 +52,11 @@
   }
   .links{
     max-width: 450px;
+  }
+  .line-it-button{
+    margin-left: 150px;
+    margin-bottom: 10px;
+    justify-content: center;
   }
   .statuses{
     margin: 0.5rem;

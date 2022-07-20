@@ -64,6 +64,12 @@ window.addEventListener('DOMContentLoaded', function (){
         $(this).attr('name',`formdate[name${v}]` );
         v++;
       });
+      $('input[name="formdate[task5]"').val("道具の準備")
+      $('input[name="formdate[task6]"').val("買い出し")
+      $('input[name="formdate[task7]"').val("火起こし")
+      $('input[name="formdate[task8]"').val("食材調理")
+      $('input[name="formdate[task9]"').val("テント設営")
+      $('input[name="formdate[task10]"').val("テント設営")
     }
   });
 });
