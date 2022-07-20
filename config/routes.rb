@@ -8,9 +8,12 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
   root 'pages#top'
-  post '/callback' => "linebot#callback"
+  post '/callback' => 'linebot#callback'
   resources :pages, only: %i[create new]
   resources :tasks, only: %i[create new]
+  resources :contacts, only: %i[new create]
+  post 'contacts/confirm', to: 'contacts#confirm', as: 'confirm'
+  post 'contacts/back', to: 'contacts#back', as: 'back'
   get 'pages/guide'
   get 'linebot/push'
   namespace :api do
