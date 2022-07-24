@@ -15,7 +15,6 @@ AllCops:
     - "bin/webpack"
     - "bin/webpack-dev-server"
 
-
 LineLength:
   Max: 200
 
@@ -25,6 +24,7 @@ ClassAndModuleChildren:
 Metrics/BlockLength:
   Exclude:
     - 'config/environments/development.rb'
+    - 'config/environments/production.rb'
 
 Metrics/AbcSize:
   Max: 28
