@@ -15,13 +15,7 @@ class TasksController < ApplicationController
 
   def task_action
     @page = Page.order(updated_at: :desc).limit(1).pluck(:participant)
-    if params[:formdate].present?
-      @hiddenform = formdate_params.values
-      (1..@hiddenform.size).each do |i|
-        var = "@form#{i}"
-        binding.eval("#{var} = @hiddenform[#{i}-1]")
-      end
-    end
+    @hiddenform = formdate_params.values if params[:formdate].present?
     @user = current_user.id if user_signed_in?
     @tasks = Form::TaskCollection.new
   end
