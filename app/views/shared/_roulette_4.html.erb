@@ -1,9 +1,11 @@
 <div class="roulettewrapper">
   <div class= "foundation_roulette">
-    <h3 class="fourform_task1"><%= @form1 %></h3>
-    <h3 class="fourform_task2"><%= @form3 %></h3>
-    <h3 class="fourform_task3"><%= @form5 %></h3>
-    <h3 class="fourform_task4"><%= @form7 %></h3>
+    <% if params[:formdate].present?%>
+      <h3 class="fourform_task1"><%= @hiddenform[0] %></h3>
+      <h3 class="fourform_task2"><%= @hiddenform[2] %></h3>
+      <h3 class="fourform_task3"><%= @hiddenform[4] %></h3>
+      <h3 class="fourform_task4"><%= @hiddenform[6] %></h3>
+    <% end %>
     <div class=fourstripe_f1></div>
     <div class=fourstripe_f2></div>
   </div>
@@ -11,10 +13,12 @@
 <div class="roulettewrapper_top">
   <div class= "top_roulettes4" id="roulettes">
     <em data-name= "4"></em>
-    <h3 class="fourform_name1"><%= @form2 %></h3>
-    <h3 class="fourform_name2"><%= @form4 %></h3>
-    <h3 class="fourform_name3"><%= @form6 %></h3>
-    <h3 class="fourform_name4"><%= @form8 %></h3>
+    <% if params[:formdate].present?%>
+      <h3 class="fourform_name1"><%= @hiddenform[1] %></h3>
+      <h3 class="fourform_name2"><%= @hiddenform[3] %></h3>
+      <h3 class="fourform_name3"><%= @hiddenform[5] %></h3>
+      <h3 class="fourform_name4"><%= @hiddenform[7] %></h3>
+    <% end %>
     <div class=fourstripe_t1></div>
     <div class=fourstripe_t2></div>
   </div>
