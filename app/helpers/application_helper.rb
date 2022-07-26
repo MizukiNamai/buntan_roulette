@@ -27,10 +27,6 @@ module ApplicationHelper
         image: image_url('ogp.jpg'),
         locale: 'ja_JP'
       }
-      twitter: {
-        card: 'summary',
-        site: '@mizuki_RUNTEQ24',
-      }
     }
   end
 end
