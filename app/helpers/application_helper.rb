@@ -30,6 +30,7 @@ module ApplicationHelper
       twitter: {
         card: 'summary_large_image',
         site: '@mizuki_RUNTEQ24',
+        image: image_url('ogp.jpg'),
       }
     }
   end
