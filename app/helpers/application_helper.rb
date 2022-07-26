@@ -25,7 +25,11 @@ module ApplicationHelper
         type: 'website',
         url: request.original_url,
         image: image_url('ogp.jpg'),
-        locale: 'ja_JP'
+        locale: 'ja_JP',
+      },
+      twitter: {
+        card: 'summary_large_image',
+        site: '@mizuki_RUNTEQ24',
       }
     }
   end
